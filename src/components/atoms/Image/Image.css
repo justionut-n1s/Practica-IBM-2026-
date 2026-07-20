@@ -1,0 +1,7 @@
+.img {
+  display: block;
+}
+
+.img--rounded {
+  border-radius: 15px;
+}

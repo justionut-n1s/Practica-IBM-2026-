@@ -1,0 +1,12 @@
+.hyp {
+  color: #7E7E7E;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hyp:hover {
+  color: #3BB77E;
+}

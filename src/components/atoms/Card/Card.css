@@ -1,0 +1,12 @@
+.crd {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.crd:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}

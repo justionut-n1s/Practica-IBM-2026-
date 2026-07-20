@@ -1,0 +1,27 @@
+.h1 {
+  color: #253D4E;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.h2 {
+  color: #253D4E;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.h3 {
+  color: #253D4E;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.h4 {
+  color: #253D4E;
+  font-family: 'Lato';
+  font-weight: 600;
+  font-size: 18px;
+}

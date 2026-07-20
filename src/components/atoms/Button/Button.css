@@ -1,0 +1,14 @@
+.btn {
+  background-color: #489672;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 32px;
+  font-family: 'Lato';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(37, 113, 78);
+}
