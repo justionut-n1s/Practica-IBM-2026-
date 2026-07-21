@@ -1,0 +1,28 @@
+.text-input{
+    padding: 0px 15px;
+    border-color: black;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #838383;
+}
+
+.text-input--header-input{
+    height: 50px;
+    width: 530px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.text-input--email-input{
+    height: 64px;
+    width: 290px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.checkbox{
+    height: 17px;
+    width: 17px;
+    border: 2px;
+    border-color: gray;
+    border-radius: 2px;
+}
+
