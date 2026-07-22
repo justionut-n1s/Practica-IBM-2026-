@@ -1,9 +1,0 @@
-.text { font-family: 'Lato'; }
-
-.text--default { color: #7E7E7E; }
-.text--label    { color: #3BB77E; font-weight: 600; text-transform: uppercase; }
-.text--light    { color: #FFFFFF; }
-
-.text--sm { font-size: 14px; }
-.text--md { font-size: 16px; }
-.text--lg { font-size: 20px; }

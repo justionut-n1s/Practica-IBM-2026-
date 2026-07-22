@@ -11,15 +11,6 @@ function App() {
       <Heading lvl={4}>Test</Heading>
       <Heading lvl={2} light>Test - light</Heading>
 
-      <Text>text normal</Text>
-      <Text variant="label">text label</Text>
-      <Text variant="light">text light</Text>
-      <Text size="sm">text mic</Text>
-      <Text size="lg">text mare</Text>
-
-      <Button onClick={() => alert('merge')}>Button</Button>
-      <Button variant="outline">Outline</Button>
-      <Button type="submit">Submit</Button>
 
       <Image src="https://placehold.co/200x150" alt="poza test" width={200} height={150} />
       <Image src="https://placehold.co/200x150" alt="poza test rotunda" width={200} height={150} rounded />
