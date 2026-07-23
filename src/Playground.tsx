@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
 import { Button, Icon, Image, Text, Hyperlink, Card, Heading } from './components/atoms'
 
+=======
+import { Button, Icon, Image, Text, Hyperlink, Card, Heading, PriceTag } from './components/atoms'
+import { ProductCard } from './components/molecules'
+>>>>>>> Stashed changes
 // test rapid, verific tot ce am facut pana acum
 
 function App() {
@@ -27,6 +32,8 @@ function App() {
         <Text>card flat test</Text>
         <Button>ok</Button>
       </Card>
+      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
+      
     </>
   )
 }
