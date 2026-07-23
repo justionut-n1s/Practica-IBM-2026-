@@ -1,0 +1,23 @@
+.badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.badge--pink {
+    background-color: #F74B81;
+}
+
+.badge--blue {
+    background-color: #29A9E1;
+}
+
+.badge--green {
+    background-color: #3BB77E;
+}
+
+.badge--orange {
+    background-color: #F2711C;
+}

@@ -1,0 +1,21 @@
+.pricetag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pricetag__price {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3BB77E;
+}
+
+.pricetag__old-price {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    color: #ADADAD;
+    text-decoration: line-through;
+}
