@@ -37,7 +37,7 @@ function App() {
         <Text variant="header1" type="p">card flat test</Text>
         <Button variant="add-button" onClick={() => {}}>ok</Button>
       </Card>
-      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
+      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' name_link='https://placehold.co/200x200' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
       
     </>
   )

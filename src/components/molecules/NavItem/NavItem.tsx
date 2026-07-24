@@ -17,7 +17,9 @@ function NavItem({ iconSrc, textItem, link , is_arrow }: NavItemProps) {
             }
             <Hyperlink message={textItem} link={link} ></Hyperlink>
             {is_arrow &&
-                <Icon src={arrow} alt='Icon' size={8}/>
+                <span className="nav-item__arrow">
+                    <Icon src={arrow} alt='Icon' size={8}/>
+                </span>
             }
         </div>
     )

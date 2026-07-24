@@ -1,4 +1,4 @@
-import { Button,Icon,Card,Text, Image, Badge, StarRating, PriceTag, Heading } from '../../atoms'
+import { Button,Icon,Card,Text, Image, Badge, StarRating, PriceTag, Heading, Hyperlink } from '../../atoms'
 import cart from '../../../assets/icons/cart.svg'
 import './ProductCard.css'
 
@@ -12,11 +12,12 @@ interface ProductCardProps {
     category: string
     oldPrice?: string
     badgeText?: string
+    name_link : string
     badgeVariant?: 'pink' | 'blue' | 'green' | 'orange'
 
 }
 
-function ProductCard({ imageSrc, name, provider, category, rating, price, oldPrice, badgeText, badgeVariant }: ProductCardProps) {
+function ProductCard({ imageSrc, name, provider, category, rating, price, oldPrice, badgeText, badgeVariant, name_link }: ProductCardProps) {
   return (
 
     <Card className="product-card">
@@ -39,16 +40,15 @@ function ProductCard({ imageSrc, name, provider, category, rating, price, oldPri
             />
         </div>
     }
-
     <Text variant="header2-button" type="p">{category}</Text>
 
-    <Heading lvl={4}>{name}</Heading>
+    <Hyperlink message={name} link={name_link} className="product-card__name" />
 
     <Text variant="header2-button" type="p">By <span className="provider-name">{provider}</span></Text>
 
     <StarRating rating={rating} />
 
-    <Text variant="header2-button" type="p">By {provider}</Text>
+    
 
     <div className="product-card__footer">
         <PriceTag

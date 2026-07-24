@@ -51,3 +51,9 @@
   font-weight: 600;
 }
 
+.product-card__name {
+  font-size: 22px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #253D4E;
+}
