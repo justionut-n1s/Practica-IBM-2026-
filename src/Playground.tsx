@@ -22,12 +22,12 @@ function App() {
       < PriceTag  price="$28.85" oldPrice="$32.80" />
 
       <Card>
-        <Text>test card content</Text>
+        <Text variant="header1" type="p">test card content</Text>
         
       </Card>
       <Card variant="flat">
-        <Text>card flat test</Text>
-        <Button>ok</Button>
+        <Text variant="header1" type="p">card flat test</Text>
+        <Button variant="add-button" onClick={() => {}}>ok</Button>
       </Card>
       <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
       

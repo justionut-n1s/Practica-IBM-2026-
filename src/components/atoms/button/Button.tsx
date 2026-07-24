@@ -12,7 +12,7 @@ export default function Button({ children, variant, onClick}: ButtonProps){
     const TagName = 'button';
 
     return (
-        <TagName className={'button button--${variant}'}>{children}</TagName>
+        <TagName className={`button button--${variant}`} onClick={onClick}>{children}</TagName>
     );
 
 }

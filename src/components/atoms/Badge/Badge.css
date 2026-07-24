@@ -1,9 +1,11 @@
 .badge {
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 6px 16px;
+    border-radius: 15px 0 15px 0;
     font-family: 'Lato';
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 700;
     color: #FFFFFF;
+    display: inline-block;
 }
 
 .badge--pink {

@@ -29,19 +29,20 @@ function ProductCard({ imageSrc, name, provider, category, rating, price, oldPri
             width={200}
             height={200}
         />
-
-        {badgeText &&
-            <div className="product-card__badge">
-                <Badge
-                    text={badgeText}
-                    variant={badgeVariant}
-                />
-            </div>
-        }
-
     </div>
 
-    <Text variant="header1" type="p">{category}</Text>
+    {badgeText &&
+        <div className="product-card__badge">
+            <Badge
+                text={badgeText}
+                variant={badgeVariant}
+            />
+        </div>
+    }
+
+
+
+    <Text variant="header2-button" type="p">By <span className="provider-name">{provider}</span></Text>
 
     <Heading lvl={4}>{name}</Heading>
 
@@ -57,7 +58,7 @@ function ProductCard({ imageSrc, name, provider, category, rating, price, oldPri
         
         <Button variant="add-button" onClick={() => {}}>
             <span className="button-content">
-                <Icon src={cart} alt="shopping cart" size={30} />
+                <Icon src={cart} alt="shopping cart" size={15} />
                 Add
             </span>
         </Button>
