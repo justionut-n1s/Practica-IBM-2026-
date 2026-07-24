@@ -1,6 +1,5 @@
 import { Button, Icon, Image, Text, Hyperlink, Card, Heading, PriceTag } from './components/atoms'
-
-// test rapid, verific tot ce am facut pana acum
+import { ProductCard } from './components/molecules'
 
 function App() {
   return (
@@ -30,6 +29,8 @@ function App() {
         <Text>card flat test</Text>
         <Button>ok</Button>
       </Card>
+      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
+      
     </>
   )
 }
