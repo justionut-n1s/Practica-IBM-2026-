@@ -40,11 +40,11 @@ function ProductCard({ imageSrc, name, provider, category, rating, price, oldPri
         </div>
     }
 
-
-
-    <Text variant="header2-button" type="p">By <span className="provider-name">{provider}</span></Text>
+    <Text variant="header2-button" type="p">{category}</Text>
 
     <Heading lvl={4}>{name}</Heading>
+
+    <Text variant="header2-button" type="p">By <span className="provider-name">{provider}</span></Text>
 
     <StarRating rating={rating} />
 

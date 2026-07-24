@@ -1,5 +1,5 @@
 import { Button, Icon, Image, Text, Hyperlink, Card, Heading, PriceTag } from './components/atoms'
-import { ProductCard } from './components/molecules'
+import { ProductCard,NavItem } from './components/molecules'
 
 function App() {
   return (
@@ -10,6 +10,14 @@ function App() {
       <Heading lvl={4}>Test</Heading>
       <Heading lvl={2} light>Test - light</Heading>
 
+      <NavItem iconSrc='https://placehold.co/20x20' textItem='Test' link='https://placehold.co/20x20' is_arrow/>
+
+      <div style={{ display: 'flex', gap: '24px' }}>
+        <NavItem textItem="Home" link="/" />
+        <NavItem textItem="About" link="/about" />
+        <NavItem textItem="Shop" link="/shop" is_arrow />
+        <NavItem textItem="Vendors" link="/vendors" is_arrow />
+      </div>
 
       <Image src="https://placehold.co/200x150" alt="poza test" width={200} height={150} />
       <Image src="https://placehold.co/200x150" alt="poza test rotunda" width={200} height={150} rounded />
