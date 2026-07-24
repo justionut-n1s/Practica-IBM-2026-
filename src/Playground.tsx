@@ -1,11 +1,5 @@
-<<<<<<< Updated upstream
-import { Button, Icon, Image, Text, Hyperlink, Card, Heading } from './components/atoms'
-
-=======
 import { Button, Icon, Image, Text, Hyperlink, Card, Heading, PriceTag } from './components/atoms'
 import { ProductCard } from './components/molecules'
->>>>>>> Stashed changes
-// test rapid, verific tot ce am facut pana acum
 
 function App() {
   return (
@@ -25,8 +19,11 @@ function App() {
 
       <Hyperlink message="PlaceHold" link="https://placehold.co/" />
 
+      < PriceTag  price="$28.85" oldPrice="$32.80" />
+
       <Card>
         <Text>test card content</Text>
+        
       </Card>
       <Card variant="flat">
         <Text>card flat test</Text>

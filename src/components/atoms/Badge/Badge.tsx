@@ -4,9 +4,9 @@ import './Badge.css'
 
 type BadgeVariant = 'pink' | 'green'| 'blue' | 'orange'
 
-export interface BadgeProps {
+interface BadgeProps {
     text: string
-    variant?: BadgeVariant
+    variant: BadgeVariant
 }
 
 function Badge({ text, variant }: BadgeProps) {
