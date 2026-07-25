@@ -13,8 +13,11 @@
 }
 
 .button--subscribe-button{
-    height: 64px;
-    border-radius: 50px;
+    height: 100%;
+    width: 8rem;
+    border-radius: 3rem;
+    box-sizing: border-box;
+
 }
 
 .button--subscribe-button:hover, .button--add-button:hover, 

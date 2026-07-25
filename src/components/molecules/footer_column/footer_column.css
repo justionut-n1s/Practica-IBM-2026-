@@ -1,0 +1,7 @@
+.footer-text-column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    width: 11rem;
+}

@@ -1,18 +1,20 @@
 import React from 'react';
 import './text.css';
 
-type TextProps = {
+export interface TextProps {
     children: React.ReactNode;
     variant: 'header1' | 'header2-button' | 'header2-input-and-dropdown' | 'header3-dropdown' | 'text--title--primary-title' | 'text--title--secondary-title';
-    type: 'p' | 'span' | 'label'; 
+    type: 'p' | 'span' | 'label' | 'h1' | 'h2'; 
 }
 
-export default function Text ({ children , variant , type='p'}: TextProps){
+const Text: React.FC<TextProps> = ({ children , variant , type='p'}) => {
 
     const TagName = type;
 
     return (
-        <TagName className={'text text--${variant}'}>{children}</TagName>
+        <TagName className={`text text--${variant}`}>{children}</TagName>
     );
     
 }
+
+export default Text;
