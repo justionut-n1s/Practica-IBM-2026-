@@ -1,6 +1,7 @@
 import Icon from '../Icon/Icon'
 import starFull from '../../../assets/icons/star-full.svg'
 import starEmpty from '../../../assets/icons/star-empty.svg'
+import "./StarRating.css"
 
 // Afiseaza 5 stelute (rating rotunjit) + numarul exact intre paranteze. Props: rating (ex: 4.6)
 

@@ -16,13 +16,14 @@
     align-items: center;
 
     margin-bottom: 6px;
+    background-color: #F7F7F7;
+    border-radius: 8px;
 }
 
 .product-card__badge {
     position: absolute;
-
-    top: -24px;
-    left: -24px;
+    top: 0;
+    left: 0;
 }
 
 .product-card__content {
@@ -45,3 +46,14 @@
     gap: 6px;   
 }
 
+.provider-name {
+  color: #3BB77E;
+  font-weight: 600;
+}
+
+.product-card__name {
+  font-size: 22px;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  color: #253D4E;
+}

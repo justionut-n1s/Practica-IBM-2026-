@@ -6,7 +6,7 @@ type BadgeVariant = 'pink' | 'green'| 'blue' | 'orange'
 
 interface BadgeProps {
     text: string
-    variant: BadgeVariant
+    variant?: BadgeVariant
 }
 
 function Badge({ text, variant }: BadgeProps) {

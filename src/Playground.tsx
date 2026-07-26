@@ -1,16 +1,19 @@
 import { Button, Icon, Image, Text, Hyperlink, Card, Heading, PriceTag } from './components/atoms'
-<<<<<<< Updated upstream
-import { ProductCard } from './components/molecules'
-=======
 import { ProductCard, NavItem, ProductRow, Dropdown, TeamMemberCard } from './components/molecules'
 import cart from './assets/icons/cart.svg'
->>>>>>> Stashed changes
 
 function App() {
     return (
         <>
 
-<<<<<<< Updated upstream
+      <NavItem iconSrc='https://placehold.co/20x20' textItem='Test' link='https://placehold.co/20x20' is_arrow/>
+
+      <div style={{ display: 'flex', gap: '24px' }}>
+        <NavItem textItem="Home" link="/" />
+        <NavItem textItem="About" link="/about" />
+        <NavItem textItem="Shop" link="/shop" is_arrow />
+        <NavItem textItem="Vendors" link="/vendors" is_arrow />
+      </div>
 
       <Image src="https://placehold.co/200x150" alt="poza test" width={200} height={150} />
       <Image src="https://placehold.co/200x150" alt="poza test rotunda" width={200} height={150} rounded />
@@ -23,18 +26,17 @@ function App() {
       < PriceTag  price="$28.85" oldPrice="$32.80" />
 
       <Card>
-        <Text>test card content</Text>
+        <Text variant="header1" type="p">test card content</Text>
         
       </Card>
       <Card variant="flat">
-        <Text>card flat test</Text>
-        <Button>ok</Button>
+        <Text variant="header1" type="p">card flat test</Text>
+        <Button variant="add-button" onClick={() => {}}>ok</Button>
       </Card>
-      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
+      <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' name_link='https://placehold.co/200x200' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
       
     </>
   )
-=======
         <div style={{ display: 'flex', gap: '24px' }}>
             <NavItem textItem="Home" link="/" />
             <NavItem textItem="About" link="/about" />
@@ -147,7 +149,6 @@ function App() {
         />
         </>
     )
->>>>>>> Stashed changes
 }
 
 export default App

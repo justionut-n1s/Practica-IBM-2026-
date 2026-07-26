@@ -12,7 +12,7 @@ export default function Text ({ children , variant , type='p'}: TextProps){
     const TagName = type;
 
     return (
-        <TagName className={'text text--${variant}'}>{children}</TagName>
+        <TagName className={`text text--${variant}`}>{children}</TagName>
     );
     
 }
