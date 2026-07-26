@@ -1,0 +1,24 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-family: 'Lato';
+  font-size: 14px;
+  color: #253D4E;
+}
+
+.chip__remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #7E7E7E;
+  padding: 0;
+}
+
+.chip__remove:hover {
+  color: #F74B81;
+}
