@@ -3,11 +3,12 @@ import './text.css';
 
 export interface TextProps {
     children: React.ReactNode;
-    variant: 'header1' | 'header2-button' | 'header2-input-and-dropdown' | 'header3-dropdown' | 'text--title--primary-title' | 'text--title--secondary-title';
-    type: 'p' | 'span' | 'label' | 'h1' | 'h2'; 
+    variant: 'header1' | 'header2-button' | 'header2-input-and-dropdown' | 'header3-dropdown' | 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title';
+    type: 'p' | 'span' | 'label'; 
+    key?: number;
 }
 
-const Text: React.FC<TextProps> = ({ children , variant , type='p'}) => {
+const Text: React.FC<TextProps> = ({ children, variant, type='p'}) => {
 
     const TagName = type;
 

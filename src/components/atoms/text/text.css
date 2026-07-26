@@ -21,7 +21,7 @@
     color: #7E7E7E;
 }
 
-.text--header2-input-and-dropdown, .text--input-group{
+.text--header2-input-and-dropdown, .text--input-group, .text--checkbox-form-title{
     font-size: 14px;
     font-weight: 400;
     color: #253D4E;
@@ -90,4 +90,9 @@
     font-family: "Lato", sans-serif;
     font-size: 0.75rem;
     font-weight: 400;
+}
+
+.text--checkbox-form-title{
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
 }

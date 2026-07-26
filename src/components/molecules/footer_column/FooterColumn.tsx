@@ -4,22 +4,24 @@ import './footer_column.css'
 
 export interface FooterColumnProps {
 
+    mainClassName: string;
+    contentClassName: string;
     title: string;
-    rows: string[];
+    columnContent: string[];
 
 }
 
-const FooterColumn: React.FC<FooterColumnProps> = ({title, rows}) => {
+const FooterColumn: React.FC<FooterColumnProps> = ({mainClassName, contentClassName, title, columnContent}) => {
 
     return (
 
-        <div className='footer-text-column'>
-            <div>
-                <p className='text text--title text--title--secondary-title' >{title}</p>
+        <div className={mainClassName}>
+            <Text type='p' variant='title text--title--secondary-title' children={title}></Text>
+            <div className={contentClassName}>
+                {columnContent.map((row, index) => (
+                    <Text key={index} variant='footer-text' children={columnContent[index]}></Text>
+                ))}
             </div>
-            {rows.map((row, index) => (
-            <p key={index} className='text text--footer-text'>{rows[index]}</p>
-        ))}
         </div>
 
     );
