@@ -3,7 +3,7 @@ import './text.css';
 
 export interface TextProps {
     children: React.ReactNode;
-    variant: 'header1' | 'header2-button' | 'header2-input-and-dropdown' | 'header3-dropdown' | 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title';
+    variant: 'header2-button' | 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title' | 'countdown-text';
     type: 'p' | 'span' | 'label'; 
     key?: number;
 }

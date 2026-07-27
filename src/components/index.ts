@@ -8,6 +8,7 @@ import FooterColumn from './molecules/footer_column/FooterColumn';
 import InputGroup from './molecules/input_group/InputGroup';
 import CallCenterContainer from './molecules/call_center_container/CallCenterContainer';
 import DropdownList from './molecules/dropdown_list/DropdownList';
+import CountdownItem from './molecules/countdown_item/CountdownItem';
 import CheckboxForm from './organisms/checkbox_form/CheckboxForm';
 
-export {Button, Input, Text, Badge, ListItem, Form, FooterColumn, InputGroup, CallCenterContainer, DropdownList, CheckboxForm};
+export {Button, Input, Text, Badge, ListItem, Form, FooterColumn, InputGroup, CallCenterContainer, DropdownList, CountdownItem, CheckboxForm};
