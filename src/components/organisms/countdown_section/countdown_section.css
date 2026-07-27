@@ -1,0 +1,7 @@
+.countdown-section-style{
+    display: flex;
+    max-width: 16rem;
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+}

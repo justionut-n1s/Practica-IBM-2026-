@@ -12,7 +12,8 @@ import DropdownList from './molecules/dropdown_list/DropdownList';
 import CountdownItem from './molecules/countdown_item/CountdownItem';
 import SearchBar from './molecules/search_bar/SearchBar';
 import CheckboxForm from './organisms/checkbox_form/CheckboxForm';
+import CountdownSection from './organisms/countdown_section/CountdownSection';
 
 export {Button, Input, Text, Badge, ListItem, Combobox, 
 Form, FooterColumn, InputGroup, CallCenterContainer, DropdownList, CountdownItem, SearchBar,
-CheckboxForm};
+CheckboxForm, CountdownSection};

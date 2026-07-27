@@ -3,7 +3,7 @@ import './text.css';
 
 export interface TextProps {
     children: React.ReactNode;
-    variant: 'header2-button' | 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title' | 'countdown-text';
+    variant: 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title' | 'countdown-text' | 'countdown-timeunit';
     type: 'p' | 'span' | 'label'; 
     key?: number;
 }

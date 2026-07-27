@@ -1,8 +1,10 @@
 .countdown-item{
     display: flex;
     width: 2.5rem;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem 0.25rem 0.5rem 0.25rem;
+    margin: auto;
     flex-direction: column;
     border-radius: 0.25rem;
     text-align: center;
+    background-color: white;
 }

@@ -15,12 +15,6 @@
     color: #3BB77E;
 }
 
-.text--header2-button{
-    font-size: 16px;
-    font-weight: 400;
-    color: #7E7E7E;
-}
-
 .text--header2-input-and-dropdown, .text--input-group, .text--checkbox-form-title{
     font-size: 14px;
     font-weight: 400;
@@ -101,4 +95,11 @@
     font-size: 1.25rem;
     font-weight: 500;
     color: #3BB77E;
+}
+
+.text--countdown-timeunit{
+    font-family: "Lato", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #7E7E7E;
 }
