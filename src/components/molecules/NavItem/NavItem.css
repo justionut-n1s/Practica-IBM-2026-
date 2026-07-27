@@ -3,12 +3,3 @@
   align-items: center;
   gap: 4px;
 }
-
-.nav-item__arrow {
-  display: inline-flex;
-  transition: transform 0.2s ease;
-}
-
-.nav-item:hover .nav-item__arrow {
-  transform: rotate(180deg);
-}

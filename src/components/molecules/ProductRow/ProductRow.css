@@ -1,0 +1,30 @@
+.product-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.product-row__image {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+
+    background-color: #F7F7F7;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-row__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-row__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
