@@ -4,7 +4,7 @@ import cart from './assets/icons/cart.svg'
 
 function App() {
     return (
-        <>
+    <>
 
       <NavItem iconSrc='https://placehold.co/20x20' textItem='Test' link='https://placehold.co/20x20' is_arrow/>
 
@@ -34,9 +34,8 @@ function App() {
         <Button variant="add-button" onClick={() => {}}>ok</Button>
       </Card>
       <ProductCard imageSrc='https://placehold.co/200x200' name='Produs Test' category='Test' name_link='https://placehold.co/200x200' provider='PLACEHOLD' rating={3.2} price='25.25' oldPrice='30' badgeText='NEW' badgeVariant='green'/>
-      
-    </>
-  )
+    
+  
         <div style={{ display: 'flex', gap: '24px' }}>
             <NavItem textItem="Home" link="/" />
             <NavItem textItem="About" link="/about" />
