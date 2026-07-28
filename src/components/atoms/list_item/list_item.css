@@ -3,14 +3,16 @@
     width: 7rem;
     padding: 0.3rem 0.5rem;
     font-family: "Quicksand", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    color: #253D4E;
+    /* color: #253D4E; */
+    color: var(--color-text-dark);
     transition-duration: 0.5s;
     cursor: pointer;
 }
 
 .list-item:hover{
     background-color: gray;
-    color: white;
+    /* color: white; */
+    color: var(--color-white);
 }

@@ -1,9 +1,7 @@
 .subscribe-form{
     height: 4rem;
     width: 28rem;
-    border: 1px solid;
-    border-color: darkgreen;
-    /* border: none; */
+    border: none;
     border-radius: 3rem;
     overflow: hidden;
 }

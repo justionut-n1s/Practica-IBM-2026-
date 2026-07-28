@@ -2,7 +2,8 @@
     display: block;
     height: 3.375rem;
     width: fit-content;
-    border: 0.125rem solid #BCE3C9;
+    /* border: 0.125rem solid #BCE3C9; */
+    border: 0.125rem solid var(--color-primary-border);
     border-radius: 0.25rem;
     overflow: hidden;
 }
