@@ -1,20 +1,22 @@
-.crd { 
-    border-radius: 15px; 
-    padding: 24px; 
-    background-color: #FFFFFF; 
+.crd {
+  border-radius: 0.9375rem;
+  padding: 1.5rem;
+  background-color: var(--color-white);
 }
 
-.crd--shadow { 
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.08); 
-    transition: box-shadow .2s, transform .2s; 
+.crd--shadow {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
 }
 
-.crd--shadow:hover { 
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.12); 
-    transform: translateY(-4px); 
+.crd--shadow:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
 }
 
-.crd--flat { 
-    box-shadow: none;
-     padding: 0; 
+.crd--flat {
+  box-shadow: none;
+  padding: 0;
 }

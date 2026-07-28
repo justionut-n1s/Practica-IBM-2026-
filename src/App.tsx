@@ -1,7 +1,6 @@
-import Playground from './Playground'
+import Playground from "./Playground";
 function App() {
-  return <Playground />
-
+  return <Playground />;
 }
 
-export default App
+export default App;

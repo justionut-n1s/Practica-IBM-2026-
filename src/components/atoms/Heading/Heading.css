@@ -1,31 +1,27 @@
 .h--light {
-   color: #FFFFFF; 
+  color: var(--color-white);
 }
 
 .h1 {
-  color: #253D4E;
-  font-family: 'Lato';
+  color: var(--color-text-dark);
   font-weight: 700;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .h2 {
-  color: #253D4E;
-  font-family: 'Lato';
+  color: var(--color-text-dark);
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .h3 {
-  color: #253D4E;
-  font-family: 'Lato';
+  color: var(--color-text-dark);
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .h4 {
-  color: #253D4E;
-  font-family: 'Lato';
+  color: var(--color-text-dark);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem;
 }

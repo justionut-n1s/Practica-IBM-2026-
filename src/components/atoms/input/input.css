@@ -1,28 +1,26 @@
-.text-input{
-    padding: 0px 15px;
-    border-color: black;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: #838383;
+.text-input {
+  padding: 0 0.9375rem;
+  border-color: var(--color-black);
+  font-weight: 400;
+  color: var(--color-input-text);
 }
 
-.text-input--header-input{
-    height: 50px;
-    width: 530px;
-    border-radius: 0px 5px 5px 0px;
+.text-input--header-input {
+  height: 3.125rem;
+  width: 33.125rem;
+  border-radius: 0 0.3125rem 0.3125rem 0;
 }
 
-.text-input--email-input{
-    height: 64px;
-    width: 290px;
-    border-radius: 50px 0px 0px 50px;
+.text-input--email-input {
+  height: 4rem;
+  width: 18.125rem;
+  border-radius: 3.125rem 0 0 3.125rem;
 }
 
-.checkbox{
-    height: 17px;
-    width: 17px;
-    border: 2px;
-    border-color: gray;
-    border-radius: 2px;
+.checkbox {
+  height: 1.0625rem;
+  width: 1.0625rem;
+  border: 0.125rem;
+  border-color: var(--color-gray);
+  border-radius: 0.125rem;
 }
-

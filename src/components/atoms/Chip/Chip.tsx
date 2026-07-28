@@ -1,16 +1,17 @@
-import { useState } from 'react'
-import './Chip.css'
+import { useState } from "react";
+import "./Chip.css";
 
 interface ChipProps {
-  label: string
+  label: string;
 }
 
-// Eticheta cu buton de stergere. Props: label = textul afisat
+// Removable tag with a delete button. Props: label = displayed text
+
 function Chip({ label }: ChipProps) {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(true);
 
   if (!isVisible) {
-    return null
+    return null;
   }
 
   return (
@@ -20,7 +21,7 @@ function Chip({ label }: ChipProps) {
         X
       </button>
     </div>
-  )
+  );
 }
 
-export default Chip
+export default Chip;

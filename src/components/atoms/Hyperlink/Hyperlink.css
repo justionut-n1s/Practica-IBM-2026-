@@ -1,13 +1,12 @@
 .hyp {
-  color: #7E7E7E;
-  font-family: 'Quicksand';
-  font-weight: 70px;
-  font-size: 16px;
+  color: var(--color-text);
+  font-family: "Quicksand";
+  font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
   font-weight: 700;
 }
 
 .hyp:hover {
-  color: #3BB77E;
+  color: var(--color-primary);
 }

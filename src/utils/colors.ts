@@ -1,0 +1,9 @@
+export const COLOR_PRIMARY = "#3BB77E";
+export const COLOR_PRIMARY_DARK = "#287a54";
+export const COLOR_TEXT = "#7E7E7E";
+export const COLOR_TEXT_DARK = "#253D4E";
+export const COLOR_BORDER = "#ECECEC";
+export const COLOR_WHITE = "#FFFFFF";
+export const COLOR_PINK = "#F74B81";
+export const COLOR_BLUE = "#29A9E1";
+export const COLOR_ORANGE = "#F2711C";
