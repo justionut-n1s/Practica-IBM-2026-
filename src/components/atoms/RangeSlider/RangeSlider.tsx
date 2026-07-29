@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import './RangeSlider.css'
+import { useState } from "react";
+import "./RangeSlider.css";
 
 interface RangeSliderProps {
-  min: number
-  max: number
-  initialValue?: number
+  min: number;
+  max: number;
+  initialValue?: number;
 }
 
-// Slider pentru selectare valoare numerica (ex: pret maxim). Props: min, max, initialValue optional
+// Numeric value slider (e.g. max price). Props: min, max, initialValue (optional)
+
 function RangeSlider({ min, max, initialValue }: RangeSliderProps) {
-  const [value, setValue] = useState(initialValue ?? min)
+  const [value, setValue] = useState(initialValue ?? min);
 
   return (
     <div className="range-slider">
@@ -23,7 +24,7 @@ function RangeSlider({ min, max, initialValue }: RangeSliderProps) {
       />
       <span className="range-slider__value">${value}</span>
     </div>
-  )
+  );
 }
 
-export default RangeSlider
+export default RangeSlider;

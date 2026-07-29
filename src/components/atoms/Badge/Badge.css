@@ -1,25 +1,24 @@
 .badge {
-    padding: 6px 16px;
-    border-radius: 15px 0 15px 0;
-    font-family: 'Lato';
-    font-size: 13px;
-    font-weight: 700;
-    color: #FFFFFF;
-    display: inline-block;
+  padding: 0.375rem 1rem;
+  border-radius: 0.9375rem 0 0.9375rem 0;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-white);
+  display: inline-block;
 }
 
 .badge--pink {
-    background-color: #F74B81;
+  background-color: var(--color-pink);
 }
 
 .badge--blue {
-    background-color: #29A9E1;
+  background-color: var(--color-blue);
 }
 
 .badge--green {
-    background-color: #3BB77E;
+  background-color: var(--color-primary);
 }
 
 .badge--orange {
-    background-color: #F2711C;
+  background-color: var(--color-orange);
 }

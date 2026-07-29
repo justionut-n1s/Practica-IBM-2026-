@@ -1,14 +1,15 @@
-import './Icon.css'
+import "./Icon.css";
 
-// Afiseaza o iconita mica. Props: src, alt, size (latime = inaltime, ex: size={40})
+// Displays a small icon. Props: src, alt, size (width = height, e.g. size={40})
+
 export interface IconProps {
-  src: string
-  alt: string
-  size: number
-  className?: string
+  src: string;
+  alt: string;
+  size: number;
+  className?: string;
 }
 
-function Icon({ src, alt, size, className = '' }: IconProps) {
+function Icon({ src, alt, size, className = "" }: IconProps) {
   return (
     <img
       src={src}
@@ -17,7 +18,7 @@ function Icon({ src, alt, size, className = '' }: IconProps) {
       height={size}
       className={`ico ${className}`.trim()}
     />
-  )
+  );
 }
 
-export default Icon
+export default Icon;

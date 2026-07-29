@@ -1,21 +1,21 @@
 .pricetag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .pricetag__price {
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #3BB77E;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 .pricetag__old-price {
-    margin: 0;
-    font-family: "Quicksand", sans-serif;
-    font-size: 14px;
-    color: #ADADAD;
-    text-decoration: line-through;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-decoration: line-through;
 }

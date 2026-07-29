@@ -1,13 +1,11 @@
 .star-rating {
-    display: flex;
-    align-items: center;
-    gap: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
 }
 
 .star-rating__number {
-    margin-left: 4px;
-
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    color: #B6B6B6;
+  margin-left: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
 }

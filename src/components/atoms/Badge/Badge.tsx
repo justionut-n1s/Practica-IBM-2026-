@@ -1,16 +1,16 @@
-import './Badge.css'
+import "./Badge.css";
 
-// Eticheta -  Props: text, variant ('pink'|'blue'|'green'|'orange')
+// Small colored label. Props: text, variant ('pink'|'blue'|'green'|'orange')
 
-type BadgeVariant = 'pink' | 'green'| 'blue' | 'orange'
+type BadgeVariant = "pink" | "green" | "blue" | "orange";
 
 interface BadgeProps {
-    text: string
-    variant?: BadgeVariant
+  text: string;
+  variant?: BadgeVariant;
 }
 
-function Badge({ text, variant }: BadgeProps) {
-    return <span className={`badge badge--${variant}`}>{text}</span>
+function Badge({ text, variant = "green" }: BadgeProps) {
+  return <span className={`badge badge--${variant}`}>{text}</span>;
 }
 
-export default Badge
+export default Badge;

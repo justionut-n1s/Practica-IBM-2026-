@@ -1,21 +1,15 @@
-import './Avatar.css'
+import "./Avatar.css";
 
 interface AvatarProps {
-  src: string
-  alt: string
-  size?: number
+  src: string;
+  alt: string;
+  size?: number;
 }
 
 function Avatar({ src, alt, size = 40 }: AvatarProps) {
   return (
-    <img
-      src={src}
-      alt={alt}
-      width={size}
-      height={size}
-      className="avatar"
-    />
-  )
+    <img src={src} alt={alt} width={size} height={size} className="avatar" />
+  );
 }
 
-export default Avatar
+export default Avatar;
