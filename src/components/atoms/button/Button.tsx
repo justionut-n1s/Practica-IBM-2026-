@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react'
-import './button.css'
+import './Button.css'
 
 export type ButtonVariant = 'subscribe-button' | 'add-button' | 'shop-now-button' | 'filter-button';
 

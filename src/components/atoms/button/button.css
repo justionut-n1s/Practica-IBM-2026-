@@ -4,12 +4,9 @@
     border: none;
     border-radius: 0.25rem;
     font-family: "Quicksand", sans-serif;
-    /* font-size: 1rem; */
     font-size: var(--font-size-base, 1rem);
     font-weight: 700;
-    /* background-color: #3BB77E; */
     background-color: var(--color-primary);
-    /* color: white; */
     color: var(--color-white);
     transition-duration: 0.5s;
     cursor: pointer;
@@ -24,8 +21,6 @@
 
 .button--subscribe-button:hover, .button--add-button:hover, 
 .button--shop-now-button:hover, .button--filter-button:hover{
-    /* background-color: #287a54;
-    color: white; */
     background-color: var(--color-primary-dark);
     color: var(--color-white);
 }
@@ -33,9 +28,6 @@
 .button--add-button{
     height: 2.25rem;
     font-family: "Lato", sans-serif;
-    /* font-size: 14px; */
-    /* background-color: #DEF9EC;
-    color: #3BB77E; */
     font-size: var(--font-size-sm);
     background-color: var(--color-primary-light);
     color: var(--color-primary);
@@ -44,13 +36,11 @@
 .button--shop-now-button{
     height: 2rem; 
     padding: 0rem 0.625rem;
-    /* font-size: 0.75rem; */
     font-size: var(--font-size-xs);
 }
 
 .button--filter-button{
     height: 2.5rem;
-    /* font-size: 0.75rem; */
     font-size: var(--font-size-xs);
 }
 

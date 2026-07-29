@@ -1,6 +1,6 @@
 import React from "react"
 import { Combobox, Input } from '/src/components/index.ts'
-import './search_bar.css'
+import './SearchBar.css'
 
 interface SearchBarProps {
 

@@ -1,5 +1,5 @@
 import React, {InputHTMLAttributes} from 'react'
-import './input.css'
+import './Input.css'
 
 export type TextInputVariant = 'header-input' | 'email-input';
 

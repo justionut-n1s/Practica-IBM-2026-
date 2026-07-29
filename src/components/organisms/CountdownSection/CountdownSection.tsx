@@ -1,6 +1,6 @@
 import React from "react"
 import { CountdownItem } from '/src/components/index.ts'
-import './countdown_section.css'
+import './CountdownSection.css'
 
 interface CountdownSectionProps {
 

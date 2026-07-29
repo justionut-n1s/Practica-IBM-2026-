@@ -1,5 +1,5 @@
 import React from 'react'
-import './combobox.css'
+import './Combobox.css'
 
 interface ComboboxProps {
 

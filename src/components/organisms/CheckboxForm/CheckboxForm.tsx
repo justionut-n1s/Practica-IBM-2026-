@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, InputGroup } from '/src/components/index.ts'
-import './checkbox_form.css'
+import './CheckboxForm.css'
 
 interface CheckboxFormProps {
 

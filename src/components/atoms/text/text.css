@@ -8,20 +8,16 @@
     font-family: "Lato", sans-serif;
     font-size: 0.813rem;
     font-weight: 600;
-    /* color: #7E7E7E; */
     color: var(--color-text);
 }
 
 .text--header1--span, .text--header2-input-and-dropdown--span{
-    /* color: #3BB77E; */
     color: var(--color-primary);
 }
 
 .text--header2-input-and-dropdown, .text--input-group, .text--checkbox-form-title{
-    /* font-size: 0.875rem; */
     font-size: var(--font-size-sm);
     font-weight: 400;
-    /* color: #253D4E; */
     color: var(--color-text-dark);
 }
 
@@ -30,52 +26,41 @@
 }
 
 .text--header3-dropdown{
-    /* font-size: 1rem; */
     font-size: var(--font-size-base);
     font-weight: 700;
-    /* color: #253D4E; */
     color: var(--color-text-dark);
 }
 
 .text--header3-support-center-number{
-    /* font-size: 1.5rem; */
     font-size: var(--font-size-lg);
     font-weight: 700;
-    /* color: #3BB77E; */
     color: var(--color-primary);
 }
 
 .text--header3-support-center-text{
-    /* font-size: 0.75rem; */
     font-size: var(--font-size-xs);
     font-weight: 500;
-    /* color: #7E7E7E; */
     color: var(--color-text);
 }
 
 .text--title{
     font-weight: 700;
-    /* color: #253D4E; */
     color: var(--color-text-dark);
 }
 
 .text--title--primary-title{
-    /* font-size: 2rem; */
     font-size: var(--font-size-xl);
 }
 
 .text--title--secondary-title{
-    /* font-size: 1.5rem; */
     font-size: var(--font-size-lg);
 }
 
 .text--title--hero-title{
-    /* font-size: 4.5rem; */
     font-size: var(--font-size-hero);
 }
 
 .text--title--newsletter-title{
-    /* font-size: 2.5rem; */
     font-size: var(--font-size-2xl);
 }
 
@@ -83,7 +68,6 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 0.938rem;
-    /* color: #253D4E; */
     color: var(--color-text-dark);
 }
 
@@ -98,7 +82,6 @@
 
 .text--badge-text{
     font-family: "Lato", sans-serif;
-    /* font-size: 0.75rem; */
     font-size: var(--font-size-xs);
     font-weight: 400;
 }
@@ -111,15 +94,12 @@
 .text--countdown-text{
     font-size: 1.25rem;
     font-weight: 500;
-    /* color: #3BB77E; */
     color: var(--color-primary);
 }
 
 .text--countdown-timeunit{
     font-family: "Lato", sans-serif;
-    /* font-size: 0.875rem; */
     font-size: var(--font-size-sm, 0.875rem);
     font-weight: 400;
-    /* color: #7E7E7E; */
     color: var(--color-text);
 }

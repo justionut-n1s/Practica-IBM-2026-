@@ -1,6 +1,6 @@
 import React from 'react'
 import { Input } from '/src/components/index.ts'
-import './input_group.css'
+import './InputGroup.css'
 
 export interface InputGroupProps {
 

@@ -1,6 +1,6 @@
 import React, {useState, SubmitEvent} from 'react'
 import {Input, Button} from '/src/components/index.ts'
-import './form.css'
+import './Form.css'
 
 export type FormVariant = 'checkbox-form' | 'subscribe-form';
 
