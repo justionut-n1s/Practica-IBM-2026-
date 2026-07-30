@@ -6,6 +6,5 @@
     flex-direction: column;
     border-radius: 0.25rem;
     text-align: center;
-    /* background-color: white; */
     background-color: var(--color-white);
 }
