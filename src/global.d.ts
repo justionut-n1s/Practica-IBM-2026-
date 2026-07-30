@@ -1,3 +1,3 @@
 declare module "*.css";
-declare module "*.tsx"
+declare module "*.tsx";
 declare module "*.ts";
