@@ -1,0 +1,17 @@
+.range-slider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.range-slider__input {
+  flex: 1;
+  accent-color: #3bb77e;
+}
+
+.range-slider__value {
+  font-family: "Lato";
+  font-size: 0.875rem;
+  color: #7e7e7e;
+  min-width: 3.125rem;
+}

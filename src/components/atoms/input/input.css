@@ -1,0 +1,30 @@
+.text-input{
+    padding: 0rem 1rem;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #838383;
+    box-sizing: border-box;
+}
+
+.text-input--header-input{
+    height: inherit;
+    width: 33rem;
+    padding: 1rem;
+    font-size: var(--font-size-sm);
+}
+
+.text-input--email-input{
+    height: 100%;
+    width: 20rem;
+}
+
+.checkbox{
+    height: 1.063rem;
+    width: 1.063rem;
+    margin: 0;
+    border: 0.125rem;
+    border-color: gray;
+    border-radius: 0.125rem;
+}
+

@@ -1,0 +1,23 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: var(--color-bg-lighter);
+  border-radius: 1.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-text-dark);
+}
+
+.chip__remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: var(--color-text);
+  padding: 0;
+}
+
+.chip__remove:hover {
+  color: var(--color-pink);
+}
