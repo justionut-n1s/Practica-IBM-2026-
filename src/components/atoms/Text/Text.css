@@ -25,12 +25,6 @@
     font-weight: bold;
 }
 
-.text--header3-dropdown{
-    font-size: var(--font-size-base);
-    font-weight: 700;
-    color: var(--color-text-dark);
-}
-
 .text--header3-support-center-number{
     font-size: var(--font-size-lg);
     font-weight: 700;
