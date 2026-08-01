@@ -1,0 +1,16 @@
+.list-item{
+    display: block;
+    width: 7rem;
+    padding: 0.3rem 0.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-dark);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    background-color: gray;
+    color: var(--color-white);
+}

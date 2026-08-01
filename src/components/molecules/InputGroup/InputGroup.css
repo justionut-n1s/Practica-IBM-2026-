@@ -1,0 +1,8 @@
+.text--input-group--position{
+    display: flex;
+    width: fit-content;
+    gap: 0.5rem;
+    place-items: center;
+    margin: 0.4rem 0rem;
+    
+}

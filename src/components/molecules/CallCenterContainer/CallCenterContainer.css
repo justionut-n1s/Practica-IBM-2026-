@@ -1,0 +1,13 @@
+.call-center-container{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.call-center-container--text-container{
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    place-items: center;
+}
