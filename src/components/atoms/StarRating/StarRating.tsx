@@ -5,7 +5,7 @@ import "./StarRating.css";
 
 // Displays 5 stars (rounded rating) + exact number in parentheses. Props: rating (e.g. 4.6)
 
-interface StarRatingProps {
+export interface StarRatingProps {
   rating: number;
 }
 
