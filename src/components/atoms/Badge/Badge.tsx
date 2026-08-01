@@ -4,7 +4,7 @@ import "./Badge.css";
 
 type BadgeVariant = "pink" | "green" | "blue" | "orange";
 
-interface BadgeProps {
+export interface BadgeProps {
   text: string;
   variant?: BadgeVariant;
 }
