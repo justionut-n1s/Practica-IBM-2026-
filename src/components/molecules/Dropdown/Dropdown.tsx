@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Icon, Hyperlink } from "../../atoms";
-import { arrowIcon } from "../../../assets/icons";
+import { Chevron } from "../../../assets/icons";
 import "./Dropdown.css";
 
 interface DropdownProps {
@@ -23,7 +23,7 @@ function Dropdown({ label, options }: DropdownProps) {
         <span
           className={`dropdown__arrow ${isOpen ? "dropdown__arrow--active" : ""}`}
         >
-          <Icon src={arrowIcon} alt="arrow" size={10} />
+          <Icon src={Chevron} alt="arrow" size={10} />
         </span>
       </button>
 

@@ -14,6 +14,7 @@ import {
   ProductRow,
   Dropdown,
   TeamMemberCard,
+  CallCenterContainer,
 } from "./components/molecules";
 import cart from "./assets/icons/cart.svg";
 
@@ -193,6 +194,12 @@ function App() {
           { icon: cart, link: "https://twitter.com" },
         ]}
       />
+      <CallCenterContainer
+        className1="call-center-container"
+        className2="call-center-container call-center-container--text-container"
+        primaryTextContent="1900 - 6666"
+        secondaryTextContent="Working 8:00 16:00"
+      ></CallCenterContainer>
     </>
   );
 }

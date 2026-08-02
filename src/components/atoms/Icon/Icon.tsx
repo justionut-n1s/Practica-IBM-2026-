@@ -16,7 +16,7 @@ function Icon({ src, alt, size, className = "" }: IconProps) {
       alt={alt}
       width={size}
       height={size}
-      className={`ico ${className}`.trim()}
+      className={`icon ${className}`.trim()}
     />
   );
 }

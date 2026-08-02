@@ -1,8 +1,6 @@
 import "./NavItem.css";
 import { Icon, Hyperlink } from "../../atoms";
-import { arrowIcon } from "../../../assets/icons";
-
-// Dropdown menu. Props: label = main text, options = list of options shown on click
+import { Chevron } from "../../../assets/icons";
 
 interface NavItemProps {
   iconSrc?: string;
@@ -18,7 +16,7 @@ function NavItem({ iconSrc, textItem, link, is_arrow }: NavItemProps) {
       <Hyperlink message={textItem} link={link}></Hyperlink>
       {is_arrow && (
         <span className="nav-item__arrow">
-          <Icon src={arrowIcon} alt="Icon" size={8} />
+          <Icon src={Chevron} alt="Icon" size={8} />
         </span>
       )}
     </div>

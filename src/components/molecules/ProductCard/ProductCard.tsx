@@ -10,7 +10,7 @@ import {
   Heading,
   Hyperlink,
 } from "../../atoms";
-import { cartIcon } from "../../../assets/icons";
+import { Cart } from "../../../assets/icons";
 import "./ProductCard.css";
 
 interface ProductCardProps {
@@ -49,9 +49,10 @@ function ProductCard({
           <Badge text={badgeText} variant={badgeVariant} />
         </div>
       )}
-      <Text variant="header2-button" type="p">
+      {/* <Text variant="header2-button" type="p">
         {category}
-      </Text>
+      </Text> */}
+      <Heading lvl={2} children={category}></Heading>
 
       <Hyperlink
         message={name}
@@ -59,9 +60,15 @@ function ProductCard({
         className="product-card__name"
       />
 
-      <Text variant="header2-button" type="p">
+      {/* <Text variant="header2-button" type="p">
         By <span className="provider-name">{provider}</span>
-      </Text>
+      </Text> */}
+      <Heading lvl={2}>
+        By
+        <Text type="span" variant="provider-name">
+          {provider}
+        </Text>
+      </Heading>
 
       <StarRating rating={rating} />
 
@@ -70,7 +77,7 @@ function ProductCard({
 
         <Button variant="add-button" onClick={() => {}}>
           <span className="button-content">
-            <Icon src={cartIcon} alt="shopping cart" size={15} />
+            <Icon src={Cart} alt="shopping cart" size={15} />
             Add
           </span>
         </Button>
