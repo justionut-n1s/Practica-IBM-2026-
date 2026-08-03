@@ -1,0 +1,15 @@
+.combobox-section {
+  display: flex;
+  height: inherit;
+  width: fit-content;
+  margin-left: auto;
+  border: none;
+}
+
+.combobox-section__item {
+  display: block;
+  height: inherit;
+  padding: 0rem 0.5rem;
+  place-content: center;
+  line-height: 50%;
+}

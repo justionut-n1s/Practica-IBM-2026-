@@ -4,7 +4,8 @@ import "./Text.css";
 export interface TextProps {
   children: React.ReactNode;
   variant:
-    | "header1"
+    | "header-upper-section"
+    | "header-upper-section--span"
     | "footer-text"
     | "title text--title--primary-title"
     | "title text--title--secondary-title"

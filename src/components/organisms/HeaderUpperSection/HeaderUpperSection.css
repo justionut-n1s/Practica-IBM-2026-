@@ -1,0 +1,15 @@
+.upper-section-style {
+  display: flex;
+  height: 2rem;
+  padding: 0;
+  border-bottom: 0.063rem solid #ececec;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.upper-section-style__text-container {
+  height: inherit;
+  margin: auto;
+  place-content: center;
+  line-height: 50%;
+}

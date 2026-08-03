@@ -7,6 +7,7 @@ import {
   Card,
   Heading,
   PriceTag,
+  Combobox,
 } from "./components/atoms";
 import {
   ProductCard,
@@ -14,11 +15,43 @@ import {
   ProductRow,
   Dropdown,
   TeamMemberCard,
-  CallCenterContainer,
+  HyperlinkGroup,
+  HyperlinkGroupItem,
+  HeaderComboboxSection,
+  HeaderComboboxSectionItem,
 } from "./components/molecules";
-import cart from "./assets/icons/cart.svg";
+import { HeaderUpperSection } from "./components/organisms";
+import cart from "./assets/icons/Cart.svg";
 
 function App() {
+  const hyperlinkList: HyperlinkGroupItem[] = [
+    { id: 1, message: "About us", link: "" },
+    { id: 2, message: "My Account", link: "" },
+    { id: 3, message: "Wishlist", link: "" },
+    { id: 4, message: "Order Tracking", link: "" },
+  ];
+
+  const optionList1: string[] = ["value1", "value2", "value3", "value4"];
+  const optionList2: string[] = ["CAD", "EUR", "CHF"];
+
+  const comboboxList: HeaderComboboxSectionItem[] = [
+    {
+      key: 1,
+      name: "firstCB",
+      id: "1",
+      className: "combobox-style combobox-style--header-upper-section",
+      selectedOptionLabel: "Add categories",
+      optionList: optionList1,
+    },
+    {
+      key: 2,
+      name: "secondCB",
+      id: "2",
+      className: "combobox-style combobox-style--header-upper-section",
+      selectedOptionLabel: "USD",
+      optionList: optionList2,
+    },
+  ];
   return (
     <>
       <NavItem
@@ -57,12 +90,12 @@ function App() {
       <PriceTag price="$28.85" oldPrice="$32.80" />
 
       <Card>
-        <Text variant="header1" type="p">
+        <Text variant="header-upper-section" type="p">
           test card content
         </Text>
       </Card>
       <Card variant="flat">
-        <Text variant="header1" type="p">
+        <Text variant="header-upper-section" type="p">
           card flat test
         </Text>
         <Button variant="add-button" onClick={() => {}}>
@@ -194,12 +227,21 @@ function App() {
           { icon: cart, link: "https://twitter.com" },
         ]}
       />
-      <CallCenterContainer
-        className1="call-center-container"
-        className2="call-center-container call-center-container--text-container"
-        primaryTextContent="1900 - 6666"
-        secondaryTextContent="Working 8:00 16:00"
-      ></CallCenterContainer>
+      {/* <HyperlinkGroup content={hyperlinkList}></HyperlinkGroup>
+      <Combobox
+        name="name"
+        id="id"
+        className="combobox-style"
+        selectedOptionLabel="Add Categories"
+        optionList={optionList1}
+      ></Combobox>
+      <HeaderComboboxSection
+        comboboxContentList={comboboxList}
+      ></HeaderComboboxSection> */}
+      <HeaderUpperSection
+        hyperlinkList={hyperlinkList}
+        comboboxList={comboboxList}
+      ></HeaderUpperSection>
     </>
   );
 }

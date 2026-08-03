@@ -10,3 +10,9 @@
 .hyp:hover {
   color: var(--color-primary);
 }
+
+.hyp--header-upper-section {
+  font-family: "Lato", sans-serif;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
