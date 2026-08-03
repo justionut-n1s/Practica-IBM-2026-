@@ -29,9 +29,9 @@ function Dropdown({ label, options }: DropdownProps) {
 
       {isOpen && (
         <ul className="dropdown__menu">
-          {options.map((optiune) => (
-            <li key={optiune} className="dropdown__item">
-              {optiune}
+          {options.map((option) => (
+            <li key={option} className="dropdown__item">
+              {option}
             </li>
           ))}
         </ul>

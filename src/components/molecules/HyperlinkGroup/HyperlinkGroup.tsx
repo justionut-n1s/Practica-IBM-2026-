@@ -1,5 +1,5 @@
 import React from "react";
-import { Hyperlink, HyperlinkProps } from "../../atoms";
+import { Hyperlink, HyperlinkProps } from "../../atoms/index";
 import "./HyperlinkGroup.css";
 
 export interface HyperlinkGroupItem extends HyperlinkProps {

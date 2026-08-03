@@ -5,7 +5,7 @@ import "./Icon.css";
 export interface IconProps {
   src: string;
   alt: string;
-  size: number;
+  size: number | undefined;
   className?: string;
 }
 

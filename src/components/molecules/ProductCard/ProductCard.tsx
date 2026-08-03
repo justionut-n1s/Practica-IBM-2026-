@@ -77,7 +77,12 @@ function ProductCard({
 
         <Button variant="add-button" onClick={() => {}}>
           <span className="button-content">
-            <Icon src={Cart} alt="shopping cart" size={15} />
+            <Icon
+              src={Cart}
+              className="icon icon--green"
+              alt="shopping cart"
+              size={15}
+            />
             Add
           </span>
         </Button>

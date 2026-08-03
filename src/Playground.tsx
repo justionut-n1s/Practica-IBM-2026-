@@ -20,8 +20,12 @@ import {
   HeaderComboboxSection,
   HeaderComboboxSectionItem,
 } from "./components/molecules";
-import { HeaderUpperSection } from "./components/organisms";
-import cart from "./assets/icons/Cart.svg";
+import {
+  HeaderUpperSection,
+  OptionsGroup,
+  OptionsGroupItem,
+} from "./components/organisms";
+import { Compare, Heart, Cart, Profile } from "./assets/icons/index";
 
 function App() {
   const hyperlinkList: HyperlinkGroupItem[] = [
@@ -52,10 +56,19 @@ function App() {
       optionList: optionList2,
     },
   ];
+
+  const options: OptionsGroupItem[] = [
+    { id: 1, iconSrc: Compare, textItem: "Compare", link: "" },
+    { id: 2, iconSrc: Heart, textItem: "Wishlist", link: "" },
+    { id: 1, iconSrc: Cart, textItem: "Cart", link: "" },
+    { id: 1, iconSrc: Profile, textItem: "Account", link: "" },
+  ];
+
   return (
     <>
       <NavItem
         iconSrc="https://placehold.co/20x20"
+        size={20}
         textItem="Test"
         link="https://placehold.co/20x20"
         is_arrow
@@ -116,7 +129,7 @@ function App() {
       />
 
       <div style={{ display: "flex", gap: "24px" }}>
-        <NavItem textItem="Home" link="/" />
+        <NavItem textItem="Home" link="/" hyperlinkClassName="" />
         <NavItem textItem="About" link="/about" />
         <NavItem textItem="Shop" link="/shop" />
         <Dropdown
@@ -223,8 +236,8 @@ function App() {
         name="Ana Popescu"
         role="Worker"
         socialLinks={[
-          { icon: cart, link: "https://facebook.com" },
-          { icon: cart, link: "https://twitter.com" },
+          { icon: Cart, link: "https://facebook.com" },
+          { icon: Cart, link: "https://twitter.com" },
         ]}
       />
       {/* <HyperlinkGroup content={hyperlinkList}></HyperlinkGroup>
@@ -242,6 +255,7 @@ function App() {
         hyperlinkList={hyperlinkList}
         comboboxList={comboboxList}
       ></HeaderUpperSection>
+      <OptionsGroup optionsList={options}></OptionsGroup>
     </>
   );
 }

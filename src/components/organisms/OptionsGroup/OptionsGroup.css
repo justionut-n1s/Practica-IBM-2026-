@@ -1,0 +1,7 @@
+.options-group-style {
+  display: flex;
+  gap: 1rem;
+  height: 2.5rem;
+  width: fit-content;
+  padding: 0;
+}

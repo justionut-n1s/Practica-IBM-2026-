@@ -4,6 +4,11 @@
   place-content: center;
 }
 
+.icon--black {
+  filter: invert(18%) sepia(54%) saturate(444%) hue-rotate(162deg)
+    brightness(98%) contrast(90%);
+}
+
 .icon--gray {
   filter: invert(51%) sepia(33%) saturate(0%) hue-rotate(259deg) brightness(90%)
     contrast(87%);
