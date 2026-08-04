@@ -1,5 +1,5 @@
 import { Heading } from "../../atoms";
-import { ProductRow } from "../../molecules";
+import ProductRow from "../../molecules/ProductRow/ProductRow";
 import "./ProductLists.css";
 
 interface RowProduct {

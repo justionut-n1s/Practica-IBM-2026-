@@ -1,4 +1,4 @@
-import { ProductCard } from "../../molecules";
+import ProductCard from "../../molecules/ProductCard/ProductCard";
 import "./ProductGrid.css";
 
 interface Product {
