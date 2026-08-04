@@ -20,3 +20,4 @@ export { default as Input } from "./Input/Input";
 export { default as Text } from "./Text/Text";
 export { default as ListItem } from "./ListItem/ListItem";
 export { default as Combobox, type ComboboxProps } from "./Combobox/Combobox";
+export { default as Logo } from "./Logo/Logo";

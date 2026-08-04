@@ -8,6 +8,7 @@ import {
   Heading,
   PriceTag,
   Combobox,
+  Logo,
 } from "./components/atoms";
 import {
   ProductCard,
@@ -19,6 +20,7 @@ import {
   HyperlinkGroupItem,
   HeaderComboboxSection,
   HeaderComboboxSectionItem,
+  SearchBar,
 } from "./components/molecules";
 import {
   HeaderUpperSection,
@@ -256,6 +258,12 @@ function App() {
         comboboxList={comboboxList}
       ></HeaderUpperSection>
       <OptionsGroup optionsList={options}></OptionsGroup>
+      <Logo logoHeight={52} logoWidth={180}></Logo>
+      <SearchBar
+        comboboxOptions={optionList1}
+        placeholder="Search for items..."
+        inputClassName="text-input text-input--header-input"
+      ></SearchBar>
     </>
   );
 }

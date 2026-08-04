@@ -3,21 +3,25 @@ import { Combobox, Input } from "../../atoms/index";
 import "./SearchBar.css";
 
 interface SearchBarProps {
-  name: string;
-  id: string;
+  comboboxOptions: string[];
   inputClassName: string;
   placeholder: string;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
-  name,
-  id,
+  comboboxOptions,
   inputClassName,
   placeholder,
 }) => {
   return (
     <div className="search-bar">
-      <Combobox name={name} id={id}></Combobox>
+      <Combobox
+        name="name"
+        id="id"
+        selectedOptionLabel="Add categories"
+        className="combobox-style"
+        optionList={comboboxOptions}
+      ></Combobox>
       <Input
         type="text"
         className={inputClassName}

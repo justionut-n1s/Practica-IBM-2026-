@@ -1,21 +1,28 @@
-import React from 'react';
-import './Text.css';
+import React from "react";
+import "./Text.css";
 
 export interface TextProps {
-    children: React.ReactNode;
-    variant: 'footer-text' | 'title text--title--primary-title' | 'title text--title--secondary-title' | 'checkbox-form-title' | 'countdown-text' | 'countdown-timeunit';
-    type: 'p' | 'span' | 'label'; 
-    key?: number;
+  children: React.ReactNode;
+  variant:
+    | "header-upper-section"
+    | "header-upper-section--span"
+    | "footer-text"
+    | "title text--title--primary-title"
+    | "title text--title--secondary-title"
+    | "checkbox-form-title"
+    | "countdown-text"
+    | "countdown-timeunit"
+    | "header3-support-center-number"
+    | "header3-support-center-text"
+    | "provider-name";
+  type?: "p" | "span" | "label";
+  key?: number;
 }
 
-const Text: React.FC<TextProps> = ({ children, variant, type='p'}) => {
+const Text: React.FC<TextProps> = ({ children, variant, type = "p" }) => {
+  const TagName = type;
 
-    const TagName = type;
-
-    return (
-        <TagName className={`text text--${variant}`}>{children}</TagName>
-    );
-    
-}
+  return <TagName className={`text text--${variant}`}>{children}</TagName>;
+};
 
 export default Text;
