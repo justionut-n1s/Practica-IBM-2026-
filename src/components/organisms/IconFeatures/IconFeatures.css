@@ -1,0 +1,27 @@
+.icon-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-bg-light);
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.icon-features__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon-features__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.icon-features__subtitle {
+  font-size: var(--font-size-xs);
+  color: var(--color-text);
+  margin: 0;
+}
