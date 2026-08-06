@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Button,
   Icon,
@@ -21,15 +22,26 @@ import {
   HeaderComboboxSection,
   HeaderComboboxSectionItem,
   SearchBar,
+  IconCombobox,
 } from "./components/molecules";
 import {
   HeaderUpperSection,
   OptionsGroup,
   OptionsGroupItem,
+  HeaderMidSection,
 } from "./components/organisms";
-import { Compare, Heart, Cart, Profile } from "./assets/icons/index";
+import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
+
+const optionList = [
+  { value: "Las Vegas, NV" },
+  { value: "Henderson, NV" },
+  { value: "Reno, NV" },
+  { value: "San Francisco, CA" },
+];
 
 function App() {
+  const [selectedOption, setSelectedOption] = useState<string>("");
+
   const hyperlinkList: HyperlinkGroupItem[] = [
     { id: 1, message: "About us", link: "" },
     { id: 2, message: "My Account", link: "" },
@@ -46,7 +58,7 @@ function App() {
       name: "firstCB",
       id: "1",
       className: "combobox-style combobox-style--header-upper-section",
-      selectedOptionLabel: "Add categories",
+      selectedOptionLabel: "English",
       optionList: optionList1,
     },
     {
@@ -257,13 +269,26 @@ function App() {
         hyperlinkList={hyperlinkList}
         comboboxList={comboboxList}
       ></HeaderUpperSection>
-      <OptionsGroup optionsList={options}></OptionsGroup>
+      {/* <OptionsGroup optionsList={options}></OptionsGroup>
       <Logo logoHeight={52} logoWidth={180}></Logo>
       <SearchBar
         comboboxOptions={optionList1}
         placeholder="Search for items..."
         inputClassName="text-input text-input--header-input"
       ></SearchBar>
+      <IconCombobox
+        options={optionList1}
+        iconSrc={Location}
+        size={16}
+        placeholder="Your Location"
+        value={selectedOption}
+        onValueChange={setSelectedOption}
+      ></IconCombobox> */}
+      <HeaderMidSection
+        optionList1={optionList1}
+        optionList2={optionList1}
+        hyperlinkOptions={options}
+      ></HeaderMidSection>
     </>
   );
 }

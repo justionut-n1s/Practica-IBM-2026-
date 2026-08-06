@@ -1,17 +1,18 @@
-import React, {InputHTMLAttributes} from 'react'
-import './Input.css'
+import React, { InputHTMLAttributes } from "react";
+import "./Input.css";
 
-export type TextInputVariant = 'header-input' | 'email-input';
+export type TextInputVariant = "header-input" | "email-input" | "icon-input";
 
-export interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
-    type: 'text' | 'checkbox' | 'range';
-    variant?: TextInputVariant;
+export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  variant?: TextInputVariant;
 }
 
-const Input: React.FC<InputProps> = ({ type , className='' , ...otherProps}) => {
-
-    return (<input type={type} className={className}{...otherProps}></input>);
-
-}
+const Input: React.FC<InputProps> = ({
+  type,
+  className = "",
+  ...otherProps
+}) => {
+  return <input type={type} className={className} {...otherProps}></input>;
+};
 
 export default Input;

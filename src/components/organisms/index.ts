@@ -5,3 +5,4 @@ export {
   default as OptionsGroup,
   type OptionsGroupItem,
 } from "./OptionsGroup/OptionsGroup";
+export { default as HeaderMidSection } from "./HeaderMidSection/HeaderMidSection";

@@ -1,6 +1,6 @@
 .options-group-style {
   display: flex;
-  gap: 1rem;
+  gap: 0.875rem;
   height: 2.5rem;
   width: fit-content;
   padding: 0;

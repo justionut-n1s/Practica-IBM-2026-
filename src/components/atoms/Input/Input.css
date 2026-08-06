@@ -10,17 +10,19 @@
 
 .text-input--header-input {
   height: inherit;
-  width: 33rem;
-  padding: 1rem;
-  font-size: var(--font-size-sm);
+  width: 70%;
+  padding: 0.5rem;
+  font-size: 0.625rem;
   background-image: url(../../../assets/icons/Search.svg);
-  background-position: 30rem 1rem;
+  background-position: right 0.5rem center;
+  background-size: 0.875rem 0.875rem;
   background-repeat: no-repeat;
 }
 
 .text-input--email-input {
   height: 100%;
   width: 20rem;
+  background-image: none;
 }
 
 .checkbox {
@@ -30,4 +32,16 @@
   border: 0.125rem;
   border-color: gray;
   border-radius: 0.125rem;
+}
+
+.text-input--icon-input {
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: var(--color-primary);
+  background-image: none;
+}
+
+.text-input--icon-input::placeholder {
+  color: var(--color-primary);
 }

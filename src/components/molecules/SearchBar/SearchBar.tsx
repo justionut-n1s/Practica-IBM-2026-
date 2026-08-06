@@ -18,7 +18,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       <Combobox
         name="name"
         id="id"
-        selectedOptionLabel="Add categories"
+        selectedOptionLabel="All categories"
         className="combobox-style"
         optionList={comboboxOptions}
       ></Combobox>

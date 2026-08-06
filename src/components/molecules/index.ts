@@ -18,3 +18,4 @@ export {
   default as HeaderComboboxSection,
   type HeaderComboboxSectionItem,
 } from "./HeaderComboboxSection/HeaderComboboxSection";
+export { default as IconCombobox } from "./IconCombobox/IconCombobox";

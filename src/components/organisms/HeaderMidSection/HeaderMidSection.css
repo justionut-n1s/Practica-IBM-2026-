@@ -1,0 +1,10 @@
+.header-mid-section-style {
+  display: flex;
+  gap: 0.5rem;
+  height: 4rem;
+  padding: 1rem 0rem;
+  background-color: var(--color-white);
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}

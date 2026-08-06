@@ -22,7 +22,7 @@ const Combobox: React.FC<ComboboxProps> = ({
         {selectedOptionLabel}
       </option>
       {optionList.map((row, index) => (
-        <option>{optionList[index]}</option>
+        <option className="combobox-style-option">{optionList[index]}</option>
       ))}
     </select>
   );

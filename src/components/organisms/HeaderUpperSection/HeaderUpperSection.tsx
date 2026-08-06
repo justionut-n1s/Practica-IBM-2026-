@@ -18,9 +18,9 @@ const HeaderUpperSection: React.FC<HeaderUpperSectionProps> = ({
   comboboxList,
 }) => {
   return (
-    <div className="upper-section-style">
+    <div className="header-upper-section-style">
       <HyperlinkGroup content={hyperlinkList}></HyperlinkGroup>
-      <div className="upper-section-style__text-container">
+      <div className="header-upper-section-style__text-container">
         <Text variant="header-upper-section">
           100% Secure delivery without contacting the courier
         </Text>
