@@ -3,14 +3,19 @@ import { Icon, Hyperlink } from "../../atoms";
 import { Chevron } from "../../../assets/icons";
 import "./Dropdown.css";
 
-interface DropdownProps {
+export interface DropdownProps {
   label: string;
+  labelVariant?: string;
+  chevronVariant?: string;
   options: string[];
 }
 
-// Dropdown menu. Props: label = main text, options = list of options shown on click
-
-function Dropdown({ label, options }: DropdownProps) {
+function Dropdown({
+  label,
+  labelVariant,
+  chevronVariant,
+  options,
+}: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="dropdown">
@@ -18,10 +23,10 @@ function Dropdown({ label, options }: DropdownProps) {
         className={`dropdown__toggle ${isOpen ? "dropdown__toggle--active" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Hyperlink message={label} link="#" />
+        <Hyperlink variant={labelVariant} message={label} link="#" />
 
         <span
-          className={`dropdown__arrow ${isOpen ? "dropdown__arrow--active" : ""}`}
+          className={`dropdown__arrow ${isOpen ? "dropdown__arrow--active" : `dropdown__arrow--${chevronVariant}`}`}
         >
           <Icon src={Chevron} alt="arrow" size={10} />
         </span>

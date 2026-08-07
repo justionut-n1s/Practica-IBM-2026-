@@ -18,7 +18,7 @@ const OptionsGroup: React.FC<OptionsGroupProps> = ({ optionsList }) => {
           key={id}
           iconClassName="icon icon--black"
           size={18}
-          hyperlinkClassName="hyp hyp--header-mid-section"
+          hyperlinkVariant="hyp--header-mid-section"
           {...otherProps}
         ></NavItem>
       ))}

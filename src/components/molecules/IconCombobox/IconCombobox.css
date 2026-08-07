@@ -13,3 +13,20 @@
   box-shadow: 0.313rem 0.313rem 0.625rem 0rem #0000000d;
   align-items: center;
 }
+
+.icon-combobox-style--green {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  border: none;
+  box-shadow: none;
+}
+
+.icon-combobox-style__chevron {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-combobox-style__chevron--active {
+  transform: rotate(180deg);
+}

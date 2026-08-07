@@ -1,26 +1,29 @@
 import React from "react";
 import { Text, Icon } from "../../atoms/index";
-import { Phone, Headset } from "../../../assets/icons/index";
 import "./CallCenterContainer.css";
 
 export interface CallCenterContainerProps {
-  className1: string;
-  className2: string;
-  iconClassName?: string;
+  // className1: string;
+  // className2: string;
+  iconSrc: string;
   primaryTextContent: string;
   secondaryTextContent: string;
 }
 
 const CallCenterContainer: React.FC<CallCenterContainerProps> = ({
-  className1,
-  className2,
+  iconSrc,
   primaryTextContent,
   secondaryTextContent,
 }) => {
   return (
-    <div className={className1}>
-      <img src={Phone} height={30} width={30} className="icon icon--gray"></img>
-      <div className={className2}>
+    <div className="call-center-container">
+      <Icon
+        src={iconSrc}
+        alt="Icon"
+        size={24}
+        className="icon icon--gray"
+      ></Icon>
+      <div className="call-center-container call-center-container--text-container">
         <Text variant="header3-support-center-number">
           {primaryTextContent}
         </Text>

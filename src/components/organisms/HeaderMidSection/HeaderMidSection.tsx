@@ -28,7 +28,8 @@ const HeaderMidSection: React.FC<HeaderMidSectionProps> = ({
         options={optionList2}
         iconSrc={Location}
         size={16}
-        placeholder="Your Location"
+        label="Your Location"
+        iconVariant="icon--gray"
       ></IconCombobox>
       <OptionsGroup optionsList={hyperlinkOptions}></OptionsGroup>
     </div>

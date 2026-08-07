@@ -2,7 +2,7 @@
   display: flex;
   height: 2rem;
   padding: 0;
-  border-bottom: 0.063rem solid #ececec;
+  border-bottom: 0.063rem solid var(--color-border);
   justify-content: space-between;
   align-items: center;
   overflow: hidden;

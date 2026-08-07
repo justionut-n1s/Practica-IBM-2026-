@@ -7,7 +7,7 @@ export interface NavItemProps {
   iconClassName?: string;
   size?: number;
   textItem: string;
-  hyperlinkClassName?: string;
+  hyperlinkVariant?: string;
   link: string;
   is_arrow?: boolean;
 }
@@ -17,7 +17,7 @@ function NavItem({
   iconClassName,
   size,
   textItem,
-  hyperlinkClassName,
+  hyperlinkVariant,
   link,
   is_arrow,
 }: NavItemProps) {
@@ -28,7 +28,7 @@ function NavItem({
       )}
       <Hyperlink
         message={textItem}
-        className={hyperlinkClassName}
+        variant={hyperlinkVariant}
         link={link}
       ></Hyperlink>
       {is_arrow && (

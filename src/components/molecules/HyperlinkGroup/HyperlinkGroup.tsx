@@ -17,7 +17,7 @@ const HyperlinkGroup: React.FC<HyperlinkGroupProps> = ({ content }) => {
         <div className="hyperlink-group__item">
           <Hyperlink
             key={id}
-            className="hyp--header-upper-section"
+            variant="hyp--header-upper-section"
             {...linkProps}
           ></Hyperlink>
         </div>

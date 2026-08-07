@@ -18,3 +18,8 @@
   filter: invert(70%) sepia(15%) saturate(1709%) hue-rotate(100deg)
     brightness(86%) contrast(80%);
 }
+
+.icon--white {
+  filter: invert(99%) sepia(82%) saturate(2%) hue-rotate(1deg) brightness(106%)
+    contrast(101%);
+}

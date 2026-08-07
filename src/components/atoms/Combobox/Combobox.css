@@ -20,19 +20,21 @@
 
 .combobox-style--location {
   height: 100%;
-  width: 5rem;
+  width: fit-content;
   padding: 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 0.625rem;
   color: var(--color-primary);
   appearance: none;
-  background-image: url(../../../assets/icons/Chevron.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 0.5rem;
+}
+
+.combobox-style--location--green {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .combobox-style-option {
+  background-color: var(--color-white);
   color: var(--color-text);
 }

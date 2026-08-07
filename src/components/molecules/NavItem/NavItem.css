@@ -1,5 +1,5 @@
 .nav-item {
-  display: flex;
-  align-items: center;
+  display: inline-flex;
+  place-items: center;
   gap: 0.25rem;
 }

@@ -1,7 +1,7 @@
 export { default as ProductCard } from "./ProductCard/ProductCard";
 export { default as NavItem, type NavItemProps } from "./NavItem/NavItem";
 export { default as ProductRow } from "./ProductRow/ProductRow";
-export { default as Dropdown } from "./Dropdown/Dropdown";
+export { default as Dropdown, type DropdownProps } from "./Dropdown/Dropdown";
 export { default as TeamMemberCard } from "./TeamMemberCard/TeamMemberCard";
 export { default as Form } from "./Form/Form";
 export { default as CallCenterContainer } from "./CallCenterContainer/CallCenterContainer";

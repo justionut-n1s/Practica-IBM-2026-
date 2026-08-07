@@ -29,6 +29,7 @@ import {
   OptionsGroup,
   OptionsGroupItem,
   HeaderMidSection,
+  HeaderBottomSection,
 } from "./components/organisms";
 import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
 
@@ -143,7 +144,7 @@ function App() {
       />
 
       <div style={{ display: "flex", gap: "24px" }}>
-        <NavItem textItem="Home" link="/" hyperlinkClassName="" />
+        <NavItem textItem="Home" link="/" hyperlinkVariant="" />
         <NavItem textItem="About" link="/about" />
         <NavItem textItem="Shop" link="/shop" />
         <Dropdown
@@ -289,6 +290,7 @@ function App() {
         optionList2={optionList1}
         hyperlinkOptions={options}
       ></HeaderMidSection>
+      <HeaderBottomSection></HeaderBottomSection>
     </>
   );
 }
