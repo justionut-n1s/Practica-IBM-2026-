@@ -1,46 +1,48 @@
-.button{
-    width: auto;
-    padding: 0rem 1.25rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--font-size-base, 1rem);
-    font-weight: 700;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    transition-duration: 0.5s;
-    cursor: pointer;
+.button {
+  width: auto;
+  padding: 0rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 700;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 
-.button--subscribe-button{
-    height: 100%;
-    width: 8rem;
-    border-radius: 3rem;
-    box-sizing: border-box;
+.button--subscribe-button {
+  height: 100%;
+  width: 30%;
+  font-size: var(--font-size-sm);
+  border-radius: 3rem;
+  box-sizing: border-box;
 }
 
-.button--subscribe-button:hover, .button--add-button:hover, 
-.button--shop-now-button:hover, .button--filter-button:hover{
-    background-color: var(--color-primary-dark);
-    color: var(--color-white);
+.button--subscribe-button:hover,
+.button--add-button:hover,
+.button--shop-now-button:hover,
+.button--filter-button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
-.button--add-button{
-    height: 2.25rem;
-    font-family: "Lato", sans-serif;
-    font-size: var(--font-size-sm);
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
+.button--add-button {
+  height: 2.25rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-sm);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
 }
 
-.button--shop-now-button{
-    height: 2rem; 
-    padding: 0rem 0.625rem;
-    font-size: var(--font-size-xs);
+.button--shop-now-button {
+  height: 2rem;
+  padding: 0rem 0.625rem;
+  font-size: var(--font-size-xs);
 }
 
-.button--filter-button{
-    height: 2.5rem;
-    font-size: var(--font-size-xs);
+.button--filter-button {
+  height: 2.5rem;
+  font-size: var(--font-size-xs);
 }
-

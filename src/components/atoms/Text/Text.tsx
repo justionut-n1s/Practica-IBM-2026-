@@ -9,6 +9,8 @@ export interface TextProps {
     | "footer-text"
     | "title text--title--primary-title"
     | "title text--title--secondary-title"
+    | "title text--title--hero-title"
+    | "title text--title--hero-subtitle"
     | "checkbox-form-title"
     | "countdown-text"
     | "countdown-timeunit"

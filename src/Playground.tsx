@@ -30,6 +30,8 @@ import {
   OptionsGroupItem,
   HeaderMidSection,
   HeaderBottomSection,
+  HeroSlider,
+  HeroSliderProps,
 } from "./components/organisms";
 import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
 
@@ -291,6 +293,13 @@ function App() {
         hyperlinkOptions={options}
       ></HeaderMidSection>
       <HeaderBottomSection></HeaderBottomSection>
+      <HeroSlider
+        title="Don't miss amazing
+      grocery deals"
+        subtitle="Sign up for the daily newsletter"
+        placeholder="Your email address"
+        buttonLabel="Subscribe"
+      ></HeroSlider>
     </>
   );
 }

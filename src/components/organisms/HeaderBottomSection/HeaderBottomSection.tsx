@@ -21,16 +21,6 @@ interface DropdownConfig extends DropdownProps {
 type NavGroupConfig = NavItemConfig | DropdownConfig;
 
 const navItems: NavGroupConfig[] = [
-  // {
-  //   type: "navitem",
-  //   iconSrc: Blaze,
-  //   iconClassName: "icon icon--green",
-  //   size: 20,
-  //   textItem: "Deals",
-  //   hyperlinkVariant: "hyp",
-  //   link: "",
-  //   is_arrow: false,
-  // },
   {
     type: "dropdown",
     label: "Home",
@@ -108,7 +98,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
         link=""
         is_arrow={false}
       ></NavItem>
-      <div className="header-bottom-section-style__navgroup">
+      <nav className="header-bottom-section-style__navgroup">
         {navItems.map((item, index) => {
           if (item.type === "navitem") {
             return (
@@ -133,7 +123,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
             );
           }
         })}
-      </div>
+      </nav>
       <CallCenterContainer
         iconSrc={Headset}
         primaryTextContent="1900 - 888"
