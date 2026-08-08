@@ -1,10 +1,7 @@
 .icon-features {
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.5rem 2rem;
-  background-color: var(--color-bg-light);
-  border-radius: 0.5rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
 }
 
@@ -12,6 +9,11 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex: 1;
+  min-width: 12rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-bg-light);
+  border-radius: 0.5rem;
 }
 
 .icon-features__text {

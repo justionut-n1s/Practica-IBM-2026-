@@ -1,25 +1,19 @@
-import { Heading, Text, Image, Button } from "../../atoms";
-import { Input } from "../../atoms";
+import { Heading, Text, Image, Button, Input } from "../../atoms";
+import { shopper } from "../../../assets/images";
 import "./NewsletterBanner.css";
 
 interface NewsletterBannerProps {
   title: string;
   subtitle: string;
-  imageSrc: string;
-  onSubscribe?: (email: string) => void;
 }
 
-// Newsletter signup banner: heading, text, email input + button, side image
-function NewsletterBanner({
-  title,
-  subtitle,
-  imageSrc,
-  onSubscribe,
-}: NewsletterBannerProps) {
+// Newsletter signup banner with heading, email input, subscribe button and side image
+function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
   return (
     <div className="newsletter-banner">
       <div className="newsletter-banner__content">
         <Heading lvl={2}>{title}</Heading>
+
         <Text variant="footer-text" type="p">
           {subtitle}
         </Text>
@@ -31,14 +25,19 @@ function NewsletterBanner({
             placeholder="Your email address"
             className="text-input text-input--email-input"
           />
-          <Button variant="subscribe-button" onClick={() => onSubscribe?.("")}>
+
+          <Button
+            variant="subscribe-button"
+            className="button button--subscribe-button"
+            onClick={() => {}}
+          >
             Subscribe
           </Button>
         </div>
       </div>
 
       <div className="newsletter-banner__image">
-        <Image src={imageSrc} alt="Fresh vegetables" width={300} height={250} />
+        <Image src={shopper} alt="Shopper" width={400} height={300} />
       </div>
     </div>
   );

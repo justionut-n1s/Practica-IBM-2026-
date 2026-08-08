@@ -1,5 +1,5 @@
 import React from "react"
-import { CountdownItem } from '/src/components/index.ts'
+import { CountdownItem } from "../../molecules"
 import './CountdownSection.css'
 
 interface CountdownSectionProps {

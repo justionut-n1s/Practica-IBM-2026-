@@ -49,7 +49,7 @@ function ProductCard({
           <Badge text={badgeText} variant={badgeVariant} />
         </div>
       )}
-      <Text variant="header2-button" type="p">
+      <Text variant="footer-text" type="p">
         {category}
       </Text>
 
@@ -59,7 +59,7 @@ function ProductCard({
         className="product-card__name"
       />
 
-      <Text variant="header2-button" type="p">
+      <Text variant="footer-text" type="p">
         By <span className="provider-name">{provider}</span>
       </Text>
 
@@ -68,7 +68,11 @@ function ProductCard({
       <div className="product-card__footer">
         <PriceTag price={price} oldPrice={oldPrice} />
 
-        <Button variant="add-button" onClick={() => {}}>
+        <Button
+          variant="add-button"
+          className="button button--add-button"
+          onClick={() => {}}
+        >
           <span className="button-content">
             <Icon src={cartIcon} alt="shopping cart" size={15} />
             Add
