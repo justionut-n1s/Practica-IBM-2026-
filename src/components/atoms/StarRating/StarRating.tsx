@@ -3,21 +3,19 @@ import { starFullIcon } from "../../../assets/icons";
 import { starEmptyIcon } from "../../../assets/icons";
 import "./StarRating.css";
 
-// Displays 5 stars (rounded rating) + exact number in parentheses. Props: rating (e.g. 4.6)
-
 export interface StarRatingProps {
   rating: number;
 }
 
 function StarRating({ rating }: StarRatingProps) {
-  const ratingRotunjit = Math.round(rating);
-  const pozitii = [1, 2, 3, 4, 5];
+  const roundedRating = Math.round(rating);
+  const positions = [1, 2, 3, 4, 5];
 
   return (
     <div className="star-rating">
-      {pozitii.map((pozitie) => {
-        const sursa = pozitie <= ratingRotunjit ? starFullIcon : starEmptyIcon;
-        return <Icon key={pozitie} src={sursa} alt="stea" size={16} />;
+      {positions.map((position) => {
+        const source = position <= roundedRating ? starFullIcon : starEmptyIcon;
+        return <Icon key={position} src={source} alt="Star" size={12} />;
       })}
       <span className="star-rating__number">({rating})</span>
     </div>

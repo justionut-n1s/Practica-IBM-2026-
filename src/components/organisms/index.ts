@@ -11,3 +11,7 @@ export {
   default as HeroSlider,
   type HeroSliderProps,
 } from "./HeroSlider/HeroSlider";
+export {
+  default as ProductGrid,
+  type ProductGridItem,
+} from "./ProductGrid/ProductGrid";

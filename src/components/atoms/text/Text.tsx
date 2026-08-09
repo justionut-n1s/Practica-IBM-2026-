@@ -16,7 +16,9 @@ export interface TextProps {
     | "countdown-timeunit"
     | "header3-support-center-number"
     | "header3-support-center-text"
-    | "provider-name";
+    | "provider-text"
+    | "category-text"
+    | "provider-text text--provider-text--span";
   type?: "p" | "span" | "label";
   key?: number;
 }

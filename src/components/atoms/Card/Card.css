@@ -1,6 +1,6 @@
 .crd {
   border-radius: 0.9375rem;
-  padding: 1.5rem;
+  padding: 1.5rem 0.875rem 0.875rem 0.875rem;
   background-color: var(--color-white);
 }
 

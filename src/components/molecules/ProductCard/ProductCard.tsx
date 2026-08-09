@@ -13,7 +13,7 @@ import {
 import { Cart } from "../../../assets/icons";
 import "./ProductCard.css";
 
-interface ProductCardProps {
+export interface ProductCardProps {
   imageSrc: string;
   name: string;
   provider: string;
@@ -41,7 +41,7 @@ function ProductCard({
   return (
     <Card className="product-card">
       <div className="product-card__image">
-        <Image src={imageSrc} alt={name} width={200} height={200} />
+        <Image src={imageSrc} alt={name} width={96} height={96} />
       </div>
 
       {badgeText && (
@@ -49,28 +49,18 @@ function ProductCard({
           <Badge text={badgeText} variant={badgeVariant} />
         </div>
       )}
-      {/* <Text variant="header2-button" type="p">
-        {category}
-      </Text> */}
-      <Heading lvl={2} children={category}></Heading>
-
-      <Hyperlink
-        message={name}
-        link={name_link}
-        className="product-card__name"
-      />
-
-      {/* <Text variant="header2-button" type="p">
-        By <span className="provider-name">{provider}</span>
-      </Text> */}
-      <Heading lvl={2}>
-        By
-        <Text type="span" variant="provider-name">
-          {provider}
-        </Text>
-      </Heading>
+      {/* <Heading lvl={4} children={category}></Heading> */}
+      <Text variant="category-text">{category}</Text>
+      <Hyperlink message={name} link={name_link} variant="product-card__name" />
 
       <StarRating rating={rating} />
+
+      <Text variant="provider-text">
+        By
+        <Text type="span" variant="provider-text text--provider-text--span">
+          {provider}
+        </Text>
+      </Text>
 
       <div className="product-card__footer">
         <PriceTag price={price} oldPrice={oldPrice} />
@@ -81,7 +71,7 @@ function ProductCard({
               src={Cart}
               className="icon icon--green"
               alt="shopping cart"
-              size={15}
+              size={13}
             />
             Add
           </span>

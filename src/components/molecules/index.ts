@@ -1,4 +1,7 @@
-export { default as ProductCard } from "./ProductCard/ProductCard";
+export {
+  default as ProductCard,
+  type ProductCardProps,
+} from "./ProductCard/ProductCard";
 export { default as NavItem, type NavItemProps } from "./NavItem/NavItem";
 export { default as ProductRow } from "./ProductRow/ProductRow";
 export { default as Dropdown, type DropdownProps } from "./Dropdown/Dropdown";

@@ -28,3 +28,8 @@
   font-weight: 400;
   color: var(--color-text);
 }
+
+.hyp--product-grid {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}

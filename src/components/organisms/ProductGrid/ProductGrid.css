@@ -1,0 +1,28 @@
+.product-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 47.5rem;
+}
+
+.product-grid-container__title {
+  display: flex;
+  text-align: left;
+  padding: 1rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-grid-container__nav {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.product-grid-container__grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 0.5rem;
+  width: 100%;
+}
