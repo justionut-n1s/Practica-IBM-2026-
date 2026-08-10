@@ -43,9 +43,16 @@
   color: var(--color-text);
 }
 
-.text--title {
+.text--title,
+.text--banner-text {
   font-weight: 700;
   color: var(--color-text-dark);
+}
+
+.text--banner-text {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 1.25rem;
 }
 
 .text--title--primary-title {
@@ -101,9 +108,10 @@
 }
 
 .text--countdown-text {
-  font-size: 1.25rem;
+  font-size: var(--font-size-sm);
   font-weight: 500;
   color: var(--color-primary);
+  line-height: 0.875rem;
 }
 
 .text--countdown-timeunit,
@@ -114,7 +122,21 @@
   color: var(--color-text);
 }
 
-.text--provider-text--span {
+.text--countdown-timeunit {
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+}
+
+.text--provider-deals-container {
+  font-family: "Lato", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: 0.625rem;
+  color: var(--color-text);
+}
+
+.text--provider-text--span,
+.text--provider-deals-container--span {
   font-weight: 600;
   color: var(--color-primary);
 }

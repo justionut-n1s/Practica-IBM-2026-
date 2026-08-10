@@ -15,3 +15,8 @@ export {
   default as ProductGrid,
   type ProductGridItem,
 } from "./ProductGrid/ProductGrid";
+export {
+  default as DealsContainer,
+  type DealsContainerItem,
+  type BannerItem,
+} from "./DealsContainer/DealsContainer";

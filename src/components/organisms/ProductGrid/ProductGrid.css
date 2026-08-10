@@ -15,7 +15,7 @@
 
 .product-grid-container__nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.875rem;
   justify-content: space-between;
 }
 

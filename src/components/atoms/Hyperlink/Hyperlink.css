@@ -33,3 +33,9 @@
   font-size: var(--font-size-xs);
   font-weight: 600;
 }
+
+.hyp--deals-container {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  line-height: 0.875rem;
+}

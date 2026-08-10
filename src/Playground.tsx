@@ -34,8 +34,20 @@ import {
   HeroSliderProps,
   ProductGrid,
   ProductGridItem,
+  DealsContainer,
+  DealsContainerItem,
+  BannerItem,
 } from "./components/organisms";
 import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
+import {
+  BannerImg1,
+  DealsContainerImg1,
+  DealsContainerImg2,
+  DealsContainerImg3,
+  DealsContainerImg4,
+  BannerImg2,
+  BannerImg3,
+} from "./assets/images/index";
 
 const optionList = [
   { value: "Las Vegas, NV" },
@@ -216,182 +228,73 @@ function App() {
     },
   ];
 
+  const productList: DealsContainerItem[] = [
+    {
+      id: 1,
+      imageSrc: DealsContainerImg1,
+      numericValue: 555,
+      name: "Product",
+      link: "",
+      rating: 4,
+      provider: " Provider",
+      price: "29.99",
+      oldPrice: "49.99",
+    },
+    {
+      id: 2,
+      imageSrc: DealsContainerImg2,
+      numericValue: 555,
+      name: "Product",
+      link: "",
+      rating: 1,
+      provider: " Provider",
+      price: "29.99",
+      oldPrice: "49.99",
+    },
+    {
+      id: 3,
+      imageSrc: DealsContainerImg3,
+      numericValue: 555,
+      name: "Product",
+      link: "",
+      rating: 5,
+      provider: " Provider",
+      price: "29.99",
+      oldPrice: "49.99",
+    },
+    {
+      id: 4,
+      imageSrc: DealsContainerImg4,
+      numericValue: 555,
+      name: "Product",
+      link: "",
+      rating: 3.5,
+      provider: " Provider",
+      price: "29.99",
+      oldPrice: "49.99",
+    },
+  ];
+
+  const bannerList: BannerItem[] = [
+    {
+      id: 1,
+      imageSrc: BannerImg1,
+      bannerTitle: "Everyday Fresh & Clean with Our Products",
+    },
+    {
+      id: 2,
+      imageSrc: BannerImg2,
+      bannerTitle: "Make your Breakfast Healthy and Easy",
+    },
+    {
+      id: 3,
+      imageSrc: BannerImg3,
+      bannerTitle: "The Best Organic Products Online",
+    },
+  ];
+
   return (
     <>
-      <NavItem
-        iconSrc="https://placehold.co/20x20"
-        size={20}
-        textItem="Test"
-        link="https://placehold.co/20x20"
-        is_arrow
-      />
-
-      <div style={{ display: "flex", gap: "24px" }}>
-        <NavItem textItem="Home" link="/" />
-        <NavItem textItem="About" link="/about" />
-        <NavItem textItem="Shop" link="/shop" is_arrow />
-        <NavItem textItem="Vendors" link="/vendors" is_arrow />
-      </div>
-
-      <Image
-        src="https://placehold.co/200x150"
-        alt="poza test"
-        width={200}
-        height={150}
-      />
-      <Image
-        src="https://placehold.co/200x150"
-        alt="poza test rotunda"
-        width={200}
-        height={150}
-        rounded
-      />
-
-      <Icon src="https://placehold.co/40" alt="icon test" size={40} />
-      <Icon src="https://placehold.co/20" alt="icon mic" size={20} />
-
-      <Hyperlink message="PlaceHold" link="https://placehold.co/" />
-
-      <PriceTag price="$28.85" oldPrice="$32.80" />
-
-      <Card>
-        <Text variant="header-upper-section" type="p">
-          test card content
-        </Text>
-      </Card>
-      <Card variant="flat">
-        <Text variant="header-upper-section" type="p">
-          card flat test
-        </Text>
-        <Button variant="add-button" onClick={() => {}}>
-          ok
-        </Button>
-      </Card>
-      <ProductCard
-        imageSrc="https://placehold.co/200x200"
-        name="Produs Test"
-        category="Test"
-        name_link="https://placehold.co/200x200"
-        provider="PLACEHOLD"
-        rating={3.2}
-        price="25.25"
-        oldPrice="30"
-        badgeText="NEW"
-        badgeVariant="green"
-      />
-
-      <div style={{ display: "flex", gap: "24px" }}>
-        <NavItem textItem="Home" link="/" hyperlinkVariant="" />
-        <NavItem textItem="About" link="/about" />
-        <NavItem textItem="Shop" link="/shop" />
-        <Dropdown
-          label="Vendors"
-          options={["All Vendors", "NEW Vendors", "Popular Vendors"]}
-        />
-      </div>
-
-      <Heading lvl={1}>Heading 1</Heading>
-      <Heading lvl={2}>Heading 2</Heading>
-      <Heading lvl={3}>Heading 3</Heading>
-      <Heading lvl={4}>Heading 4</Heading>
-
-      <Heading lvl={1}>PRODUCTS</Heading>
-      <div style={{ display: "flex", gap: "24px" }}>
-        <ProductCard
-          imageSrc="https://placehold.co/200x200"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          category="Test"
-          provider="PLACEHOLD"
-          rating={3.2}
-          price="25.25"
-          oldPrice="30"
-          badgeText="NEW"
-          badgeVariant="green"
-        />
-        <ProductCard
-          imageSrc="https://placehold.co/200x200"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          category="Test"
-          provider="PLACEHOLD"
-          rating={4.2}
-          price="25.25"
-          oldPrice="30"
-          badgeText="-20%"
-          badgeVariant="pink"
-        />
-        <ProductCard
-          imageSrc="https://placehold.co/200x200"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          category="Test"
-          provider="PLACEHOLD"
-          rating={5}
-          price="25.25"
-          oldPrice="30"
-          badgeText="FRESH!"
-          badgeVariant="blue"
-        />
-        <ProductCard
-          imageSrc="https://placehold.co/200x200"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          category="Test"
-          provider="PLACEHOLD"
-          rating={1}
-          price="25.25"
-          oldPrice="30"
-          badgeText="WOW"
-          badgeVariant="orange"
-        />
-      </div>
-
-      <Heading lvl={1}>POPULAR PRODUCTS</Heading>
-      <div>
-        <ProductRow
-          imageSrc="https://placehold.co/100x100"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          rating={4}
-          price="34"
-          oldPrice="50"
-        />
-        <ProductRow
-          imageSrc="https://placehold.co/100x100"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          rating={4}
-          price="34"
-          oldPrice="50"
-        />
-        <ProductRow
-          imageSrc="https://placehold.co/100x100"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          rating={4}
-          price="34"
-          oldPrice="50"
-        />
-        <ProductRow
-          imageSrc="https://placehold.co/100x100"
-          name="Produs Test"
-          name_link="https://placehold.co/200x200"
-          rating={4}
-          price="34"
-          oldPrice="50"
-        />
-      </div>
-
-      <TeamMemberCard
-        imageSrc="https://placehold.co/200x200"
-        name="Ana Popescu"
-        role="Worker"
-        socialLinks={[
-          { icon: Cart, link: "https://facebook.com" },
-          { icon: Cart, link: "https://twitter.com" },
-        ]}
-      />
       {/* <HyperlinkGroup content={hyperlinkList}></HyperlinkGroup>
       <Combobox
         name="name"
@@ -436,6 +339,10 @@ function App() {
         buttonLabel="Subscribe"
       ></HeroSlider>
       <ProductGrid productCardList={productCards}></ProductGrid>
+      <DealsContainer
+        productList={productList}
+        bannerList={bannerList}
+      ></DealsContainer>
     </>
   );
 }

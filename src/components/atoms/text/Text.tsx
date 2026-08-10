@@ -18,7 +18,10 @@ export interface TextProps {
     | "header3-support-center-text"
     | "provider-text"
     | "category-text"
-    | "provider-text text--provider-text--span";
+    | "banner-text"
+    | "provider-text text--provider-text--span"
+    | "provider-deals-container"
+    | "provider-deals-container text--provider-deals-container--span";
   type?: "p" | "span" | "label";
   key?: number;
 }
