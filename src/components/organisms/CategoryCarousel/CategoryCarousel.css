@@ -1,0 +1,50 @@
+.category-carousel {
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-carousel__title-container {
+  display: flex;
+  padding: 1rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-carousel__title-container__text-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.category-carousel__title-container__button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.category-carousel__card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.category-carousel__card {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  /*width: 6.352rem; 6.352rem*/
+  width: 0;
+  flex: 1 1 0;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #f4f6fa;
+  justify-content: space-between;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.category-carousel__card__image {
+  height: 50%;
+  margin: 0rem auto;
+  aspect-ratio: auto;
+}

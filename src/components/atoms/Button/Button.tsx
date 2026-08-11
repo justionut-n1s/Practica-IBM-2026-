@@ -5,7 +5,9 @@ export type ButtonVariant =
   | "subscribe-button"
   | "add-button"
   | "shop-now-button"
-  | "filter-button";
+  | "filter-button"
+  | "arrow-button-left"
+  | "arrow-button-right";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;

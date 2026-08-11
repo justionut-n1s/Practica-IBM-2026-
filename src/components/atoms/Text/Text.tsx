@@ -19,6 +19,7 @@ export interface TextProps {
     | "provider-text"
     | "category-text"
     | "banner-text"
+    | "category-card-text"
     | "provider-text text--provider-text--span"
     | "provider-deals-container"
     | "provider-deals-container text--provider-deals-container--span";

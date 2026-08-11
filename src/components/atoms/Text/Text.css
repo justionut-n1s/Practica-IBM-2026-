@@ -44,7 +44,8 @@
 }
 
 .text--title,
-.text--banner-text {
+.text--banner-text,
+.text--category-card-text {
   font-weight: 700;
   color: var(--color-text-dark);
 }
@@ -53,6 +54,11 @@
   position: relative;
   font-size: var(--font-size-base);
   line-height: 1.25rem;
+}
+
+.text--category-card-text {
+  font-size: var(--font-size-xs);
+  line-height: 0.875rem;
 }
 
 .text--title--primary-title {

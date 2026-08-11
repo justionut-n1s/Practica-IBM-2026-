@@ -37,6 +37,8 @@ import {
   DealsContainer,
   DealsContainerItem,
   BannerItem,
+  CategoryCarousel,
+  CategoryCarouselItem,
 } from "./components/organisms";
 import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
 import {
@@ -47,6 +49,14 @@ import {
   DealsContainerImg4,
   BannerImg2,
   BannerImg3,
+  MilkAndDairy,
+  WineAndAlcohol,
+  ClothingAndBeauty,
+  PetFood,
+  PackagedFastFood,
+  BakingMaterial,
+  FruitsAndVegetables,
+  FreshSeafood,
 } from "./assets/images/index";
 
 const optionList = [
@@ -293,38 +303,23 @@ function App() {
     },
   ];
 
+  const cardList: CategoryCarouselItem[] = [
+    { id: 1, imageSrc: MilkAndDairy, cardLabel: "Milk & Dairy" },
+    { id: 2, imageSrc: WineAndAlcohol, cardLabel: "Wine & Alcohol" },
+    { id: 3, imageSrc: ClothingAndBeauty, cardLabel: "Clothing & Beauty" },
+    { id: 4, imageSrc: PetFood, cardLabel: "Pet Food & Toys" },
+    { id: 5, imageSrc: PackagedFastFood, cardLabel: "Packaged Fast Food" },
+    { id: 6, imageSrc: BakingMaterial, cardLabel: "Baking Material" },
+    { id: 7, imageSrc: FruitsAndVegetables, cardLabel: "Fruits & Vegetables" },
+    { id: 8, imageSrc: FreshSeafood, cardLabel: "Fresh Seafood" },
+  ];
+
   return (
     <>
-      {/* <HyperlinkGroup content={hyperlinkList}></HyperlinkGroup>
-      <Combobox
-        name="name"
-        id="id"
-        className="combobox-style"
-        selectedOptionLabel="Add Categories"
-        optionList={optionList1}
-      ></Combobox>
-      <HeaderComboboxSection
-        comboboxContentList={comboboxList}
-      ></HeaderComboboxSection> */}
       <HeaderUpperSection
         hyperlinkList={hyperlinkList}
         comboboxList={comboboxList}
       ></HeaderUpperSection>
-      {/* <OptionsGroup optionsList={options}></OptionsGroup>
-      <Logo logoHeight={52} logoWidth={180}></Logo>
-      <SearchBar
-        comboboxOptions={optionList1}
-        placeholder="Search for items..."
-        inputClassName="text-input text-input--header-input"
-      ></SearchBar>
-      <IconCombobox
-        options={optionList1}
-        iconSrc={Location}
-        size={16}
-        placeholder="Your Location"
-        value={selectedOption}
-        onValueChange={setSelectedOption}
-      ></IconCombobox> */}
       <HeaderMidSection
         optionList1={optionList1}
         optionList2={optionList1}
@@ -343,6 +338,7 @@ function App() {
         productList={productList}
         bannerList={bannerList}
       ></DealsContainer>
+      <CategoryCarousel cardList={cardList}></CategoryCarousel>
     </>
   );
 }

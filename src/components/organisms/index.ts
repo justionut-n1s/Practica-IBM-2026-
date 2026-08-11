@@ -20,3 +20,7 @@ export {
   type DealsContainerItem,
   type BannerItem,
 } from "./DealsContainer/DealsContainer";
+export {
+  default as CategoryCarousel,
+  type CategoryCarouselItem,
+} from "./CategoryCarousel/CategoryCarousel";
