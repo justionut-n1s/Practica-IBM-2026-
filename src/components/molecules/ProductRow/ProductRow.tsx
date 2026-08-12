@@ -28,7 +28,7 @@ function ProductRow({
         <Hyperlink
           message={name}
           link={name_link}
-          className="product-card__name"
+          className="product-row__name"
         />
 
         <StarRating rating={rating} />

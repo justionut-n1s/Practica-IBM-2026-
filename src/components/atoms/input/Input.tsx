@@ -4,6 +4,7 @@ import "./Input.css";
 export type TextInputVariant = "header-input" | "email-input" | "icon-input";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+  type: "text" | "checkbox" | "range";
   variant?: TextInputVariant;
 }
 

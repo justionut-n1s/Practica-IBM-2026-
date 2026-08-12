@@ -1,5 +1,5 @@
 import React from "react";
-import { Input } from "/React Projects/Practica-IBM-2026-/src/components/atoms/index";
+import { Input } from "../../atoms/index";
 import "./InputGroup.css";
 
 export interface InputGroupProps {

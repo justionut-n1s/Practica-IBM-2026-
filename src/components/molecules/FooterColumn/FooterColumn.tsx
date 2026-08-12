@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "/React Projects/Practica-IBM-2026-/src/components/atoms/index";
+import { Text } from "../../atoms/index";
 import "./FooterColumn.css";
 
 export interface FooterColumnProps {

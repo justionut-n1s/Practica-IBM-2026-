@@ -65,7 +65,11 @@ function ProductCard({
       <div className="product-card__footer">
         <PriceTag price={price} oldPrice={oldPrice} />
 
-        <Button variant="add-button" onClick={() => {}}>
+        <Button
+          variant="add-button"
+          className="button button--add-button"
+          onClick={() => {}}
+        >
           <span className="button-content">
             <Icon
               src={Cart}
