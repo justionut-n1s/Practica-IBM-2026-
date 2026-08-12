@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from '/src/components/index.ts'
+import { Input } from '../../atoms'
 import './InputGroup.css'
 
 export interface InputGroupProps {

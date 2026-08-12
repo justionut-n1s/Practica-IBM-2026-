@@ -1,5 +1,6 @@
 import React from 'react'
-import { Text, InputGroup } from '/src/components/index.ts'
+import { Text } from '../../atoms'
+import {InputGroup } from '../../molecules'
 import './CheckboxForm.css'
 
 interface CheckboxFormProps {

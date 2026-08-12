@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '/src/components/index.ts'
+import { Text } from '../../atoms'
 import './FooterColumn.css'
 
 export interface FooterColumnProps {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { ListItem } from '/src/components/index.ts'
+import { ListItem } from '../../atoms'
 import './DropdownList.css'
 
 interface DropdownListProps {
