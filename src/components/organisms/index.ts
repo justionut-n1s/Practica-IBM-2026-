@@ -24,3 +24,8 @@ export {
   default as CategoryCarousel,
   type CategoryCarouselItem,
 } from "./CategoryCarousel/CategoryCarousel";
+export { default as Footer } from "./Footer/Footer";
+export { default as IconFeatures } from "./IconFeatures/IconFeatures";
+export { default as ProductLists } from "./ProductLists/ProductLists";
+export { default as PromoBanners } from "./PromoBanners/PromoBanners";
+export { default as NewsletterBanner } from "./NewsletterBanner/NewsletterBanner";

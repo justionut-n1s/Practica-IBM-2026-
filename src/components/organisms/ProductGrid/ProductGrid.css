@@ -26,3 +26,9 @@
   gap: 0.5rem;
   width: 100%;
 }
+
+.product-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}

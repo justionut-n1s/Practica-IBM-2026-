@@ -1,0 +1,19 @@
+.promo-banners {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.promo-banners__item {
+  flex: 1;
+  min-width: 16rem;
+  min-height: 12rem;
+  border-radius: 0.75rem;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
