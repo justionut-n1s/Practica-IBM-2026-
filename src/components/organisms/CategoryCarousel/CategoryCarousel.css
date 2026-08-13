@@ -31,16 +31,16 @@
 .category-carousel__card {
   display: flex;
   flex-direction: column;
-  height: 8rem;
-  /*width: 6.352rem; 6.352rem*/
+  height: 11rem;
   width: 0;
   flex: 1 1 0;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.75rem;
   border-radius: 0.5rem;
   background-color: #f4f6fa;
   justify-content: space-between;
   box-sizing: border-box;
   overflow: hidden;
+  text-align: center;
 }
 
 .category-carousel__card__image {

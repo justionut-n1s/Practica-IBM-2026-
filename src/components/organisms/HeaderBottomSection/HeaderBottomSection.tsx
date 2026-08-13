@@ -99,7 +99,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
         is_arrow={false}
       ></NavItem>
       <nav className="header-bottom-section-style__navgroup">
-        {navItems.map((item, index) => {
+        {navItems.map((item) => {
           if (item.type === "navitem") {
             return (
               <NavItem

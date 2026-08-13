@@ -7,6 +7,7 @@ export interface TextProps {
     | "header-upper-section"
     | "header-upper-section--span"
     | "footer-text"
+    | "footer-text text--footer-text--copyright-text"
     | "title text--title--primary-title"
     | "title text--title--secondary-title"
     | "title text--title--hero-title"

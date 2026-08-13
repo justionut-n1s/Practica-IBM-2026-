@@ -45,7 +45,16 @@ import {
   PromoBanners,
   ProductLists,
 } from "./components/organisms";
-import { Compare, Heart, Cart, Profile, Location } from "./assets/icons/index";
+import {
+  Compare,
+  Heart,
+  Cart,
+  Profile,
+  Location,
+  Headset,
+  Mail,
+  Hours,
+} from "./assets/icons/index";
 import {
   BannerImg1,
   DealsContainerImg1,
@@ -696,6 +705,28 @@ function Playground() {
     },
   ];
 
+  const footerAboutList = [
+    {
+      id: 1,
+      iconSrc: Location,
+      alt: "Address",
+      text: "Address: 5171 W Campbell Ave undefined Kent, Utah 53127 United States",
+    },
+    {
+      id: 1,
+      iconSrc: Headset,
+      alt: "Phone",
+      text: "Call Us: (+91)-540-025-124553",
+    },
+    { id: 1, iconSrc: Mail, alt: "Email", text: "Email: sale@Nest.com" },
+    {
+      id: 1,
+      iconSrc: Hours,
+      alt: "Hours",
+      text: "Hours: 10:00 - 18:00, Mon - Sat",
+    },
+  ];
+
   const sectionStyle = { padding: "0 2rem", boxSizing: "border-box" as const };
 
   return (
@@ -710,7 +741,7 @@ function Playground() {
         hyperlinkOptions={options}
       ></HeaderMidSection>
       <HeaderBottomSection></HeaderBottomSection>
-      <HeroSlider
+      {/* <HeroSlider
         title="Don't miss amazing
         grocery deals"
         subtitle="Sign up for the daily newsletter"
@@ -722,14 +753,29 @@ function Playground() {
         productList={productList}
         bannerList={bannerList}
       ></DealsContainer>
-      <CategoryCarousel cardList={cardList}></CategoryCarousel>
+      <CategoryCarousel cardList={cardList}></CategoryCarousel> */}
       <div style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
         <div style={sectionStyle}>
+          <HeroSlider
+            title="Don't miss amazing
+          grocery deals"
+            subtitle="Sign up for the daily newsletter"
+            placeholder="Your email address"
+            buttonLabel="Subscribe"
+          ></HeroSlider>
+          <ProductGrid productCardList={productCards}></ProductGrid>
+          <DealsContainer
+            productList={productList}
+            bannerList={bannerList}
+          ></DealsContainer>
+          <CategoryCarousel cardList={cardList}></CategoryCarousel>
+        </div>
+        {/* <div style={sectionStyle}>
           <Heading lvl={2}>Popular Products</Heading>
           <div style={{ height: "1.5rem" }} />
-          {/* <ProductGrid products={gridProducts} /> */}
-        </div>
-        <div style={sectionStyle}>
+          <ProductGrid products={gridProducts} />
+        </div> */}
+        {/* <div style={sectionStyle}>
           <PromoBanners
             banners={[
               {
@@ -752,7 +798,7 @@ function Playground() {
               },
             ]}
           />
-        </div>
+        </div> */}
         <div style={sectionStyle}>
           <ProductLists columns={listColumns} />
         </div>
@@ -772,9 +818,10 @@ function Playground() {
         {/* Footer */}
         <Footer
           columns={footerColumns}
+          aboutContent={footerAboutList}
           supportContacts={[
-            { number: "1900646666", label: "Working 8:00 - 22:00" },
-            { number: "1900648888", label: "24/7 Support Center" },
+            { number: "1900 - 6666", label: "Working 8:00 - 22:00" },
+            { number: "1900 - 8888", label: "24/7 Support Center" },
           ]}
           copyrightText="© 2022, Nest - HTML Ecommerce Template. All rights reserved"
         ></Footer>
