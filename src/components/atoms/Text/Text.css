@@ -6,7 +6,7 @@
 
 .text--header-upper-section {
   font-family: "Lato", sans-serif;
-  font-size: 0.5rem;
+  font-size: var(--font-size-xs);
   font-weight: 400;
   color: var(--color-text);
 }
@@ -32,13 +32,13 @@
 }
 
 .text--header3-support-center-number {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-lg);
   font-weight: 700;
   color: var(--color-primary);
 }
 
 .text--header3-support-center-text {
-  font-size: 0.563rem;
+  font-size: var(--font-size-xs);
   font-weight: 500;
   color: var(--color-text);
 }

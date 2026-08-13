@@ -1,7 +1,7 @@
 .icon-combobox-style {
   display: flex;
   gap: 0.5rem;
-  height: 1.75rem;
+  height: 2.5rem;
   width: fit-content;
   padding: 0rem 0.5rem;
   font-family: "Quicksand", sans-serif;
@@ -15,9 +15,9 @@
 }
 
 .icon-combobox-style--green {
+  height: 2.3rem;
   background-color: var(--color-primary);
   color: var(--color-white);
-  font-weight: 700;
   border: none;
   box-shadow: none;
 }

@@ -20,7 +20,7 @@ const CallCenterContainer: React.FC<CallCenterContainerProps> = ({
       <Icon
         src={iconSrc}
         alt="Icon"
-        size={24}
+        size={30}
         className="icon icon--gray"
       ></Icon>
       <div className="call-center-container call-center-container--text-container">

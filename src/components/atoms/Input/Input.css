@@ -12,10 +12,10 @@
   height: inherit;
   width: 70%;
   padding: 0.5rem;
-  font-size: 0.625rem;
+  font-size: var(--font-size-sm);
   background-image: url(../../../assets/icons/Search.svg);
   background-position: right 0.5rem center;
-  background-size: 0.875rem 0.875rem;
+  background-size: 1.25rem 1.25rem;
   background-repeat: no-repeat;
 }
 

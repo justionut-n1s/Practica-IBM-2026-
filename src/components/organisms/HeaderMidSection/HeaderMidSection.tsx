@@ -18,7 +18,7 @@ const HeaderMidSection: React.FC<HeaderMidSectionProps> = ({
 }) => {
   return (
     <div className="header-mid-section-style">
-      <Logo logoHeight={34} logoWidth={112}></Logo>
+      <Logo logoHeight={45} logoWidth={147}></Logo>
       <SearchBar
         comboboxOptions={optionList1}
         placeholder="Search for items..."
