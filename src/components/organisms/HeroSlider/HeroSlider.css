@@ -1,9 +1,11 @@
 .hero-slider {
   display: flex;
   flex-direction: column;
-  height: 22rem;
-  width: 47.5rem;
+  height: 25rem;
+  /* width: 47.5rem; */
+  width: 78%;
   padding: 2rem 2rem 1rem 2rem;
+  margin-left: auto;
   border: none;
   border-radius: 1.875rem;
   background-color: rgb(255, 210, 194);

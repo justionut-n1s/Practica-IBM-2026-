@@ -104,25 +104,32 @@
 
 .text--input-group {
   font-family: "Lato", sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-dark);
 }
 
 .text--badge-text,
-.text--category-text {
+.text--category-text,
+.text--left-category-card-text {
   font-family: "Lato", sans-serif;
   font-size: var(--font-size-xs);
   font-weight: 400;
 }
 
+.text--left-category-card-text {
+  color: var(--color-text-dark);
+}
+
 .text--checkbox-form-title {
   font-family: "Lato", sans-serif;
   font-weight: 900;
+  color: var(--color-text);
 }
 
 .text--countdown-text {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   font-weight: 500;
   color: var(--color-primary);
-  line-height: 0.875rem;
 }
 
 .text--countdown-timeunit,
@@ -134,20 +141,10 @@
 }
 
 .text--countdown-timeunit {
-  font-size: 0.625rem;
-  line-height: 0.625rem;
+  font-size: var(--font-size-xs);
 }
 
-.text--provider-deals-container {
-  font-family: "Lato", sans-serif;
-  font-size: 0.625rem;
-  font-weight: 400;
-  line-height: 0.625rem;
-  color: var(--color-text);
-}
-
-.text--provider-text--span,
-.text--provider-deals-container--span {
+.text--provider-text--span {
   font-weight: 600;
   color: var(--color-primary);
 }

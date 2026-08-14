@@ -35,14 +35,13 @@
 }
 
 .hyp--product-grid {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   font-weight: 600;
 }
 
 .hyp--deals-container {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
   font-weight: 700;
-  line-height: 0.875rem;
 }
 
 .hyp--footer {

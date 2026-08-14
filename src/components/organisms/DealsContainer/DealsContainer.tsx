@@ -34,13 +34,9 @@ export interface BannerItem {
 
 export interface DealsContainerProps {
   productList: DealsContainerItem[];
-  bannerList: BannerItem[];
 }
 
-const DealsContainer: React.FC<DealsContainerProps> = ({
-  productList,
-  bannerList,
-}) => {
+const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
   return (
     <div className="deals-container">
       <div className="deals-container__title">
@@ -73,11 +69,11 @@ const DealsContainer: React.FC<DealsContainerProps> = ({
                   variant="hyp--deals-container"
                 />
                 <StarRating rating={rating} />
-                <Text variant="provider-deals-container">
+                <Text variant="provider-text">
                   By
                   <Text
                     type="span"
-                    variant="provider-deals-container text--provider-deals-container--span"
+                    variant="provider-text text--provider-text--span"
                   >
                     {provider}
                   </Text>
@@ -100,19 +96,6 @@ const DealsContainer: React.FC<DealsContainerProps> = ({
             </div>
           ),
         )}
-      </div>
-      <div className="deals-container__banner-container">
-        {bannerList.map(({ id, imageSrc, bannerTitle }) => (
-          <Card key={id} className="deals-container__banner" variant="flat">
-            <Image
-              src={imageSrc}
-              alt="Banner Image"
-              className="deals-container__banner__image"
-            ></Image>
-            <Text variant="banner-text">{bannerTitle}</Text>
-            <Button variant="shop-now-button">Shop Now</Button>
-          </Card>
-        ))}
       </div>
     </div>
   );

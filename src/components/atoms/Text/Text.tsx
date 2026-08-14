@@ -20,10 +20,9 @@ export interface TextProps {
     | "provider-text"
     | "category-text"
     | "banner-text"
+    | "left-category-card-text"
     | "category-card-text"
-    | "provider-text text--provider-text--span"
-    | "provider-deals-container"
-    | "provider-deals-container text--provider-deals-container--span";
+    | "provider-text text--provider-text--span";
   type?: "p" | "span" | "label";
   key?: number;
 }

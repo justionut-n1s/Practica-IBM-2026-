@@ -41,7 +41,7 @@ function ProductCard({
   return (
     <Card className="product-card">
       <div className="product-card__image">
-        <Image src={imageSrc} alt={name} width={96} height={96} />
+        <Image src={imageSrc} alt={name} />
       </div>
 
       {badgeText && (
@@ -49,7 +49,6 @@ function ProductCard({
           <Badge text={badgeText} variant={badgeVariant} />
         </div>
       )}
-      {/* <Heading lvl={4} children={category}></Heading> */}
       <Text variant="category-text">{category}</Text>
       <Hyperlink message={name} link={name_link} variant="product-card__name" />
 
@@ -65,15 +64,11 @@ function ProductCard({
       <div className="product-card__footer">
         <PriceTag price={price} oldPrice={oldPrice} />
 
-        <Button
-          variant="add-button"
-          className="button button--add-button"
-          onClick={() => {}}
-        >
+        <Button variant="add-button" onClick={() => {}}>
           <span className="button-content">
             <Icon
               src={Cart}
-              className="icon icon--green"
+              className="icon--green"
               alt="shopping cart"
               size={13}
             />

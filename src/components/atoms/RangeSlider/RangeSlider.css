@@ -6,12 +6,12 @@
 
 .range-slider__input {
   flex: 1;
-  accent-color: #3bb77e;
+  accent-color: var(--color-primary);
 }
 
 .range-slider__value {
   font-family: "Lato";
   font-size: 0.875rem;
-  color: #7e7e7e;
+  color: var(--color-text);
   min-width: 3.125rem;
 }

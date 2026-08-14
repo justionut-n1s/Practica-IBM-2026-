@@ -8,7 +8,7 @@
   font-weight: 700;
   background-color: var(--color-primary);
   color: var(--color-white);
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
   cursor: pointer;
 }
 
@@ -28,12 +28,16 @@
   color: var(--color-white);
 }
 
+.button--add-button:hover img {
+  filter: invert(99%) sepia(82%) saturate(2%) hue-rotate(1deg) brightness(106%)
+    contrast(101%);
+}
+
 .button--add-button {
-  height: 1.45rem;
-  padding: 0rem 0.35rem;
-  width: 3rem;
+  height: 2.25rem;
+  padding: 0rem 0.5rem;
   font-family: "Lato", sans-serif;
-  font-size: 0.65rem;
+  font-size: var(--font-size-xs);
   background-color: var(--color-primary-light);
   color: var(--color-primary);
   box-sizing: border-box;

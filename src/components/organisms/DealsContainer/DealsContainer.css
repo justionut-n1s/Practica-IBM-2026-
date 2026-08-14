@@ -12,7 +12,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 47.5rem;
+  width: 78%;
+  margin-left: auto;
 }
 
 .deals-container__title {
@@ -24,12 +25,12 @@
 .deals-container__banner-container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4, 11.125rem);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .deals-container__banner-container {
   grid-template-rows: auto;
-  grid-template-columns: repeat(3, 15.166rem);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .deals-container__card,
@@ -52,10 +53,10 @@
   gap: 0.25rem;
   width: 100%;
   padding: 0.5rem;
-  box-sizing: border-box;
   text-align: left;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .deals-container__banner {

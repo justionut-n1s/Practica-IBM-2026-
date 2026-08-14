@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 47.5rem;
+  /* width: 47.5rem; */
+  width: 78%;
+  margin-left: auto;
 }
 
 .product-grid-container__title {
@@ -21,9 +23,9 @@
 
 .product-grid-container__grid {
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 0.5rem;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
   width: 100%;
 }
 
