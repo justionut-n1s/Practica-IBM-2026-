@@ -1,12 +1,5 @@
 import React from "react";
 import { Heading, Card, Image, Text } from "../../atoms/index";
-import {
-  MilkAndDairy,
-  ClothingAndBeauty,
-  WineAndAlcohol,
-  BakingMaterial,
-  PackagedFastFood,
-} from "../../../assets/images/index";
 import "./CategoryPanel.css";
 
 interface CardList {

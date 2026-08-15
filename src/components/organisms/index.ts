@@ -31,3 +31,4 @@ export { default as PromoBanners } from "./PromoBanners/PromoBanners";
 export { default as NewsletterBanner } from "./NewsletterBanner/NewsletterBanner";
 export { default as CategoryPanel } from "./CategoryPanel/CategoryPanel";
 export { default as FilterPanel } from "./FilterPanel/FilterPanel";
+export { default as NewProductPanel } from "./NewProductPanel/NewProductPanel";

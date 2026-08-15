@@ -1,6 +1,6 @@
 import "./Card.css";
 
-type CardVariant = "shadow" | "flat";
+export type CardVariant = "shadow" | "flat";
 
 export interface CardProps {
   children: React.ReactNode;

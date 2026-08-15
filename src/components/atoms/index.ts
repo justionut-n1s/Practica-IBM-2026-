@@ -4,7 +4,7 @@ export {
   default as Hyperlink,
   type HyperlinkProps,
 } from "./Hyperlink/Hyperlink";
-export { default as Card, type CardProps } from "./Card/Card";
+export { default as Card, type CardProps, type CardVariant } from "./Card/Card";
 export { default as Heading, type HeadingProps } from "./Heading/Heading";
 export { default as PriceTag, type PriceTagProps } from "./PriceTag/PriceTag";
 export { default as Badge, type BadgeProps } from "./Badge/Badge";

@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  RangeSlider,
-  Heading,
-  Card,
-  Button,
-  Icon,
-  Image,
-} from "../../atoms/index";
+import { RangeSlider, Heading, Card, Button, Icon } from "../../atoms/index";
 import { CheckboxForm } from "../index";
 import { Filter } from "../../../assets/icons/index";
 import "./FilterPanel.css";

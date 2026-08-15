@@ -47,6 +47,7 @@ import {
   ProductLists,
   CategoryPanel,
   FilterPanel,
+  NewProductPanel,
 } from "./components/organisms";
 import {
   Compare,
@@ -767,6 +768,33 @@ function Playground() {
     { id: 2, title: "Item Condition", options: ["New", "Refurbished", "Used"] },
   ];
 
+  const newProducts = [
+    {
+      id: 1,
+      imageSrc: nuts,
+      name: "Chen Cardigan",
+      name_link: "",
+      rating: 3.5,
+      price: "22.99",
+    },
+    {
+      id: 2,
+      imageSrc: organicCoffee,
+      name: "Chen Sweater",
+      name_link: "",
+      rating: 4.6,
+      price: "36.99",
+    },
+    {
+      id: 3,
+      imageSrc: orangeCream,
+      name: "Colorful Jacket",
+      name_link: "",
+      rating: 2.4,
+      price: "45.99",
+    },
+  ];
+
   const sectionStyle = { padding: "0 2rem", boxSizing: "border-box" as const };
 
   return (
@@ -809,6 +837,7 @@ function Playground() {
           <CategoryCarousel cardList={cardList}></CategoryCarousel>
           <CategoryPanel cardList={categoryList}></CategoryPanel>
           <FilterPanel checkboxList={checkboxList}></FilterPanel>
+          <NewProductPanel productRowList={newProducts}></NewProductPanel>
         </div>
         {/* <div style={sectionStyle}>
           <Heading lvl={2}>Popular Products</Heading>

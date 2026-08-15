@@ -51,3 +51,4 @@ export { default as stews } from "./stews.png";
 export { default as veggiePops } from "./veggie-pops.png";
 export { default as iceCream } from "./ice-cream.png";
 export { default as Vegetable } from "./Vegetable.png";
+export { default as SliderImg1 } from "./SliderImg1.png";
