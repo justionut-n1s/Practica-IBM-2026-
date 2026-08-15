@@ -2,7 +2,6 @@
   display: grid;
   /* display: flex; */
   width: 78%;
-  margin-left: auto;
   gap: 1.5rem;
   /* flex-wrap: wrap; */
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));

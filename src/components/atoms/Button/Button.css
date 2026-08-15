@@ -78,3 +78,8 @@
 .button--arrow-button-right:hover {
   background-color: var(--color-text-light);
 }
+
+.button--arrow-button-left:disabled,
+.button--arrow-button-right:disabled {
+  opacity: 50%;
+}
