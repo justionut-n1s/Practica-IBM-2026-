@@ -1,12 +1,10 @@
-import { Heading } from "../../atoms";
-import Button from "../../atoms/button/Button";
-import { promo1, promo2, promo3 } from "../../../assets/images";
+import { Text, Button } from "../../atoms/index";
+import { promo1, promo2, promo3 } from "../../../assets/images/index";
 import "./PromoBanners.css";
 
 interface Banner {
   imageSrc: string;
   title: string;
-  buttonLabel: string;
   buttonHref: string;
 }
 
@@ -14,7 +12,6 @@ interface PromoBannersProps {
   banners: Banner[];
 }
 
-// Row of small promotional banners (image + title + button)
 function PromoBanners({ banners }: PromoBannersProps) {
   return (
     <div className="promo-banners">
@@ -24,14 +21,14 @@ function PromoBanners({ banners }: PromoBannersProps) {
           className="promo-banners__item"
           style={{ backgroundImage: `url(${banner.imageSrc})` }}
         >
-          <Heading lvl={3}>{banner.title}</Heading>
+          <Text variant="banner-text">{banner.title}</Text>
           <a href={banner.buttonHref}>
             <Button
               variant="shop-now-button"
               className="button button--shop-now-button"
               onClick={() => {}}
             >
-              {banner.buttonLabel}
+              Shop Now
             </Button>
           </a>
         </div>

@@ -10,10 +10,10 @@ import {
   Heading,
   Hyperlink,
 } from "../../atoms";
-import { cartIcon } from "../../../assets/icons";
+import { Cart } from "../../../assets/icons";
 import "./ProductCard.css";
 
-interface ProductCardProps {
+export interface ProductCardProps {
   imageSrc: string;
   name: string;
   provider: string;
@@ -41,7 +41,7 @@ function ProductCard({
   return (
     <Card className="product-card">
       <div className="product-card__image">
-        <Image src={imageSrc} alt={name} width={200} height={200} />
+        <Image src={imageSrc} alt={name} />
       </div>
 
       {badgeText && (
@@ -49,32 +49,29 @@ function ProductCard({
           <Badge text={badgeText} variant={badgeVariant} />
         </div>
       )}
-      <Text variant="footer-text" type="p">
-        {category}
-      </Text>
-
-      <Hyperlink
-        message={name}
-        link={name_link}
-        className="product-card__name"
-      />
-
-      <Text variant="footer-text" type="p">
-        By <span className="provider-name">{provider}</span>
-      </Text>
+      <Text variant="category-text">{category}</Text>
+      <Hyperlink message={name} link={name_link} variant="product-card__name" />
 
       <StarRating rating={rating} />
+
+      <Text variant="provider-text">
+        By
+        <Text type="span" variant="provider-text text--provider-text--span">
+          {provider}
+        </Text>
+      </Text>
 
       <div className="product-card__footer">
         <PriceTag price={price} oldPrice={oldPrice} />
 
-        <Button
-          variant="add-button"
-          className="button button--add-button"
-          onClick={() => {}}
-        >
+        <Button variant="add-button" onClick={() => {}}>
           <span className="button-content">
-            <Icon src={cartIcon} alt="shopping cart" size={15} />
+            <Icon
+              src={Cart}
+              className="icon--green"
+              alt="shopping cart"
+              size={13}
+            />
             Add
           </span>
         </Button>

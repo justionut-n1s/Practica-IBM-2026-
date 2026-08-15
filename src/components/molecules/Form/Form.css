@@ -1,8 +1,8 @@
-.subscribe-form{
-    height: 4rem;
-    width: 28rem;
-    border: none;
-    border-radius: 3rem;
-    overflow: hidden;
+.subscribe-form {
+  height: 2.5rem;
+  width: 22rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--color-white);
+  overflow: hidden;
 }
-

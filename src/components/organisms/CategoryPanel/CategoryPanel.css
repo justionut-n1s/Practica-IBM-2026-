@@ -1,0 +1,53 @@
+.category-panel {
+  display: flex;
+  flex-direction: column;
+  height: 22rem;
+  width: 20%;
+  padding: 1rem;
+  border: 0.063rem solid var(--color-border);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.category-panel__title {
+  height: 10%;
+  width: 100%;
+}
+
+.category-panel__card-list {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: repeat(5, 1fr);
+  height: 90%;
+  padding: 0;
+  margin: 0;
+}
+
+.category-panel__card-list__card {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.063rem solid var(--color-border);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.category-panel__card-list__card__count-item {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--color-primary-light);
+  color: var(--color-text-dark);
+  border-radius: 100%;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5rem;
+}
+
+.category-panel__card-list__card__image {
+  height: 2rem;
+  aspect-ratio: 1/1;
+}

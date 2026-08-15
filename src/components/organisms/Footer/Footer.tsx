@@ -1,19 +1,15 @@
-import { Heading, Text, Image, Hyperlink, Icon } from "../../atoms";
-
-import {
-  logo,
-  googlePlay,
-  appStore,
-  payment,
-  iconAddress,
-  iconPhone,
-  iconEmail,
-  iconHours,
-  iconNumber,
-} from "../../../assets/images";
-
+import { Heading, Text, Image, Hyperlink, Icon, Logo } from "../../atoms/index";
+import { CallCenterContainer } from "../../molecules/index";
+import { googlePlay, appStore, payment } from "../../../assets/images";
+import { Phone } from "../../../assets/icons/index";
 import "./Footer.css";
 
+interface FooterAboutColumn {
+  id: number;
+  iconSrc: string;
+  alt: string;
+  text: string;
+}
 interface FooterLink {
   label: string;
   href: string;
@@ -30,6 +26,7 @@ interface SupportContact {
 }
 
 interface FooterProps {
+  aboutContent: FooterAboutColumn[];
   columns: FooterColumnData[];
   supportContacts: SupportContact[];
   copyrightText: string;
@@ -43,7 +40,11 @@ function FooterColumnLocal({ title, links }: FooterColumnData) {
       <ul className="footer__column-list">
         {links.map((link) => (
           <li key={link.label}>
-            <Hyperlink message={link.label} link={link.href} />
+            <Hyperlink
+              variant="hyp--footer"
+              message={link.label}
+              link={link.href}
+            />
           </li>
         ))}
       </ul>
@@ -51,42 +52,31 @@ function FooterColumnLocal({ title, links }: FooterColumnData) {
   );
 }
 
-function Footer({ columns, supportContacts, copyrightText }: FooterProps) {
+function Footer({
+  aboutContent,
+  columns,
+  supportContacts,
+  copyrightText,
+}: FooterProps) {
   return (
     <footer className="footer">
       <div className="footer__top">
         <div className="footer__about">
-          <Image src={logo} alt="Nest Logo" width={120} height={40} />
-
+          <Logo logoHeight={50} logoWidth={163}></Logo>
           <ul className="footer__contact">
-            <li>
-              <Icon src={iconAddress} alt="address" size={16} />
-              <Text variant="footer-text" type="span">
-                Address 5171 W Campbell Ave undefined Kent, Utah 53127 United
-                States
-              </Text>
-            </li>
-
-            <li>
-              <Icon src={iconPhone} alt="phone" size={16} />
-              <Text variant="footer-text" type="span">
-                Call Us (+91)-540-025-124553
-              </Text>
-            </li>
-
-            <li>
-              <Icon src={iconEmail} alt="email" size={16} />
-              <Text variant="footer-text" type="span">
-                Email sale@Nest.com
-              </Text>
-            </li>
-
-            <li>
-              <Icon src={iconHours} alt="hours" size={16} />
-              <Text variant="footer-text" type="span">
-                Hours 10:00 - 18:00, Mon - Sat
-              </Text>
-            </li>
+            {aboutContent.map(({ id, iconSrc, alt, text }) => (
+              <li key={id}>
+                <Icon
+                  className="icon--green"
+                  src={iconSrc}
+                  alt={alt}
+                  size={16}
+                />
+                <Text variant="footer-text" type="span">
+                  {text}
+                </Text>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -122,23 +112,17 @@ function Footer({ columns, supportContacts, copyrightText }: FooterProps) {
       <div className="footer__divider" />
 
       <div className="footer__bottom">
-        <div className="footer__copyright">
-          <Text variant="footer-text" type="span">
-            {copyrightText}
-          </Text>
-        </div>
+        <Text variant="footer-text text--footer-text--copyright-text">
+          {copyrightText}
+        </Text>
 
         <div className="footer__support">
           {supportContacts.map((contact) => (
-            <div key={contact.number} className="footer__support-item">
-              <Icon src={iconNumber} alt="phone" size={16} />
-
-              <div>
-                <span className="footer__support-number">{contact.number}</span>
-
-                <span className="footer__support-text">{contact.label}</span>
-              </div>
-            </div>
+            <CallCenterContainer
+              iconSrc={Phone}
+              primaryTextContent={contact.number}
+              secondaryTextContent={contact.label}
+            ></CallCenterContainer>
           ))}
         </div>
 

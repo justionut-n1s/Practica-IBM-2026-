@@ -1,19 +1,17 @@
 import "./Hyperlink.css";
 
-// Used for text that navigates to another page (HOME, ABOUT, SHOP).
-
 export interface HyperlinkProps {
   message: string;
   link: string;
-  className?: string;
+  variant?: string;
 }
 
-function Hyperlink({ message, link, className = "" }: HyperlinkProps) {
+function Hyperlink({ message, link, variant = "" }: HyperlinkProps) {
   const isExternal = link.startsWith("http");
 
   return (
     <a
-      className={`hyp ${className}`.trim()}
+      className={`hyp ${variant}`.trim()}
       href={link}
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}

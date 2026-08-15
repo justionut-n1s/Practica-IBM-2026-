@@ -1,3 +1,33 @@
+.product-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* width: 47.5rem; */
+  width: 78%;
+}
+
+.product-grid-container__title {
+  display: flex;
+  text-align: left;
+  padding: 1rem 0rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-grid-container__nav {
+  display: flex;
+  gap: 0.875rem;
+  justify-content: space-between;
+}
+
+.product-grid-container__grid {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
 .product-grid {
   display: flex;
   gap: 1.5rem;

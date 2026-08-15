@@ -1,7 +1,5 @@
 import "./Image.css";
 
-// Displays an image. Props: src, alt, width, height, rounded (true/false for rounded corners)
-
 export interface ImageProps {
   src: string;
   alt: string;

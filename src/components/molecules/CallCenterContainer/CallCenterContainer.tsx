@@ -1,34 +1,38 @@
-import React from 'react'
-import './CallCenterContainer.css'
+import React from "react";
+import { Text, Icon } from "../../atoms/index";
+import "./CallCenterContainer.css";
 
 export interface CallCenterContainerProps {
-
-    className1: string;
-    className2: string;
-    iconClassName? : string;
-    primaryTextClassName: string;
-    primaryTextContent: string;
-    secondaryTextClassName: string;
-    secondaryTextContent: string;
-
+  // className1: string;
+  // className2: string;
+  iconSrc: string;
+  primaryTextContent: string;
+  secondaryTextContent: string;
 }
 
-const CallCenterContainer: React.FC<CallCenterContainerProps> = ({className1, className2, 
-    primaryTextClassName, primaryTextContent, 
-    secondaryTextClassName, secondaryTextContent}) => {
+const CallCenterContainer: React.FC<CallCenterContainerProps> = ({
+  iconSrc,
+  primaryTextContent,
+  secondaryTextContent,
+}) => {
+  return (
+    <div className="call-center-container">
+      <Icon
+        src={iconSrc}
+        alt="Icon"
+        size={30}
+        className="icon icon--gray"
+      ></Icon>
+      <div className="call-center-container call-center-container--text-container">
+        <Text variant="header3-support-center-number">
+          {primaryTextContent}
+        </Text>
+        <Text variant="header3-support-center-text">
+          {secondaryTextContent}
+        </Text>
+      </div>
+    </div>
+  );
+};
 
-    return (
-
-        <div className={className1}>
-            <p className={primaryTextClassName}>{primaryTextContent}</p>
-            <div className={className2}>
-                <p className={primaryTextClassName}>{primaryTextContent}</p>
-                <p className={secondaryTextClassName}>{secondaryTextContent}</p>
-            </div>
-        </div>
-
-    );
-
-}
-
-export default CallCenterContainer
+export default CallCenterContainer;

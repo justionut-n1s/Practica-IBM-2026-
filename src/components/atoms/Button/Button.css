@@ -1,46 +1,85 @@
-.button{
-    width: auto;
-    padding: 0rem 1.25rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-family: "Quicksand", sans-serif;
-    font-size: var(--font-size-base, 1rem);
-    font-weight: 700;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    transition-duration: 0.5s;
-    cursor: pointer;
+.button {
+  width: auto;
+  padding: 0rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: var(--font-size-base, 1rem);
+  font-weight: 700;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transition-duration: 0.1s;
+  cursor: pointer;
 }
 
-.button--subscribe-button{
-    height: 100%;
-    width: 8rem;
-    border-radius: 3rem;
-    box-sizing: border-box;
+.button--subscribe-button {
+  height: 100%;
+  width: 30%;
+  font-size: var(--font-size-sm);
+  border-radius: 3rem;
+  box-sizing: border-box;
 }
 
-.button--subscribe-button:hover, .button--add-button:hover, 
-.button--shop-now-button:hover, .button--filter-button:hover{
-    background-color: var(--color-primary-dark);
-    color: var(--color-white);
+.button--subscribe-button:hover,
+.button--add-button:hover,
+.button--shop-now-button:hover,
+.button--filter-button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
 }
 
-.button--add-button{
-    height: 2.25rem;
-    font-family: "Lato", sans-serif;
-    font-size: var(--font-size-sm);
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
+.button--add-button:hover img {
+  filter: invert(99%) sepia(82%) saturate(2%) hue-rotate(1deg) brightness(106%)
+    contrast(101%);
 }
 
-.button--shop-now-button{
-    height: 2rem; 
-    padding: 0rem 0.625rem;
-    font-size: var(--font-size-xs);
+.button--add-button {
+  height: 2.25rem;
+  padding: 0rem 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-xs);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  box-sizing: border-box;
 }
 
-.button--filter-button{
-    height: 2.5rem;
-    font-size: var(--font-size-xs);
+.button--shop-now-button {
+  position: relative;
+  height: 1.5rem;
+  width: fit-content;
+  padding: 0rem 0.625rem;
+  font-size: var(--font-size-xs);
 }
 
+.button--filter-button {
+  height: 2.5rem;
+  font-size: var(--font-size-xs);
+}
+
+.button--arrow-button-left,
+.button--arrow-button-right {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0rem 0.5rem;
+  background-color: #f2f3f4;
+  place-items: center;
+}
+
+.button--arrow-button-left {
+  transform: rotate(90deg);
+}
+
+.button--arrow-button-right {
+  transform: rotate(-90deg);
+}
+
+.button--arrow-button-left:hover,
+.button--arrow-button-right:hover {
+  background-color: var(--color-text-light);
+}
+
+.button--arrow-button-left:disabled,
+.button--arrow-button-right:disabled {
+  opacity: 50%;
+}

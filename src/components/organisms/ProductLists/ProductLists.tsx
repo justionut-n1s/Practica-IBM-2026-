@@ -20,7 +20,6 @@ interface ProductListsProps {
   columns: ProductColumn[];
 }
 
-// Multi-column product lists (e.g. Top Selling, Trending). Props: columns = array of {title, products}
 function ProductLists({ columns }: ProductListsProps) {
   return (
     <div className="product-lists">

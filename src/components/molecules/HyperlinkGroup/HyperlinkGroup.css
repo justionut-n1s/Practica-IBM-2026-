@@ -1,0 +1,14 @@
+.hyperlink-group {
+  display: flex;
+  height: inherit;
+  width: fit-content;
+  border: none;
+}
+
+.hyperlink-group__item {
+  display: block;
+  height: inherit;
+  padding: 0rem 0.5rem;
+  place-content: center;
+  line-height: 50%;
+}

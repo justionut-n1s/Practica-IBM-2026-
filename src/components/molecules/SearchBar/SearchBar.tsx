@@ -1,25 +1,34 @@
-import React from "react"
-import { Combobox, Input } from '../../atoms'
-import './SearchBar.css'
+import React from "react";
+import { Combobox, Input } from "../../atoms/index";
+import "./SearchBar.css";
 
 interface SearchBarProps {
-
-    name: string;
-    id: string;
-    inputClassName: string;
-    placeholder: string;
-
+  comboboxOptions: string[];
+  inputClassName: string;
+  placeholder: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ name, id, inputClassName, placeholder }) => {
+const SearchBar: React.FC<SearchBarProps> = ({
+  comboboxOptions,
+  inputClassName,
+  placeholder,
+}) => {
+  return (
+    <div className="search-bar">
+      <Combobox
+        name="name"
+        id="id"
+        selectedOptionLabel="All categories"
+        className="combobox-style"
+        optionList={comboboxOptions}
+      ></Combobox>
+      <Input
+        type="text"
+        className={inputClassName}
+        placeholder={placeholder}
+      ></Input>
+    </div>
+  );
+};
 
-    return (
-        <div className="search-bar">
-            <Combobox name={name} id={id}></Combobox>
-            <Input type="text" className={inputClassName} placeholder={placeholder}></Input>
-        </div>
-    );
-
-}
-
-export default SearchBar
+export default SearchBar;

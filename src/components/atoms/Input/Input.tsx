@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes } from "react";
-import "./input.css";
+import "./Input.css";
 
-export type TextInputVariant = "header-input" | "email-input";
+export type TextInputVariant = "header-input" | "email-input" | "icon-input";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   type: "text" | "checkbox" | "range";

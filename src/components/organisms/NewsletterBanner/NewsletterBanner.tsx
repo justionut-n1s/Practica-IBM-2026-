@@ -1,4 +1,5 @@
-import { Heading, Text, Image, Button, Input } from "../../atoms";
+import { Heading, Text, Image, Button, Input } from "../../atoms/index";
+import { Form } from "../../molecules/index";
 import { shopper } from "../../../assets/images";
 import "./NewsletterBanner.css";
 
@@ -7,7 +8,6 @@ interface NewsletterBannerProps {
   subtitle: string;
 }
 
-// Newsletter signup banner with heading, email input, subscribe button and side image
 function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
   return (
     <div className="newsletter-banner">
@@ -18,7 +18,7 @@ function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
           {subtitle}
         </Text>
 
-        <div className="newsletter-banner__form">
+        {/* <div className="newsletter-banner__form">
           <Input
             type="text"
             variant="email-input"
@@ -33,7 +33,12 @@ function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
           >
             Subscribe
           </Button>
-        </div>
+        </div> */}
+        <Form
+          inputClassName="text-input text-input--email-input"
+          placeholder="Your email address"
+          buttonText="Subscribe"
+        ></Form>
       </div>
 
       <div className="newsletter-banner__image">

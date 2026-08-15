@@ -1,25 +1,23 @@
 import React, { useState, SubmitEvent } from "react";
-import { Input, Button } from "../../atoms";
+import { Input, Button } from "../../atoms/index";
 import "./Form.css";
 
 export type FormVariant = "checkbox-form" | "subscribe-form";
 
 export interface FormProps {
   variant?: FormVariant;
-  className: string;
+  // className: string;
   inputClassName: string;
   placeholder: string;
-  buttonClassName: string;
+  // buttonClassName: string;
   buttonText: string;
   onFormSubmit?: (inputValue: string) => void;
 }
 
 const Form: React.FC<FormProps> = ({
   variant,
-  className = "",
   inputClassName,
   placeholder,
-  buttonClassName,
   buttonText,
 }) => {
   const [value, setValue] = useState("");
@@ -33,13 +31,13 @@ const Form: React.FC<FormProps> = ({
   // }
 
   return (
-    <form className={className}>
+    <form className="subscribe-form">
       <Input
         type="text"
         className={inputClassName}
         placeholder={placeholder}
       ></Input>
-      <Button className={buttonClassName}>{buttonText}</Button>
+      <Button variant="subscribe-button">{buttonText}</Button>
     </form>
   );
 };

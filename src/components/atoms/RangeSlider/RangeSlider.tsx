@@ -7,8 +7,6 @@ interface RangeSliderProps {
   initialValue?: number;
 }
 
-// Numeric value slider (e.g. max price). Props: min, max, initialValue (optional)
-
 function RangeSlider({ min, max, initialValue }: RangeSliderProps) {
   const [value, setValue] = useState(initialValue ?? min);
 

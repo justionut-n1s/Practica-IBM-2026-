@@ -1,3 +1,25 @@
-.ico {
+.icon {
   display: block;
+  height: inherit;
+  place-content: center;
+}
+
+.icon--black {
+  filter: invert(18%) sepia(54%) saturate(444%) hue-rotate(162deg)
+    brightness(98%) contrast(90%);
+}
+
+.icon--gray {
+  filter: invert(51%) sepia(33%) saturate(0%) hue-rotate(259deg) brightness(90%)
+    contrast(87%);
+}
+
+.icon--green {
+  filter: invert(70%) sepia(15%) saturate(1709%) hue-rotate(100deg)
+    brightness(86%) contrast(80%);
+}
+
+.icon--white {
+  filter: invert(99%) sepia(82%) saturate(2%) hue-rotate(1deg) brightness(106%)
+    contrast(101%);
 }

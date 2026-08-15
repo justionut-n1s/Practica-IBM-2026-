@@ -1,24 +1,39 @@
 import "./NavItem.css";
 import { Icon, Hyperlink } from "../../atoms";
-import { arrowIcon } from "../../../assets/icons";
+import { Chevron } from "../../../assets/icons";
 
-// Dropdown menu. Props: label = main text, options = list of options shown on click
-
-interface NavItemProps {
+export interface NavItemProps {
   iconSrc?: string;
+  iconClassName?: string;
+  size?: number;
   textItem: string;
+  hyperlinkVariant?: string;
   link: string;
   is_arrow?: boolean;
 }
 
-function NavItem({ iconSrc, textItem, link, is_arrow }: NavItemProps) {
+function NavItem({
+  iconSrc,
+  iconClassName,
+  size,
+  textItem,
+  hyperlinkVariant,
+  link,
+  is_arrow,
+}: NavItemProps) {
   return (
     <div className="nav-item">
-      {iconSrc && <Icon src={iconSrc} alt="Icon" size={20} />}
-      <Hyperlink message={textItem} link={link}></Hyperlink>
+      {iconSrc && (
+        <Icon src={iconSrc} className={iconClassName} alt="Icon" size={size} />
+      )}
+      <Hyperlink
+        message={textItem}
+        variant={hyperlinkVariant}
+        link={link}
+      ></Hyperlink>
       {is_arrow && (
         <span className="nav-item__arrow">
-          <Icon src={arrowIcon} alt="Icon" size={8} />
+          <Icon src={Chevron} alt="Icon" size={8} />
         </span>
       )}
     </div>

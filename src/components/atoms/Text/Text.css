@@ -1,99 +1,150 @@
-.text{
-    font-family: "Quicksand", sans-serif;
-    padding: 0;
-    margin: 0;
+.text {
+  font-family: "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.text--header1{
-    font-family: "Lato", sans-serif;
-    font-size: 0.813rem;
-    font-weight: 600;
-    color: var(--color-text);
+.text--header-upper-section {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  color: var(--color-text);
 }
 
-.text--header1--span, .text--header2-input-and-dropdown--span{
-    color: var(--color-primary);
+.text--header-upper-section--span,
+.text--header2-input-and-dropdown--span {
+  color: var(--color-primary);
+}
+.text--header-upper-section--span {
+  font-weight: 600;
 }
 
-.text--header2-input-and-dropdown, .text--input-group, .text--checkbox-form-title{
-    font-size: var(--font-size-sm);
-    font-weight: 400;
-    color: var(--color-text-dark);
+.text--header2-input-and-dropdown,
+.text--input-group,
+.text--checkbox-form-title {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text-dark);
 }
 
-.text--header2-input-and-dropdown--span{
-    font-weight: bold;
+.text--header2-input-and-dropdown--span {
+  font-weight: bold;
 }
 
-.text--header3-support-center-number{
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    color: var(--color-primary);
+.text--header3-support-center-number {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
-.text--header3-support-center-text{
-    font-size: var(--font-size-xs);
-    font-weight: 500;
-    color: var(--color-text);
+.text--header3-support-center-text {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: var(--color-text);
 }
 
-.text--title{
-    font-weight: 700;
-    color: var(--color-text-dark);
+.text--title,
+.text--banner-text,
+.text--category-card-text {
+  font-weight: 700;
+  color: var(--color-text-dark);
 }
 
-.text--title--primary-title{
-    font-size: var(--font-size-xl);
+.text--banner-text {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 1.25rem;
 }
 
-.text--title--secondary-title{
-    font-size: var(--font-size-lg);
+.text--category-card-text {
+  font-size: var(--font-size-base);
+  line-height: 1.25rem;
 }
 
-.text--title--hero-title{
-    font-size: var(--font-size-hero);
+.text--title--primary-title {
+  font-size: var(--font-size-xl);
 }
 
-.text--title--newsletter-title{
-    font-size: var(--font-size-2xl);
+.text--title--secondary-title {
+  font-size: var(--font-size-lg);
 }
 
-.text--footer-text{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 0.938rem;
-    color: var(--color-text-dark);
+.text--title--hero-title {
+  font-size: var(--font-size-hero);
+  height: fit-content;
+  line-height: 100%;
 }
 
-.text--footer-text--span{
-    font-weight: 600;
+.text--title--hero-subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--color-text);
 }
 
-.text--input-group{
-    font-family: "Lato", sans-serif;
-    
+.text--title--newsletter-title {
+  font-size: var(--font-size-2xl);
 }
 
-.text--badge-text{
-    font-family: "Lato", sans-serif;
-    font-size: var(--font-size-xs);
-    font-weight: 400;
+.text--footer-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-dark);
 }
 
-.text--checkbox-form-title{
-    font-family: "Lato", sans-serif;
-    font-weight: 900;
+.text--footer-text--copyright-text {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
 }
 
-.text--countdown-text{
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--color-primary);
+.text--footer-text--span {
+  font-weight: 600;
 }
 
-.text--countdown-timeunit{
-    font-family: "Lato", sans-serif;
-    font-size: var(--font-size-sm, 0.875rem);
-    font-weight: 400;
-    color: var(--color-text);
+.text--input-group {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-dark);
+}
+
+.text--badge-text,
+.text--category-text,
+.text--left-category-card-text {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+}
+
+.text--left-category-card-text {
+  color: var(--color-text-dark);
+}
+
+.text--checkbox-form-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+.text--countdown-text {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.text--countdown-timeunit,
+.text--provider-text {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.text--countdown-timeunit {
+  font-size: var(--font-size-xs);
+}
+
+.text--provider-text--span {
+  font-weight: 600;
+  color: var(--color-primary);
 }

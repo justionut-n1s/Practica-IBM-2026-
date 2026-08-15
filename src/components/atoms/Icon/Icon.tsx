@@ -1,11 +1,9 @@
 import "./Icon.css";
 
-// Displays a small icon. Props: src, alt, size (width = height, e.g. size={40})
-
 export interface IconProps {
   src: string;
   alt: string;
-  size: number;
+  size: number | undefined;
   className?: string;
 }
 
@@ -16,7 +14,7 @@ function Icon({ src, alt, size, className = "" }: IconProps) {
       alt={alt}
       width={size}
       height={size}
-      className={`ico ${className}`.trim()}
+      className={`icon ${className}`.trim()}
     />
   );
 }

@@ -1,24 +1,32 @@
-import React from 'react'
-import './Combobox.css'
+import React, { SelectHTMLAttributes } from "react";
+import "./Combobox.css";
 
-interface ComboboxProps {
-
-    name: string;
-    id: string;
-
+export interface ComboboxProps extends SelectHTMLAttributes<HTMLSelectElement> {
+  name: string;
+  id: string;
+  className: string | undefined;
+  selectedOptionLabel: string;
+  optionList: string[];
 }
 
-const Combobox: React.FC<ComboboxProps> = ({ name, id }) => {
+const Combobox: React.FC<ComboboxProps> = ({
+  name,
+  id,
+  className,
+  selectedOptionLabel,
+  optionList,
+  ...otherProps
+}) => {
+  return (
+    <select name={name} id={id} className={className}>
+      <option className="combobox-style-option" value="" selected>
+        {selectedOptionLabel}
+      </option>
+      {optionList.map((row, index) => (
+        <option className="combobox-style-option">{optionList[index]}</option>
+      ))}
+    </select>
+  );
+};
 
-    return (
-        <select name={name} id={id} className='combobox-style'>
-            <option value="" selected>All categories</option>
-            <option value="value1">Value 1</option>
-            <option value="value2">Value 2</option>
-            <option value="value3">Value 3</option>
-        </select>
-    );
-
-}
-
-export default Combobox
+export default Combobox;
