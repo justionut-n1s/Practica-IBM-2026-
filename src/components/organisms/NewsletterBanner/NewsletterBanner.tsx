@@ -1,7 +1,7 @@
 import { Heading, Text, Image, Button, Input } from "../../atoms/index";
 import { Form } from "../../molecules/index";
 import { shopper } from "../../../assets/images";
-import "./NewsletterBanner.css";
+import "./Newsletter.css";
 
 interface NewsletterBannerProps {
   title: string;

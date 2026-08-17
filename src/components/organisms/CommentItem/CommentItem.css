@@ -1,0 +1,17 @@
+.comment-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 0.0625rem solid var(--color-border);
+}
+
+.comment-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.comment-item__date {
+  color: var(--color-text-light);
+  font-size: var(--font-size-xs);
+}

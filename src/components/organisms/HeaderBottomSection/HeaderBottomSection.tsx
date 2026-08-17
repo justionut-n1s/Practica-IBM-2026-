@@ -8,10 +8,12 @@ import {
   CallCenterContainer,
 } from "../../molecules/index";
 import { Headset, Blaze, Browse } from "../../../assets/icons/index";
+import { Page } from "../../../types";
 import "./HeaderBottomSection.css";
 
 interface NavItemConfig extends NavItemProps {
   type: "navitem";
+  page?: Page;
 }
 
 interface DropdownConfig extends DropdownProps {
@@ -22,11 +24,20 @@ type NavGroupConfig = NavItemConfig | DropdownConfig;
 
 const navItems: NavGroupConfig[] = [
   {
-    type: "dropdown",
-    label: "Home",
-    labelVariant: "hyp--span",
-    chevronVariant: "green",
-    options: ["option1", "option2", "option3"],
+    type: "navitem",
+    textItem: "Home",
+    hyperlinkVariant: "hyp",
+    link: "",
+    is_arrow: false,
+    page: "home",
+  },
+  {
+    type: "navitem",
+    textItem: "Shop",
+    hyperlinkVariant: "hyp",
+    link: "",
+    is_arrow: false,
+    page: "shop",
   },
   {
     type: "navitem",
@@ -34,11 +45,15 @@ const navItems: NavGroupConfig[] = [
     hyperlinkVariant: "hyp",
     link: "",
     is_arrow: false,
+    page: "about",
   },
   {
-    type: "dropdown",
-    label: "Shop",
-    options: ["option1", "option2", "option3"],
+    type: "navitem",
+    textItem: "Contact",
+    hyperlinkVariant: "hyp",
+    link: "",
+    is_arrow: false,
+    page: "contact",
   },
   {
     type: "dropdown",
@@ -55,28 +70,18 @@ const navItems: NavGroupConfig[] = [
     label: "Blog",
     options: ["option1", "option2", "option3"],
   },
-  {
-    type: "dropdown",
-    label: "Pages",
-    options: ["option1", "option2", "option3"],
-  },
-  {
-    type: "navitem",
-    textItem: "Contact",
-    hyperlinkVariant: "hyp",
-    link: "",
-    is_arrow: false,
-  },
 ];
 
 const optionList1: string[] = ["value1", "value2", "value3", "value4"];
 
 interface HeaderBottomSectionProps {
   optionList?: string[];
+  onNavigate: (page: Page) => void;
 }
 
 const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
   optionList,
+  onNavigate,
 }) => {
   return (
     <div className="header-bottom-section-style">
@@ -103,6 +108,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
           if (item.type === "navitem") {
             return (
               <NavItem
+                key={item.textItem}
                 iconSrc={item.iconSrc}
                 iconClassName={item.iconClassName}
                 size={item.size}
@@ -110,11 +116,20 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
                 hyperlinkVariant={item.hyperlinkVariant}
                 link={item.link}
                 is_arrow={item.is_arrow}
+                onClick={
+                  item.page
+                    ? (e) => {
+                        e.preventDefault();
+                        onNavigate(item.page!);
+                      }
+                    : undefined
+                }
               ></NavItem>
             );
           } else if (item.type === "dropdown") {
             return (
               <Dropdown
+                key={item.label}
                 label={item.label}
                 labelVariant={item.labelVariant}
                 chevronVariant={item.chevronVariant}

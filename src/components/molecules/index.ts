@@ -22,3 +22,7 @@ export {
   type HeaderComboboxSectionItem,
 } from "./HeaderComboboxSection/HeaderComboboxSection";
 export { default as IconCombobox } from "./IconCombobox/IconCombobox";
+export {
+  default as Breadcrumb,
+  type BreadcrumbTrailItem,
+} from "./Breadcrumb/Breadcrumb";

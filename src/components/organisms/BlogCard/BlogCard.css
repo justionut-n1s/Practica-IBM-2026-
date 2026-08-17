@@ -1,0 +1,16 @@
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blog-card__category {
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+}
+
+.blog-card__date {
+  color: var(--color-text-light);
+  font-size: var(--font-size-xs);
+}

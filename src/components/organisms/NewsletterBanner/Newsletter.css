@@ -1,0 +1,33 @@
+.newsletter-banner {
+  background-color: var(--color-primary-light);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem 0 3rem;
+  min-height: 16rem;
+}
+
+.newsletter-banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding-bottom: 2.5rem;
+  max-width: 62%;
+}
+
+.newsletter-banner__image {
+  align-self: flex-end;
+  flex-shrink: 0;
+  max-height: 20rem;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+
+.newsletter-banner__image img {
+  max-height: 20rem;
+  object-fit: contain;
+}

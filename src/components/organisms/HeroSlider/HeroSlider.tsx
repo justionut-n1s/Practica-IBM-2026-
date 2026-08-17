@@ -16,10 +16,18 @@ const HeroSlider: React.FC<HeroSliderProps> = ({
   subtitle,
   placeholder,
   buttonLabel,
+  backgroundImg,
 }) => {
   return (
     <div className="hero-slider">
-      <div className="hero-slider__slide">
+      <div
+        className="hero-slider__slide"
+        style={
+          backgroundImg
+            ? { backgroundImage: `url(${backgroundImg})` }
+            : undefined
+        }
+      >
         <div className="hero-slider__content">
           <Text variant="title text--title--hero-title">{title}</Text>
           <Text variant="title text--title--hero-subtitle">{subtitle}</Text>

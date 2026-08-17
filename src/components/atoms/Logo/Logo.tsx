@@ -1,5 +1,5 @@
 import React from "react";
-import { NestLogo } from "../../../assets/images/index";
+import { logo as NestLogo } from "../../../assets/images/index";
 import "./Logo.css";
 
 interface LogoProps {
