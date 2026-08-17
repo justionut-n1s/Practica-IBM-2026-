@@ -6,7 +6,10 @@ export {
   type OptionsGroupItem,
 } from "./OptionsGroup/OptionsGroup";
 export { default as HeaderMidSection } from "./HeaderMidSection/HeaderMidSection";
-export { default as HeaderBottomSection } from "./HeaderBottomSection/HeaderBottomSection";
+export {
+  default as HeaderBottomSection,
+  type NavGroupConfig,
+} from "./HeaderBottomSection/HeaderBottomSection";
 export {
   default as HeroSlider,
   type HeroSliderProps,

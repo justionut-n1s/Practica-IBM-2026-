@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CountdownItem } from "../../molecules/index";
+import { translations } from "../../../translations/translations";
 import "./CountdownSection.css";
 
 export interface TimeLeft {
@@ -30,6 +31,7 @@ const CountdownSection: React.FC<CountdownSectionProps> = ({ targetDate }) => {
       ? targetDate
       : new Date(targetDate).getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => getTimeLeft(target));
+  const translation = translations.en.countdownSection;
 
   useEffect(() => {
     const tick = () => setTimeLeft(getTimeLeft(target));
@@ -47,19 +49,19 @@ const CountdownSection: React.FC<CountdownSectionProps> = ({ targetDate }) => {
     <div className="countdown-section-style">
       <CountdownItem
         numericValue={timeLeft.days}
-        timeUnit="Days"
+        timeUnit={translation.days}
       ></CountdownItem>
       <CountdownItem
         numericValue={pad(timeLeft.hours)}
-        timeUnit="Hours"
+        timeUnit={translation.hours}
       ></CountdownItem>
       <CountdownItem
         numericValue={pad(timeLeft.minutes)}
-        timeUnit="Min"
+        timeUnit={translation.minutes}
       ></CountdownItem>
       <CountdownItem
         numericValue={pad(timeLeft.seconds)}
-        timeUnit="Sec"
+        timeUnit={translation.seconds}
       ></CountdownItem>
     </div>
   );

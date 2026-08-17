@@ -103,23 +103,6 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slideList, intervalMs }) => {
       </div>
     </div>
   );
-
-  {
-    /*    <div className="hero-slider__content">
-           <Text variant="title text--title--hero-title">{title}</Text>
-           <Text variant="title text--title--hero-subtitle">{subtitle}</Text>
-           <Form
-             inputClassName="text-input text-input--email-input"
-             placeholder={placeholder}
-             buttonText={buttonLabel}
-           ></Form>
-         </div>
-       </div>
-       <div className="hero-slider__pagination">
-         <div className="hero-slider__dot hero-slider__dot--active"></div>
-         <div className="hero-slider__dot"></div>
-       </div> */
-  }
 };
 
 export default HeroSlider;

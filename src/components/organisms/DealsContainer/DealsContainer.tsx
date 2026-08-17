@@ -12,6 +12,7 @@ import {
 } from "../../atoms/index";
 import { CountdownSection } from "../index";
 import { Cart } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./DealsContainer.css";
 
 export interface DealsContainerItem {
@@ -37,10 +38,12 @@ export interface DealsContainerProps {
 }
 
 const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
+  const translation = translations.en.dealsContainer;
+
   return (
     <div className="deals-container">
       <div className="deals-container__title">
-        <Heading lvl={3}>Deals Of The Day</Heading>
+        <Heading lvl={3}>{translation.title}</Heading>
       </div>
       <div className="deals-container__card-container">
         {productList.map(
@@ -70,7 +73,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
                 />
                 <StarRating rating={rating} />
                 <Text variant="provider-text">
-                  By
+                  {translation.by}
                   <Text
                     type="span"
                     variant="provider-text text--provider-text--span"
@@ -88,7 +91,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
                         alt="shopping cart"
                         size={13}
                       />
-                      Add
+                      {translation.add}
                     </span>
                   </Button>
                 </div>

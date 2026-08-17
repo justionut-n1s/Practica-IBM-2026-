@@ -4,7 +4,7 @@ import "./CountdownItem.css";
 
 interface CountdownItemProps {
   numericValue: string | number;
-  timeUnit: "Sec" | "Min" | "Hours" | "Days";
+  timeUnit: string;
 }
 
 const CountdownItem: React.FC<CountdownItemProps> = ({

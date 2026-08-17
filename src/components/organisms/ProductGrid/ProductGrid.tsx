@@ -1,6 +1,7 @@
 import React from "react";
 import { Heading, Hyperlink, HyperlinkProps } from "../../atoms/index";
 import { ProductCard, ProductCardProps } from "../../molecules/index";
+import { translations } from "../../../translations/translations";
 import "./ProductGrid.css";
 
 interface HyperlinkItem extends HyperlinkProps {
@@ -26,10 +27,11 @@ const hyperlinkConfig: HyperlinkItem[] = [
 ];
 
 const ProductGrid: React.FC<ProductGridProps> = ({ productCardList }) => {
+  const translation = translations.en.productGrid;
   return (
     <div className="product-grid-container">
       <div className="product-grid-container__title">
-        <Heading lvl={3}>Popular Products</Heading>
+        <Heading lvl={3}>{translation.title}</Heading>
         <nav className="product-grid-container__nav">
           {hyperlinkConfig.map(({ key, ...otherProps }) => (
             <Hyperlink

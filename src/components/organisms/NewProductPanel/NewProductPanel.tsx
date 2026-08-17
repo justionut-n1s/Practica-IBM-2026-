@@ -1,6 +1,7 @@
 import React from "react";
 import { Heading, Card } from "../../atoms/index";
 import { ProductRow } from "../../molecules/index";
+import { translations } from "../../../translations/translations";
 import "./NewProductPanel.css";
 
 interface NewProductPanelItem {
@@ -19,10 +20,11 @@ interface NewProductPanelProps {
 const NewProductPanel: React.FC<NewProductPanelProps> = ({
   productRowList,
 }) => {
+  const translation = translations.en.newProductsPanel;
   return (
     <Card className="new-product-panel">
       <div className="new-product-panel__title">
-        <Heading lvl={4}>New Products</Heading>
+        <Heading lvl={4}>{translation.title}</Heading>
       </div>
       <div className="new-product-panel__card-container">
         {productRowList.map(({ id, ...otherProps }) => (

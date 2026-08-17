@@ -9,6 +9,7 @@ import {
   Icon,
 } from "../../atoms/index";
 import { Chevron } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./CategoryCarousel.css";
 
 export interface CategoryCarouselItem {
@@ -31,6 +32,7 @@ const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
   const [index, setIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [cardWidth, setCardWidth] = useState(0);
+  const translation = translations.en.categoryCarousel;
 
   useEffect(() => {
     const update = () => {
@@ -56,7 +58,7 @@ const CategoryCarousel: React.FC<CategoryCarouselProps> = ({
     <div className="category-carousel">
       <div className="category-carousel__title-container">
         <div className="category-carousel__title-container__text-container">
-          <Heading lvl={3}>Shop by Categories</Heading>
+          <Heading lvl={3}>{translation.title}</Heading>
           <Hyperlink
             variant="hyp--category-carousel"
             message="All Categories"

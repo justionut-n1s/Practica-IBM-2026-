@@ -27,7 +27,7 @@ function TeamMemberCard({
 
       <Heading lvl={4}>{name}</Heading>
 
-      <Text variant="header2-button" type="p">
+      <Text variant="header-upper-section" type="p">
         {role}
       </Text>
 

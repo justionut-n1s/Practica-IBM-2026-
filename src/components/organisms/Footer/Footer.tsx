@@ -2,6 +2,7 @@ import { Heading, Text, Image, Hyperlink, Icon, Logo } from "../../atoms/index";
 import { CallCenterContainer } from "../../molecules/index";
 import { googlePlay, appStore, payment } from "../../../assets/images";
 import { Phone } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./Footer.css";
 
 interface FooterAboutColumn {
@@ -58,6 +59,7 @@ function Footer({
   supportContacts,
   copyrightText,
 }: FooterProps) {
+  const translation = translations.en.footer;
   return (
     <footer className="footer">
       <div className="footer__top">
@@ -79,7 +81,6 @@ function Footer({
             ))}
           </ul>
         </div>
-
         {columns.map((column) => (
           <FooterColumnLocal
             key={column.title}
@@ -87,12 +88,11 @@ function Footer({
             links={column.links}
           />
         ))}
-
         <div className="footer__install">
-          <Heading lvl={4}>Install App</Heading>
+          <Heading lvl={4}>{translation.appColumnTitle}</Heading>
 
           <Text variant="footer-text" type="p">
-            From App Store or Google Play
+            {translation.appStoreText}
           </Text>
 
           <div className="footer__app-buttons">
@@ -102,7 +102,7 @@ function Footer({
           </div>
 
           <Text variant="footer-text" type="p">
-            Secured Payment Gateways
+            {translation.securedPaymentText}
           </Text>
 
           <Image src={payment} alt="Payment methods" width={140} height={25} />
@@ -164,7 +164,7 @@ function Footer({
           </div>
 
           <Text variant="footer-text" type="p">
-            Up to 15% discount on your first subscribe
+            {translation.footerMessage}
           </Text>
         </div>
       </div>

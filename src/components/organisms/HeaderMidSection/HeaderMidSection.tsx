@@ -3,6 +3,7 @@ import { Logo, Option } from "../../atoms/index";
 import { SearchBar, IconCombobox } from "../../molecules/index";
 import { OptionsGroup, OptionsGroupItem } from "../index";
 import { Location } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./HeaderMidSection.css";
 
 interface HeaderMidSectionProps {
@@ -16,19 +17,20 @@ const HeaderMidSection: React.FC<HeaderMidSectionProps> = ({
   locationList,
   hyperlinkOptions,
 }) => {
+  const translation = translations.en.headerMidSection;
   return (
     <div className="header-mid-section-style">
       <Logo logoHeight={45} logoWidth={147}></Logo>
       <SearchBar
         comboboxOptions={categoryList}
-        placeholder="Search for items..."
+        placeholder={translation.placeholder}
         inputClassName="text-input text-input--header-input"
       ></SearchBar>
       <IconCombobox
         options={locationList}
         iconSrc={Location}
         size={16}
-        label="Your Location"
+        label={translation.comboboxLabel}
         iconVariant="icon--gray"
       ></IconCombobox>
       <OptionsGroup optionsList={hyperlinkOptions}></OptionsGroup>
