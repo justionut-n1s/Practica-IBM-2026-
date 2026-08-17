@@ -50,5 +50,7 @@ export { default as snackMix } from "./snack-mix.png";
 export { default as stews } from "./stews.png";
 export { default as veggiePops } from "./veggie-pops.png";
 export { default as iceCream } from "./ice-cream.png";
-export { default as Vegetable } from "./Vegetable.png";
 export { default as SliderImg1 } from "./SliderImg1.png";
+export { default as Vegetables } from "./Vegetables.png";
+export { default as BreadAndJuice } from "./BreadAndJuice.png";
+export { default as GroceryBag } from "./GroceryBag.png";

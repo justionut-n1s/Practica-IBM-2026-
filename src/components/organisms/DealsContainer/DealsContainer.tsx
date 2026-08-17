@@ -17,7 +17,7 @@ import "./DealsContainer.css";
 export interface DealsContainerItem {
   id: number;
   imageSrc: string;
-  numericValue: number;
+  targetDate: Date | string | number;
   name: string;
   link: string;
   provider: string;
@@ -47,7 +47,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
           ({
             id,
             imageSrc,
-            numericValue,
+            targetDate,
             name,
             link,
             provider,
@@ -61,7 +61,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
                 alt="Image"
                 className="deals-container__image"
               ></Image>
-              <CountdownSection numericValue={numericValue}></CountdownSection>
+              <CountdownSection targetDate={targetDate}></CountdownSection>
               <Card className="deals-container__card-content" variant="shadow">
                 <Hyperlink
                   message={name}

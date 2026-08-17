@@ -26,7 +26,7 @@ const navItems: NavGroupConfig[] = [
     label: "Home",
     labelVariant: "hyp--span",
     chevronVariant: "green",
-    options: ["option1", "option2", "option3"],
+    options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
   },
   {
     type: "navitem",
@@ -38,27 +38,31 @@ const navItems: NavGroupConfig[] = [
   {
     type: "dropdown",
     label: "Shop",
-    options: ["option1", "option2", "option3"],
+    options: ["Snacks", "Fruits", "Vegetables"],
   },
   {
     type: "dropdown",
     label: "Vendors",
-    options: ["option1", "option2", "option3"],
+    options: ["NestFood", "Hodo Foods", "Old El Paso"],
   },
   {
     type: "dropdown",
     label: "Mega menu",
-    options: ["option1", "option2", "option3"],
+    options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
   },
   {
     type: "dropdown",
     label: "Blog",
-    options: ["option1", "option2", "option3"],
+    options: [
+      "Best Recipes in 2026",
+      "Best Juices in 2026",
+      "Best Wines in 2026",
+    ],
   },
   {
     type: "dropdown",
     label: "Pages",
-    options: ["option1", "option2", "option3"],
+    options: ["About", "Shop", "Contact"],
   },
   {
     type: "navitem",
@@ -69,7 +73,13 @@ const navItems: NavGroupConfig[] = [
   },
 ];
 
-const optionList1: string[] = ["value1", "value2", "value3", "value4"];
+const optionList1 = [
+  { id: 1, label: "Milk & Dairy" },
+  { id: 2, label: "Fruits & Vegetables" },
+  { id: 3, label: "Baking Material" },
+  { id: 4, label: "Bread & Juice" },
+  { id: 5, label: "Snacks" },
+];
 
 interface HeaderBottomSectionProps {
   optionList?: string[];

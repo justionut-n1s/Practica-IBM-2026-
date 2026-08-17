@@ -17,7 +17,11 @@ export { default as RangeSlider } from "./RangeSlider/RangeSlider";
 export { default as Chip } from "./Chip/Chip";
 export { default as Button } from "./Button/Button";
 export { default as ListItem } from "./ListItem/ListItem";
-export { default as Combobox, type ComboboxProps } from "./Combobox/Combobox";
+export {
+  default as Combobox,
+  type ComboboxProps,
+  type Option,
+} from "./Combobox/Combobox";
 export { default as Logo } from "./Logo/Logo";
 export { default as Text } from "./Text/Text";
 export { default as Input } from "./Input/Input";

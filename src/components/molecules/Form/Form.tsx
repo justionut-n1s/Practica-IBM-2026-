@@ -11,7 +11,7 @@ export interface FormProps {
   placeholder: string;
   // buttonClassName: string;
   buttonText: string;
-  onFormSubmit?: (inputValue: string) => void;
+  onFormSubmit?: (value: string) => void;
 }
 
 const Form: React.FC<FormProps> = ({
@@ -19,25 +19,31 @@ const Form: React.FC<FormProps> = ({
   inputClassName,
   placeholder,
   buttonText,
+  onFormSubmit,
 }) => {
   const [value, setValue] = useState("");
 
-  // const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
-  //     event.preventDefault();
-  //     if(!value.trim()){
-  //         return;
-  //     }
-  //     onFormSubmit(value);
-  // }
+  const handleSubmit = (e: React.SubmitEvent) => {
+    e.preventDefault();
+    if (!value) return;
+    onFormSubmit?.(value);
+    setValue("");
+  };
 
   return (
-    <form className="subscribe-form">
+    <form className="subscribe-form" onSubmit={handleSubmit}>
       <Input
-        type="text"
+        id="subscribe-form"
+        name="subscribe-form"
+        type="email"
         className={inputClassName}
         placeholder={placeholder}
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
       ></Input>
-      <Button variant="subscribe-button">{buttonText}</Button>
+      <Button type="submit" variant="subscribe-button">
+        {buttonText}
+      </Button>
     </form>
   );
 };

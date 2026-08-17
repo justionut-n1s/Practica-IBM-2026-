@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Icon, Combobox } from "../../atoms/index";
+import React from "react";
+import { Icon, Combobox, Option } from "../../atoms/index";
 import { Chevron } from "../../../assets/icons/index";
 import "./IconCombobox.css";
 
-interface IconComboboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
+interface IconComboboxProps {
   className?: string;
   comboboxClassName?: string;
-  options: string[];
+  options: Option[];
   iconVariant?: string;
   iconSrc?: string;
   size?: number;
@@ -22,9 +22,6 @@ const IconCombobox: React.FC<IconComboboxProps> = ({
   comboboxClassName = "combobox-style combobox-style--location",
   label,
 }) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const toggleDropdown = () => setIsOpen((prev) => !prev);
-
   return (
     <div className={className}>
       {iconSrc && (
@@ -41,13 +38,8 @@ const IconCombobox: React.FC<IconComboboxProps> = ({
         className={comboboxClassName}
         selectedOptionLabel={label}
         optionList={options}
-        onFocus={() => setIsOpen(true)}
-        onBlur={() => setIsOpen(false)}
-        onClick={toggleDropdown}
       ></Combobox>
-      <span
-        className={`icon-combobox-style__chevron ${isOpen ? "icon-combobox-style__chevron--active" : ""}`}
-      >
+      <span className={`icon-combobox-style__chevron`}>
         <Icon
           src={Chevron}
           alt="Chevron"

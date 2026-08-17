@@ -5,7 +5,6 @@
   z-index: 50;
   display: flex;
   height: 3.5rem;
-  /* padding: 0.5rem 0rem; */
   padding: 0.5rem 2rem;
   border-top: 0.063rem solid var(--color-border);
   border-bottom: 0.063rem solid var(--color-border);

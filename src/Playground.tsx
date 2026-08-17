@@ -99,18 +99,31 @@ import {
   shake,
   reishiCoffee,
   orangeCream,
+  SliderImg1,
+  heroBackground,
+  BreadAndJuice,
+  GroceryBag,
+  Vegetables,
 } from "./assets/images/index";
-import { text } from "framer-motion/client";
-
-const optionList = [
-  { value: "Las Vegas, NV" },
-  { value: "Henderson, NV" },
-  { value: "Reno, NV" },
-  { value: "San Francisco, CA" },
-];
 
 function Playground() {
   const [selectedOption, setSelectedOption] = useState<string>("");
+
+  const locationList = [
+    { id: 1, label: "Las Vegas, NV" },
+    { id: 2, label: "Henderson, NV" },
+    { id: 3, label: "San Francisco, CA" },
+    { id: 4, label: "Reno, NV" },
+    { id: 5, label: "Sacramento, CA" },
+  ];
+
+  const allCategoriesList = [
+    { id: 1, label: "Milk & Dairy" },
+    { id: 2, label: "Fruits & Vegetables" },
+    { id: 3, label: "Baking Material" },
+    { id: 4, label: "Bread & Juice" },
+    { id: 5, label: "Snacks" },
+  ];
 
   const hyperlinkList: HyperlinkGroupItem[] = [
     { id: 1, message: "About us", link: "" },
@@ -119,8 +132,17 @@ function Playground() {
     { id: 4, message: "Order Tracking", link: "" },
   ];
 
-  const optionList1: string[] = ["value1", "value2", "value3", "value4"];
-  const optionList2: string[] = ["CAD", "EUR", "CHF"];
+  const optionList1 = [
+    { id: 1, label: "Spanish" },
+    { id: 2, label: "French" },
+    { id: 3, label: "Portuguese" },
+    { id: 4, label: "German" },
+  ];
+  const optionList2 = [
+    { id: 1, label: "CAD" },
+    { id: 2, label: "EUR" },
+    { id: 3, label: "CHF" },
+  ];
 
   const comboboxList: HeaderComboboxSectionItem[] = [
     {
@@ -273,11 +295,17 @@ function Playground() {
     },
   ];
 
+  const future = new Date();
+  future.setDate(future.getDate() + 426);
+  future.setHours(future.getHours() + 8);
+  future.setMinutes(future.getMinutes() + 2);
+  future.setSeconds(future.getSeconds() + 58);
+
   const productList: DealsContainerItem[] = [
     {
       id: 1,
       imageSrc: DealsContainerImg1,
-      numericValue: 555,
+      targetDate: future,
       name: "Seeds of Change Organic Quinoa, Brown",
       link: "",
       rating: 4.0,
@@ -288,7 +316,7 @@ function Playground() {
     {
       id: 2,
       imageSrc: DealsContainerImg2,
-      numericValue: 555,
+      targetDate: future,
       name: "Perdue Simply Smart Organics Gluten",
       link: "",
       rating: 1.4,
@@ -299,7 +327,7 @@ function Playground() {
     {
       id: 3,
       imageSrc: DealsContainerImg3,
-      numericValue: 555,
+      targetDate: future,
       name: "Signature Wood-Fired Mushroom",
       link: "",
       rating: 2.6,
@@ -310,7 +338,7 @@ function Playground() {
     {
       id: 4,
       imageSrc: DealsContainerImg4,
-      numericValue: 555,
+      targetDate: future,
       name: "Simply Lemonade with Raspberry Juice",
       link: "",
       rating: 3.5,
@@ -345,8 +373,11 @@ function Playground() {
     { id: 4, imageSrc: PetFood, cardLabel: "Pet Food & Toys" },
     { id: 5, imageSrc: PackagedFastFood, cardLabel: "Packaged Fast Food" },
     { id: 6, imageSrc: BakingMaterial, cardLabel: "Baking Material" },
-    { id: 7, imageSrc: FruitsAndVegetables, cardLabel: "Fruits & Vegetables" },
+    { id: 7, imageSrc: FruitsAndVegetables, cardLabel: "Fresh Fruits" },
     { id: 8, imageSrc: FreshSeafood, cardLabel: "Fresh Seafood" },
+    { id: 9, imageSrc: BreadAndJuice, cardLabel: "Bread & Juice" },
+    { id: 10, imageSrc: Vegetables, cardLabel: "Vegetables" },
+    { id: 11, imageSrc: GroceryBag, cardLabel: "Other categories" },
   ];
 
   const gridProducts = [
@@ -795,6 +826,25 @@ function Playground() {
     },
   ];
 
+  const slideList = [
+    {
+      id: 1,
+      title: "Don't miss amazing grocery deals",
+      subtitle: "Sign up for the daily newsletter",
+      placeholder: "Your email address",
+      buttonText: "Subscribe",
+      backgroundImg: SliderImg1,
+    },
+    {
+      id: 2,
+      title: "Fresh Vegetables Big discount",
+      subtitle: "Save up to 50% off on your first order",
+      placeholder: "Your email address",
+      buttonText: "Subscribe",
+      backgroundImg: heroBackground,
+    },
+  ];
+
   const sectionStyle = { padding: "0 2rem", boxSizing: "border-box" as const };
 
   return (
@@ -804,8 +854,8 @@ function Playground() {
         comboboxList={comboboxList}
       ></HeaderUpperSection>
       <HeaderMidSection
-        optionList1={optionList1}
-        optionList2={optionList1}
+        categoryList={allCategoriesList}
+        locationList={locationList}
         hyperlinkOptions={options}
       ></HeaderMidSection>
       <HeaderBottomSection></HeaderBottomSection>
@@ -824,13 +874,7 @@ function Playground() {
       <CategoryCarousel cardList={cardList}></CategoryCarousel> */}
       <div style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
         <div style={sectionStyle}>
-          <HeroSlider
-            title="Don't miss amazing
-          grocery deals"
-            subtitle="Sign up for the daily newsletter"
-            placeholder="Your email address"
-            buttonLabel="Subscribe"
-          ></HeroSlider>
+          <HeroSlider slideList={slideList} intervalMs={5000}></HeroSlider>
           <ProductGrid productCardList={productCards}></ProductGrid>
           <DealsContainer productList={productList}></DealsContainer>
           <PromoBanners banners={bannerList}></PromoBanners>
