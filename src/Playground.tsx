@@ -30,7 +30,7 @@ import {
   slideList,
   iconFeaturesList,
   categoryList,
-  checkboxList,
+  filterCheckboxList,
   newProducts,
   productCards,
   listColumns,
@@ -55,19 +55,18 @@ function Playground() {
         locationList={locationList}
         hyperlinkOptions={options}
       ></HeaderMidSection>
-      <HeaderBottomSection
+      {/* <HeaderBottomSection
         optionList={bottomHeaderComboboxList}
         navItemList={navItems}
-      ></HeaderBottomSection>
+      ></HeaderBottomSection> */}
       <div style={{ display: "flex", flexDirection: "column", gap: "3.5rem" }}>
         <div style={sectionStyle}>
           <HeroSlider slideList={slideList} intervalMs={5000}></HeroSlider>
-          <ProductGrid productCardList={productCards}></ProductGrid>
           <DealsContainer productList={productList}></DealsContainer>
           <PromoBanners banners={bannerList}></PromoBanners>
           <CategoryCarousel cardList={cardList}></CategoryCarousel>
           <CategoryPanel cardList={categoryList}></CategoryPanel>
-          <FilterPanel checkboxList={checkboxList}></FilterPanel>
+          <FilterPanel checkboxList={filterCheckboxList}></FilterPanel>
           <NewProductPanel productRowList={newProducts}></NewProductPanel>
         </div>
         {/* <div style={sectionStyle}>

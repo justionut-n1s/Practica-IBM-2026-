@@ -6,6 +6,7 @@ export type ButtonVariant =
   | "add-button"
   | "shop-now-button"
   | "filter-button"
+  | "send-message-button"
   | "arrow-button-left"
   | "arrow-button-right";
 

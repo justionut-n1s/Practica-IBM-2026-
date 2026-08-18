@@ -1,19 +1,24 @@
 import { useState } from "react";
 import { Input, Button, Heading } from "../../atoms";
+import { translations } from "../../../translations/translations";
 import "./ContactForm.css";
 
 interface ContactFormProps {
   title: string;
-  onSubmit?: (data: { name: string; email: string; phone: string; message: string }) => void;
+  onSubmit?: (data: {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  }) => void;
 }
 
-// The Input atom only supports text/checkbox/range, not textarea,
-// so the message field is a plain <textarea> instead of <Input>.
 function ContactForm({ title, onSubmit }: ContactFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const contactFormTranslate = translations.en.contactForm;
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -26,34 +31,33 @@ function ContactForm({ title, onSubmit }: ContactFormProps) {
 
       <Input
         type="text"
-        placeholder="Your Name"
+        placeholder={contactFormTranslate.namePlaceholder}
         value={name}
         onChange={(e) => setName(e.target.value)}
         className="contact-form__input"
       />
       <Input
         type="text"
-        placeholder="Email address"
+        placeholder={contactFormTranslate.emailPlaceholder}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="contact-form__input"
       />
       <Input
         type="text"
-        placeholder="Phone Number"
+        placeholder={contactFormTranslate.phonePlaceholder}
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         className="contact-form__input"
       />
       <textarea
-        placeholder="Your Message"
+        placeholder={contactFormTranslate.textareaPlaceholder}
         rows={5}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         className="contact-form__textarea"
       />
-
-      <Button variant="subscribe-button" className="button button--subscribe-button" type="submit">
+      <Button variant="send-message-button" type="submit">
         Send Message
       </Button>
     </form>

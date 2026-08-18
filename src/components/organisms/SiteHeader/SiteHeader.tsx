@@ -4,6 +4,14 @@ import HeaderBottomSection from "../HeaderBottomSection/HeaderBottomSection";
 import { HyperlinkGroupItem, HeaderComboboxSectionItem } from "../../molecules";
 import { OptionsGroupItem } from "../OptionsGroup/OptionsGroup";
 import { Compare, Heart, Cart, Profile } from "../../../assets/icons";
+import {
+  languageList,
+  locationList,
+  allCategoriesList,
+  currencyList,
+  bottomHeaderComboboxList,
+  navItems,
+} from "../../../mocks/index";
 import { Page } from "../../../types";
 
 const hyperlinkList: HyperlinkGroupItem[] = [
@@ -24,7 +32,7 @@ const comboboxList: HeaderComboboxSectionItem[] = [
     id: "language",
     className: "combobox-style combobox-style--header-upper-section",
     selectedOptionLabel: "English",
-    optionList: languageOptions,
+    optionList: languageList,
   },
   {
     key: 2,
@@ -32,7 +40,7 @@ const comboboxList: HeaderComboboxSectionItem[] = [
     id: "currency",
     className: "combobox-style combobox-style--header-upper-section",
     selectedOptionLabel: "USD",
-    optionList: currencyOptions,
+    optionList: currencyList,
   },
 ];
 
@@ -55,11 +63,15 @@ function SiteHeader({ onNavigate }: SiteHeaderProps) {
         comboboxList={comboboxList}
       />
       <HeaderMidSection
-        optionList1={locationOptions}
-        optionList2={locationOptions}
+        categoryList={allCategoriesList}
+        locationList={locationList}
         hyperlinkOptions={optionsList}
       />
-      <HeaderBottomSection onNavigate={onNavigate} />
+      <HeaderBottomSection
+        optionList={bottomHeaderComboboxList}
+        navItemList={navItems}
+        onNavigate={onNavigate}
+      />
     </>
   );
 }

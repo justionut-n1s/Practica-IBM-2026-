@@ -1,9 +1,9 @@
 import {
-  MilkAndDairy,
-  ClothingAndBeauty,
-  PetFood,
-  BakingMaterial,
-  FruitsAndVegetables,
+  milkAndDairy,
+  clothingAndBeauty,
+  petFood,
+  bakingMaterial,
+  freshFruit,
   nuts,
   organicCoffee,
   orangeCream,
@@ -12,44 +12,48 @@ import {
 export const categoryList = [
   {
     id: 1,
-    imageSrc: MilkAndDairy,
+    imageSrc: milkAndDairy,
     alt: "MilkAndDairy",
     text: "Milk & Dairy",
     itemNumber: 3,
   },
   {
     id: 2,
-    imageSrc: ClothingAndBeauty,
+    imageSrc: clothingAndBeauty,
     alt: "Clothing",
     text: "Clothing",
     itemNumber: 5,
   },
   {
     id: 3,
-    imageSrc: PetFood,
+    imageSrc: petFood,
     alt: "PetFood",
     text: "Pet Food",
     itemNumber: 8,
   },
   {
     id: 4,
-    imageSrc: BakingMaterial,
+    imageSrc: bakingMaterial,
     alt: "BakingMaterial",
     text: "Baking Material",
     itemNumber: 2,
   },
   {
     id: 5,
-    imageSrc: FruitsAndVegetables,
+    imageSrc: freshFruit,
     alt: "Fruits",
     text: "Fruits",
     itemNumber: 6,
   },
 ];
 
-export const checkboxList = [
-  { id: 1, title: "Color", options: ["Red", "Green", "Blue"] },
-  { id: 2, title: "Item Condition", options: ["New", "Refurbished", "Used"] },
+export const filterCheckboxList = [
+  { id: 1, title: "Color", options: ["Red (56)", "Green (78)", "Blue (54)"] },
+  {
+    id: 2,
+    title: "Item Condition",
+    options: ["New (1506)", "Refurbished (27)", "Used (45)"],
+  },
 ];
 
 export const newProducts = [

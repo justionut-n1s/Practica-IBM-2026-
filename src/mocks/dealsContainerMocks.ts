@@ -1,9 +1,9 @@
 import { DealsContainerItem } from "../components/organisms/index";
 import {
-  DealsContainerImg1,
-  DealsContainerImg2,
-  DealsContainerImg3,
-  DealsContainerImg4,
+  dealsImg1,
+  dealsImg2,
+  dealsImg3,
+  dealsImg4,
 } from "../assets/images/index";
 
 const future = new Date();
@@ -15,7 +15,7 @@ future.setSeconds(future.getSeconds() + 58);
 export const productList: DealsContainerItem[] = [
   {
     id: 1,
-    imageSrc: DealsContainerImg1,
+    imageSrc: dealsImg1,
     targetDate: future,
     name: "Seeds of Change Organic Quinoa, Brown",
     link: "",
@@ -26,7 +26,7 @@ export const productList: DealsContainerItem[] = [
   },
   {
     id: 2,
-    imageSrc: DealsContainerImg2,
+    imageSrc: dealsImg2,
     targetDate: future,
     name: "Perdue Simply Smart Organics Gluten",
     link: "",
@@ -37,7 +37,7 @@ export const productList: DealsContainerItem[] = [
   },
   {
     id: 3,
-    imageSrc: DealsContainerImg3,
+    imageSrc: dealsImg3,
     targetDate: future,
     name: "Signature Wood-Fired Mushroom",
     link: "",
@@ -48,7 +48,7 @@ export const productList: DealsContainerItem[] = [
   },
   {
     id: 4,
-    imageSrc: DealsContainerImg4,
+    imageSrc: dealsImg4,
     targetDate: future,
     name: "Simply Lemonade with Raspberry Juice",
     link: "",

@@ -36,3 +36,12 @@ export { default as NewsletterBanner } from "./NewsletterBanner/NewsletterBanner
 export { default as CategoryPanel } from "./CategoryPanel/CategoryPanel";
 export { default as FilterPanel } from "./FilterPanel/FilterPanel";
 export { default as NewProductPanel } from "./NewProductPanel/NewProductPanel";
+export { default as BlogCard } from "./BlogCard/BlogCard";
+export { default as BlogSidebar } from "./BlogSidebar/BlogSidebar";
+export { default as CommentItem } from "./CommentItem/CommentItem";
+export { default as ContactForm } from "./ContactForm/ContactForm";
+export { default as LocationMap } from "./LocationMap/LocationMap";
+export { default as Pagination } from "./Pagination/Pagination";
+export { default as PriceFilterPanel } from "./PriceFilterPanel/PriceFilterPanel";
+export { default as ProductListView } from "./ProductListView/ProductListView";
+export { default as StatsCounter } from "./StatsCounter/StatsCounter";

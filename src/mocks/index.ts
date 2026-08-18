@@ -14,7 +14,18 @@ export {
 } from "./headerMocks";
 export { slideList } from "./heroSliderMocks";
 export { iconFeaturesList } from "./iconFeaturesMocks";
-export { categoryList, checkboxList, newProducts } from "./leftSidePanelsMocks";
-export { productCards } from "./productGridMocks";
+export {
+  categoryList,
+  filterCheckboxList,
+  newProducts,
+} from "./rightSidePanelsMocks";
+export {
+  hyperlinkConfig,
+  productCards,
+  gridProducts,
+} from "./productGridMocks";
 export { listColumns } from "./productListMocks";
 export { bannerList } from "./promoBannersMocks";
+export { whatWeProvide, stats, team, partnerColumns } from "./aboutPageMocks";
+export { filterTags } from "./shopMocks";
+export { helpTopics, offices } from "./contactMocks";

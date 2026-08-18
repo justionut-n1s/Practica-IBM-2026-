@@ -1,4 +1,4 @@
-import { heroBackground, SliderImg1 } from "../assets/images/index";
+import { heroBackground, sliderImg1 } from "../assets/images/index";
 
 export const slideList = [
   {
@@ -7,7 +7,7 @@ export const slideList = [
     subtitle: "Sign up for the daily newsletter",
     placeholder: "Your email address",
     buttonText: "Subscribe",
-    backgroundImg: SliderImg1,
+    backgroundImg: sliderImg1,
   },
   {
     id: 2,

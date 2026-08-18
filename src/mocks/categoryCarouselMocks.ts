@@ -1,28 +1,43 @@
 import { CategoryCarouselItem } from "../components/organisms/index";
 import {
-  MilkAndDairy,
-  WineAndAlcohol,
-  ClothingAndBeauty,
-  PetFood,
-  PackagedFastFood,
-  BakingMaterial,
-  FruitsAndVegetables,
-  FreshSeafood,
-  BreadAndJuice,
-  GroceryBag,
-  Vegetables,
+  milkAndDairy,
+  wineAndAlcohol,
+  clothingAndBeauty,
+  petFood,
+  packagedFastFood,
+  bakingMaterial,
+  freshFruit,
+  freshSeafood,
+  breadAndJuice,
+  groceryBag,
+  vegetables,
 } from "../assets/images/index";
+import { translations } from "../translations/translations";
+
+const categoryTranslate = translations.en.categoryList;
 
 export const cardList: CategoryCarouselItem[] = [
-  { id: 1, imageSrc: MilkAndDairy, cardLabel: "Milk & Dairy" },
-  { id: 2, imageSrc: WineAndAlcohol, cardLabel: "Wine & Alcohol" },
-  { id: 3, imageSrc: ClothingAndBeauty, cardLabel: "Clothing & Beauty" },
-  { id: 4, imageSrc: PetFood, cardLabel: "Pet Food & Toys" },
-  { id: 5, imageSrc: PackagedFastFood, cardLabel: "Packaged Fast Food" },
-  { id: 6, imageSrc: BakingMaterial, cardLabel: "Baking Material" },
-  { id: 7, imageSrc: FruitsAndVegetables, cardLabel: "Fresh Fruits" },
-  { id: 8, imageSrc: FreshSeafood, cardLabel: "Fresh Seafood" },
-  { id: 9, imageSrc: BreadAndJuice, cardLabel: "Bread & Juice" },
-  { id: 10, imageSrc: Vegetables, cardLabel: "Vegetables" },
-  { id: 11, imageSrc: GroceryBag, cardLabel: "Other categories" },
+  { id: 1, imageSrc: milkAndDairy, cardLabel: categoryTranslate.milkAndDairy },
+  {
+    id: 2,
+    imageSrc: wineAndAlcohol,
+    cardLabel: categoryTranslate.wineAndAlcohol,
+  },
+  { id: 3, imageSrc: clothingAndBeauty, cardLabel: categoryTranslate.clothing },
+  { id: 4, imageSrc: petFood, cardLabel: categoryTranslate.petFood },
+  { id: 5, imageSrc: packagedFastFood, cardLabel: categoryTranslate.fastFood },
+  {
+    id: 6,
+    imageSrc: bakingMaterial,
+    cardLabel: categoryTranslate.bakingMaterial,
+  },
+  { id: 7, imageSrc: freshFruit, cardLabel: categoryTranslate.fruits },
+  { id: 8, imageSrc: freshSeafood, cardLabel: categoryTranslate.seafood },
+  {
+    id: 9,
+    imageSrc: breadAndJuice,
+    cardLabel: categoryTranslate.breadAndJuice,
+  },
+  { id: 10, imageSrc: vegetables, cardLabel: categoryTranslate.vegetables },
+  { id: 11, imageSrc: groceryBag, cardLabel: categoryTranslate.otherCateg },
 ];

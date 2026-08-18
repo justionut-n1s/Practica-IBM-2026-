@@ -7,19 +7,26 @@ import {
   NavGroupConfig,
 } from "../components/organisms/index";
 import { Compare, Heart, Cart, Profile } from "../assets/icons/index";
+import { translations } from "../translations/translations";
+
+const navbarTranslate = translations.en.navbar;
+const hyperlinkListTranslate = translations.en.hyperlinkList;
+const languageTranslate = translations.en.languageList;
+const categoryTranslate = translations.en.categoryList;
+const optionTranslate = translations.en.optionGroup;
 
 export const hyperlinkList: HyperlinkGroupItem[] = [
-  { id: 1, message: "About us", link: "" },
-  { id: 2, message: "My Account", link: "" },
-  { id: 3, message: "Wishlist", link: "" },
-  { id: 4, message: "Order Tracking", link: "" },
+  { id: 1, message: hyperlinkListTranslate.about, link: "" },
+  { id: 2, message: hyperlinkListTranslate.account, link: "" },
+  { id: 3, message: hyperlinkListTranslate.wishlist, link: "" },
+  { id: 4, message: hyperlinkListTranslate.orderTracking, link: "" },
 ];
 
 export const languageList = [
-  { id: 1, label: "Spanish" },
-  { id: 2, label: "French" },
-  { id: 3, label: "Portuguese" },
-  { id: 4, label: "German" },
+  { id: 1, label: languageTranslate.spanish },
+  { id: 2, label: languageTranslate.french },
+  { id: 3, label: languageTranslate.portuguese },
+  { id: 4, label: languageTranslate.german },
 ];
 
 export const currencyList = [
@@ -34,7 +41,7 @@ export const comboboxList: HeaderComboboxSectionItem[] = [
     name: "firstCB",
     id: "1",
     className: "combobox-style combobox-style--header-upper-section",
-    selectedOptionLabel: "English",
+    selectedOptionLabel: languageTranslate.english,
     optionList: languageList,
   },
   {
@@ -48,11 +55,11 @@ export const comboboxList: HeaderComboboxSectionItem[] = [
 ];
 
 export const allCategoriesList = [
-  { id: 1, label: "Milk & Dairy" },
-  { id: 2, label: "Fruits & Vegetables" },
-  { id: 3, label: "Baking Material" },
-  { id: 4, label: "Bread & Juice" },
-  { id: 5, label: "Snacks" },
+  { id: 1, label: categoryTranslate.milkAndDairy },
+  { id: 2, label: categoryTranslate.vegetables },
+  { id: 3, label: categoryTranslate.bakingMaterial },
+  { id: 4, label: categoryTranslate.breadAndJuice },
+  { id: 5, label: categoryTranslate.fastFood },
 ];
 
 export const locationList = [
@@ -64,45 +71,45 @@ export const locationList = [
 ];
 
 export const options: OptionsGroupItem[] = [
-  { id: 1, iconSrc: Compare, textItem: "Compare", link: "" },
-  { id: 2, iconSrc: Heart, textItem: "Wishlist", link: "" },
-  { id: 3, iconSrc: Cart, textItem: "Cart", link: "" },
-  { id: 4, iconSrc: Profile, textItem: "Account", link: "" },
+  { id: 1, iconSrc: Compare, textItem: optionTranslate.compare, link: "" },
+  { id: 2, iconSrc: Heart, textItem: optionTranslate.wishlist, link: "" },
+  { id: 3, iconSrc: Cart, textItem: optionTranslate.cart, link: "" },
+  { id: 4, iconSrc: Profile, textItem: optionTranslate.account, link: "" },
 ];
 
 export const navItems: NavGroupConfig[] = [
   {
     type: "dropdown",
-    label: "Home",
+    label: navbarTranslate.home,
     labelVariant: "hyp--span",
     chevronVariant: "green",
     options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
   },
   {
     type: "navitem",
-    textItem: "About",
+    textItem: navbarTranslate.about,
     hyperlinkVariant: "hyp",
     link: "",
     is_arrow: false,
   },
   {
     type: "dropdown",
-    label: "Shop",
+    label: navbarTranslate.shop,
     options: ["Snacks", "Fruits", "Vegetables"],
   },
   {
     type: "dropdown",
-    label: "Vendors",
+    label: navbarTranslate.vendors,
     options: ["NestFood", "Hodo Foods", "Old El Paso"],
   },
   {
     type: "dropdown",
-    label: "Mega menu",
+    label: navbarTranslate.megaMenu,
     options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
   },
   {
     type: "dropdown",
-    label: "Blog",
+    label: navbarTranslate.blog,
     options: [
       "Best Recipes in 2026",
       "Best Juices in 2026",
@@ -111,12 +118,12 @@ export const navItems: NavGroupConfig[] = [
   },
   {
     type: "dropdown",
-    label: "Pages",
+    label: navbarTranslate.pages,
     options: ["About", "Shop", "Contact"],
   },
   {
     type: "navitem",
-    textItem: "Contact",
+    textItem: navbarTranslate.contact,
     hyperlinkVariant: "hyp",
     link: "",
     is_arrow: false,
@@ -124,9 +131,9 @@ export const navItems: NavGroupConfig[] = [
 ];
 
 export const bottomHeaderComboboxList = [
-  { id: 1, label: "Milk & Dairy" },
-  { id: 2, label: "Fruits & Vegetables" },
-  { id: 3, label: "Baking Material" },
-  { id: 4, label: "Bread & Juice" },
-  { id: 5, label: "Snacks" },
+  { id: 1, label: categoryTranslate.milkAndDairy },
+  { id: 2, label: categoryTranslate.clothing },
+  { id: 3, label: categoryTranslate.bakingMaterial },
+  { id: 4, label: categoryTranslate.wineAndAlcohol },
+  { id: 5, label: categoryTranslate.fruits },
 ];

@@ -27,7 +27,6 @@
   flex-wrap: wrap;
 }
 
-/* Content layout */
 .shop-content {
   display: flex;
   gap: 2rem;

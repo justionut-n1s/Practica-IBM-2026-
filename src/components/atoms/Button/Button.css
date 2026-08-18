@@ -28,6 +28,11 @@
   color: var(--color-white);
 }
 
+.button--send-message-button:hover {
+  background-color: var(--color-send-button-hover);
+  color: var(--color-white);
+}
+
 .button--add-button:hover img {
   filter: invert(99%) sepia(82%) saturate(2%) hue-rotate(1deg) brightness(106%)
     contrast(101%);
@@ -51,9 +56,15 @@
   font-size: var(--font-size-xs);
 }
 
-.button--filter-button {
+.button--filter-button,
+.button--send-message-button {
   height: 2.5rem;
   font-size: var(--font-size-xs);
+  width: fit-content;
+}
+
+.button--send-message-button {
+  background-color: var(--color-text-dark);
 }
 
 .button--arrow-button-left,
