@@ -1,0 +1,18 @@
+.stats-counter {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-primary-dark);
+  background-blend-mode: multiply;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.stats-counter__item {
+  text-align: center;
+  color: var(--color-white);
+}
+
+.stats-counter__item p {
+  color: var(--color-primary-light);
+  margin-top: 0.25rem;
+}

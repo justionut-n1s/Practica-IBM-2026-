@@ -2,7 +2,7 @@ import { Heading, Text, Image } from "../../atoms/index";
 import { Form } from "../../molecules/index";
 import { shopper } from "../../../assets/images";
 import { translations } from "../../../translations/translations";
-import "./NewsletterBanner.css";
+import "./Newsletter.css";
 
 interface NewsletterBannerProps {
   title: string;

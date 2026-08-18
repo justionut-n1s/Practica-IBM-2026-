@@ -10,10 +10,12 @@ import {
 } from "../../molecules/index";
 import { Headset, Blaze, Browse } from "../../../assets/icons/index";
 import { translations } from "../../../translations/translations";
+import { Page } from "../../../types";
 import "./HeaderBottomSection.css";
 
 interface NavItemConfig extends NavItemProps {
   type: "navitem";
+  page?: Page;
 }
 
 interface DropdownConfig extends DropdownProps {
@@ -86,11 +88,13 @@ export type NavGroupConfig = NavItemConfig | DropdownConfig;
 interface HeaderBottomSectionProps {
   optionList: Option[];
   navItemList: NavGroupConfig[];
+  onNavigate: (page: Page) => void;
 }
 
 const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
   optionList,
   navItemList,
+  onNavigate,
 }) => {
   const translation = translations.en.headerBottomSection;
   return (
@@ -118,6 +122,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
           if (item.type === "navitem") {
             return (
               <NavItem
+                key={item.textItem}
                 iconSrc={item.iconSrc}
                 iconClassName={item.iconClassName}
                 size={item.size}
@@ -125,11 +130,20 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
                 hyperlinkVariant={item.hyperlinkVariant}
                 link={item.link}
                 is_arrow={item.is_arrow}
+                onClick={
+                  item.page
+                    ? (e) => {
+                        e.preventDefault();
+                        onNavigate(item.page!);
+                      }
+                    : undefined
+                }
               ></NavItem>
             );
           } else if (item.type === "dropdown") {
             return (
               <Dropdown
+                key={item.label}
                 label={item.label}
                 labelVariant={item.labelVariant}
                 chevronVariant={item.chevronVariant}

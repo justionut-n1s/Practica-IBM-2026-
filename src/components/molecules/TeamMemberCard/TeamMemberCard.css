@@ -11,3 +11,7 @@
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
+
+.team-member-card .h4 {
+  color: var(--color-text-dark);
+}

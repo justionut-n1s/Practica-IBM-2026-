@@ -15,7 +15,6 @@ export {
 export { default as Avatar } from "./Avatar/Avatar";
 export { default as RangeSlider } from "./RangeSlider/RangeSlider";
 export { default as Chip } from "./Chip/Chip";
-export { default as Button } from "./Button/Button";
 export { default as ListItem } from "./ListItem/ListItem";
 export {
   default as Combobox,
@@ -23,5 +22,6 @@ export {
   type Option,
 } from "./Combobox/Combobox";
 export { default as Logo } from "./Logo/Logo";
-export { default as Text } from "./Text/Text";
-export { default as Input } from "./Input/Input";
+export { default as Button } from "./button/Button";
+export { default as Text } from "./text/Text";
+export { default as Input } from "./input/Input";

@@ -10,6 +10,7 @@ export interface NavItemProps {
   hyperlinkVariant?: string;
   link: string;
   is_arrow?: boolean;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 function NavItem({
@@ -20,6 +21,7 @@ function NavItem({
   hyperlinkVariant,
   link,
   is_arrow,
+  onClick,
 }: NavItemProps) {
   return (
     <div className="nav-item">
@@ -30,6 +32,7 @@ function NavItem({
         message={textItem}
         variant={hyperlinkVariant}
         link={link}
+        onClick={onClick}
       ></Hyperlink>
       {is_arrow && (
         <span className="nav-item__arrow">

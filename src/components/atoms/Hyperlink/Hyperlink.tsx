@@ -4,9 +4,10 @@ export interface HyperlinkProps {
   message: string;
   link: string;
   variant?: string;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-function Hyperlink({ message, link, variant = "" }: HyperlinkProps) {
+function Hyperlink({ message, link, variant = "", onClick }: HyperlinkProps) {
   const isExternal = link.startsWith("http");
 
   return (
@@ -15,6 +16,7 @@ function Hyperlink({ message, link, variant = "" }: HyperlinkProps) {
       href={link}
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
+      onClick={onClick}
     >
       {message}
     </a>
