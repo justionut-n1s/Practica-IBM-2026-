@@ -1,4 +1,5 @@
 import React from "react";
+import { Option } from "../../atoms/index";
 import {
   IconCombobox,
   Dropdown,
@@ -8,6 +9,7 @@ import {
   CallCenterContainer,
 } from "../../molecules/index";
 import { Headset, Blaze, Browse } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import { Page } from "../../../types";
 import "./HeaderBottomSection.css";
 
@@ -20,91 +22,42 @@ interface DropdownConfig extends DropdownProps {
   type: "dropdown";
 }
 
-type NavGroupConfig = NavItemConfig | DropdownConfig;
-
-const navItems: NavGroupConfig[] = [
-  {
-    type: "navitem",
-    textItem: "Home",
-    hyperlinkVariant: "hyp",
-    link: "",
-    is_arrow: false,
-    page: "home",
-  },
-  {
-    type: "navitem",
-    textItem: "Shop",
-    hyperlinkVariant: "hyp",
-    link: "",
-    is_arrow: false,
-    page: "shop",
-  },
-  {
-    type: "navitem",
-    textItem: "About",
-    hyperlinkVariant: "hyp",
-    link: "",
-    is_arrow: false,
-    page: "about",
-  },
-  {
-    type: "navitem",
-    textItem: "Contact",
-    hyperlinkVariant: "hyp",
-    link: "",
-    is_arrow: false,
-    page: "contact",
-  },
-  {
-    type: "dropdown",
-    label: "Vendors",
-    options: ["option1", "option2", "option3"],
-  },
-  {
-    type: "dropdown",
-    label: "Mega menu",
-    options: ["option1", "option2", "option3"],
-  },
-  {
-    type: "dropdown",
-    label: "Blog",
-    options: ["option1", "option2", "option3"],
-  },
-];
-
-const optionList1: string[] = ["value1", "value2", "value3", "value4"];
+export type NavGroupConfig = NavItemConfig | DropdownConfig;
 
 interface HeaderBottomSectionProps {
-  optionList?: string[];
+  optionList: Option[];
+  navItemList: NavGroupConfig[];
   onNavigate: (page: Page) => void;
 }
 
 const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
   optionList,
+  navItemList,
   onNavigate,
 }) => {
+  const translation = translations.en.headerBottomSection;
   return (
     <div className="header-bottom-section-style">
       <IconCombobox
         className="icon-combobox-style icon-combobox-style--green"
-        options={optionList1}
+        options={optionList}
         iconVariant="icon--white"
         iconSrc={Browse}
         size={16}
-        label="Browse All Categories"
+        label={translation.comboboxLabel}
         comboboxClassName="combobox-style combobox-style--location combobox-style--location--green"
       ></IconCombobox>
       <NavItem
         iconSrc={Blaze}
         iconClassName="icon icon--green"
         size={20}
-        textItem="Deals"
+        textItem={translation.deals}
         hyperlinkVariant="hyp"
         link=""
         is_arrow={false}
       ></NavItem>
       <nav className="header-bottom-section-style__navgroup">
-        {navItems.map((item) => {
+        {navItemList.map((item) => {
           if (item.type === "navitem") {
             return (
               <NavItem
@@ -142,7 +95,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
       <CallCenterContainer
         iconSrc={Headset}
         primaryTextContent="1900 - 888"
-        secondaryTextContent="24/7 Support Center"
+        secondaryTextContent={translation.callCenterText}
       ></CallCenterContainer>
     </div>
   );

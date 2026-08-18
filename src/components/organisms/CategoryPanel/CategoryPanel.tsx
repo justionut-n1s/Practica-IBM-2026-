@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading, Card, Image, Text } from "../../atoms/index";
+import { translations } from "../../../translations/translations";
 import "./CategoryPanel.css";
 
 interface CardList {
@@ -15,10 +16,11 @@ interface CategoryPanelProps {
 }
 
 const CategoryPanel: React.FC<CategoryPanelProps> = ({ cardList }) => {
+  const translation = translations.en.categoryPanel;
   return (
     <Card className="category-panel">
       <div className="category-panel__title">
-        <Heading lvl={4}>Category</Heading>
+        <Heading lvl={4}>{translation.title}</Heading>
       </div>
       <div className="category-panel__card-list">
         {cardList.map(({ id, imageSrc, alt, text, itemNumber }) => (

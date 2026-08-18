@@ -1,5 +1,6 @@
 import { Icon } from "../../atoms";
 import { Home } from "../../../assets/icons";
+import { translations } from "../../../translations/translations";
 import "./Breadcrumb.css";
 
 export interface BreadcrumbTrailItem {
@@ -11,14 +12,13 @@ interface BreadcrumbProps {
   trail: BreadcrumbTrailItem[];
 }
 
-// Thin bordered bar shown right under the header on inner pages:
-// a green "Home" link with a house icon, then "/"-separated trail items.
 function Breadcrumb({ trail }: BreadcrumbProps) {
+  const breadcrumbTranslate = translations.en.breadcrumb;
   return (
     <nav className="breadcrumb">
       <a href="/" className="breadcrumb__home">
         <Icon src={Home} alt="" size={16} />
-        Home
+        {breadcrumbTranslate.home}
       </a>
       {trail.map((item) => (
         <span key={item.label} className="breadcrumb__item">

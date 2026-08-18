@@ -3,8 +3,8 @@ import { Text } from "../../atoms/index";
 import "./CountdownItem.css";
 
 interface CountdownItemProps {
-  numericValue: number;
-  timeUnit: "Sec" | "Min" | "Hours" | "Days";
+  numericValue: string | number;
+  timeUnit: string;
 }
 
 const CountdownItem: React.FC<CountdownItemProps> = ({

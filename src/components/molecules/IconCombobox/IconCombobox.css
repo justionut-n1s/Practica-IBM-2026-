@@ -26,7 +26,3 @@
   display: inline-block;
   transition: transform 0.2s ease-in-out;
 }
-
-.icon-combobox-style__chevron--active {
-  transform: rotate(180deg);
-}

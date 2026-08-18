@@ -4,6 +4,10 @@
   place-content: center;
 }
 
+.icon--rotated {
+  transform: rotate(180deg);
+}
+
 .icon--black {
   filter: invert(18%) sepia(54%) saturate(444%) hue-rotate(162deg)
     brightness(98%) contrast(90%);

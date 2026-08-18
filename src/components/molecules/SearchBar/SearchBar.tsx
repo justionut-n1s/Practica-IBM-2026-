@@ -1,9 +1,9 @@
 import React from "react";
-import { Combobox, Input } from "../../atoms/index";
+import { Combobox, Input, Option } from "../../atoms/index";
 import "./SearchBar.css";
 
 interface SearchBarProps {
-  comboboxOptions: string[];
+  comboboxOptions: Option[];
   inputClassName: string;
   placeholder: string;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { RangeSlider, Heading, Card, Button, Icon } from "../../atoms/index";
 import { CheckboxForm } from "../index";
 import { Filter } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./FilterPanel.css";
 
 interface ComboboxList {
@@ -15,10 +16,11 @@ interface FilterPanelProps {
 }
 
 const FilterPanel: React.FC<FilterPanelProps> = ({ checkboxList }) => {
+  const translation = translations.en.filterPanel;
   return (
     <Card className="filter-panel">
       <div className="filter-panel__title">
-        <Heading lvl={4}>Filter by price</Heading>
+        <Heading lvl={4}>{translation.title}</Heading>
       </div>
       <div className="filter-panel__range-slider">
         <RangeSlider min={0} max={1000}></RangeSlider>
@@ -42,7 +44,7 @@ const FilterPanel: React.FC<FilterPanelProps> = ({ checkboxList }) => {
               size={12}
               className="icon--white"
             ></Icon>
-            Filter
+            {translation.buttonLabel}
           </span>
         </Button>
       </div>

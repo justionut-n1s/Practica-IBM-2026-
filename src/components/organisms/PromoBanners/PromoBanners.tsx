@@ -1,5 +1,6 @@
 import { Text, Button } from "../../atoms/index";
 import { promo1, promo2, promo3 } from "../../../assets/images/index";
+import { translations } from "../../../translations/translations";
 import "./PromoBanners.css";
 
 interface Banner {
@@ -13,6 +14,7 @@ interface PromoBannersProps {
 }
 
 function PromoBanners({ banners }: PromoBannersProps) {
+  const translation = translations.en.promoBanners;
   return (
     <div className="promo-banners">
       {banners.map((banner) => (
@@ -28,7 +30,7 @@ function PromoBanners({ banners }: PromoBannersProps) {
               className="button button--shop-now-button"
               onClick={() => {}}
             >
-              Shop Now
+              {translation.buttonText}
             </Button>
           </a>
         </div>

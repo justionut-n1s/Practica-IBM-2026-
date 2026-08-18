@@ -1,6 +1,7 @@
-import { Heading, Text, Image, Button, Input } from "../../atoms/index";
+import { Heading, Text, Image } from "../../atoms/index";
 import { Form } from "../../molecules/index";
 import { shopper } from "../../../assets/images";
+import { translations } from "../../../translations/translations";
 import "./Newsletter.css";
 
 interface NewsletterBannerProps {
@@ -9,6 +10,7 @@ interface NewsletterBannerProps {
 }
 
 function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
+  const translation = translations.en.newsletterBanner;
   return (
     <div className="newsletter-banner">
       <div className="newsletter-banner__content">
@@ -18,26 +20,10 @@ function NewsletterBanner({ title, subtitle }: NewsletterBannerProps) {
           {subtitle}
         </Text>
 
-        {/* <div className="newsletter-banner__form">
-          <Input
-            type="text"
-            variant="email-input"
-            placeholder="Your email address"
-            className="text-input text-input--email-input"
-          />
-
-          <Button
-            variant="subscribe-button"
-            className="button button--subscribe-button"
-            onClick={() => {}}
-          >
-            Subscribe
-          </Button>
-        </div> */}
         <Form
           inputClassName="text-input text-input--email-input"
-          placeholder="Your email address"
-          buttonText="Subscribe"
+          placeholder={translation.placeholder}
+          buttonText={translation.buttonText}
         ></Form>
       </div>
 

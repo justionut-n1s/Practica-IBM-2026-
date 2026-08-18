@@ -10,12 +10,15 @@ import {
   Icon,
   Image,
 } from "../../atoms/index";
+import { CountdownSection } from "../index";
 import { Cart } from "../../../assets/icons/index";
+import { translations } from "../../../translations/translations";
 import "./DealsContainer.css";
 
 export interface DealsContainerItem {
   id: number;
   imageSrc: string;
+  targetDate: Date | string | number;
   name: string;
   link: string;
   provider: string;
@@ -35,20 +38,33 @@ export interface DealsContainerProps {
 }
 
 const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
+  const translation = translations.en.dealsContainer;
+
   return (
     <div className="deals-container">
       <div className="deals-container__title">
-        <Heading lvl={3}>Deals Of The Day</Heading>
+        <Heading lvl={3}>{translation.title}</Heading>
       </div>
       <div className="deals-container__card-container">
         {productList.map(
-          ({ id, imageSrc, name, link, provider, rating, price, oldPrice }) => (
+          ({
+            id,
+            imageSrc,
+            targetDate,
+            name,
+            link,
+            provider,
+            rating,
+            price,
+            oldPrice,
+          }) => (
             <div key={id} className="deals-container__card">
               <Image
                 src={imageSrc}
                 alt="Image"
                 className="deals-container__image"
               ></Image>
+              <CountdownSection targetDate={targetDate}></CountdownSection>
               <Card className="deals-container__card-content" variant="shadow">
                 <Hyperlink
                   message={name}
@@ -57,7 +73,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
                 />
                 <StarRating rating={rating} />
                 <Text variant="provider-text">
-                  By
+                  {translation.by}
                   <Text
                     type="span"
                     variant="provider-text text--provider-text--span"
@@ -75,7 +91,7 @@ const DealsContainer: React.FC<DealsContainerProps> = ({ productList }) => {
                         alt="shopping cart"
                         size={13}
                       />
-                      Add
+                      {translation.add}
                     </span>
                   </Button>
                 </div>

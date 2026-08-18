@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import { Page } from "./types";
 
 function App() {
-  const [page, setPage] = useState<Page>("home");
+  const [page, setPage] = useState<Page>("about");
 
   const pageProps = { onNavigate: setPage };
 

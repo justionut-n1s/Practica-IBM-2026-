@@ -1,12 +1,17 @@
 import React, { SelectHTMLAttributes } from "react";
 import "./Combobox.css";
 
+export interface Option {
+  id: number;
+  label: string;
+}
+
 export interface ComboboxProps extends SelectHTMLAttributes<HTMLSelectElement> {
   name: string;
   id: string;
   className: string | undefined;
   selectedOptionLabel: string;
-  optionList: string[];
+  optionList: Option[];
 }
 
 const Combobox: React.FC<ComboboxProps> = ({
@@ -15,15 +20,16 @@ const Combobox: React.FC<ComboboxProps> = ({
   className,
   selectedOptionLabel,
   optionList,
-  ...otherProps
 }) => {
   return (
     <select name={name} id={id} className={className}>
       <option className="combobox-style-option" value="" selected>
         {selectedOptionLabel}
       </option>
-      {optionList.map((row, index) => (
-        <option className="combobox-style-option">{optionList[index]}</option>
+      {optionList.map((option) => (
+        <option key={option.id} value="value" className="combobox-style-option">
+          {option.label}
+        </option>
       ))}
     </select>
   );
