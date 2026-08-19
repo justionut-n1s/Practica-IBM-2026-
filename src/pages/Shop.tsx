@@ -4,7 +4,7 @@ import {
   ProductGrid,
   NewsletterBanner,
   CategoryPanel,
-  FilterPanel,
+  PriceFilterPanel,
   NewProductPanel,
   DealsContainer,
 } from "../components/organisms";
@@ -15,8 +15,9 @@ import { Page } from "../types";
 import {
   gridProducts,
   productList,
-  categoryList,
-  filterCheckboxList,
+  shopCategoryList,
+  colors,
+  itemCondition,
   newProducts,
   footerAboutList,
   footerColumns,
@@ -91,15 +92,18 @@ function Shop({ onNavigate }: ShopProps) {
                 ></Icon>
               </Button>
             </div>
+            <DealsContainer productList={productList} />
           </div>
           <div className="shop-content__sidebar">
-            <CategoryPanel cardList={categoryList} />
-            <FilterPanel checkboxList={filterCheckboxList} />
+            <CategoryPanel cardList={shopCategoryList} />
+            <PriceFilterPanel
+              min={500}
+              max={1000}
+              colors={colors}
+              conditions={itemCondition}
+            ></PriceFilterPanel>
             <NewProductPanel productRowList={newProducts} />
           </div>
-        </div>
-        <div className="shop-section">
-          <DealsContainer productList={productList} />
         </div>
         <div className="shop-section">
           <NewsletterBanner

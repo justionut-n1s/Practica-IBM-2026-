@@ -8,6 +8,7 @@ import {
 } from "../components/organisms/index";
 import { Compare, Heart, Cart, Profile } from "../assets/icons/index";
 import { translations } from "../translations/translations";
+import "../pages/About";
 
 const navbarTranslate = translations.en.navbar;
 const hyperlinkListTranslate = translations.en.hyperlinkList;
@@ -84,28 +85,35 @@ export const navItems: NavGroupConfig[] = [
     labelVariant: "hyp--span",
     chevronVariant: "green",
     options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
+    link: "../pages/Home.tsx",
+    page: "home",
   },
   {
     type: "navitem",
     textItem: navbarTranslate.about,
     hyperlinkVariant: "hyp",
-    link: "",
+    link: "../pages/About.tsx",
     is_arrow: false,
+    page: "about",
   },
   {
     type: "dropdown",
     label: navbarTranslate.shop,
     options: ["Snacks", "Fruits", "Vegetables"],
+    link: "../pages/Shop.tsx",
+    page: "shop",
   },
   {
     type: "dropdown",
     label: navbarTranslate.vendors,
     options: ["NestFood", "Hodo Foods", "Old El Paso"],
+    link: "",
   },
   {
     type: "dropdown",
     label: navbarTranslate.megaMenu,
     options: ["Popular Products", "Deals Of The Day", "Shop by Categories"],
+    link: "",
   },
   {
     type: "dropdown",
@@ -115,18 +123,21 @@ export const navItems: NavGroupConfig[] = [
       "Best Juices in 2026",
       "Best Wines in 2026",
     ],
+    link: "",
   },
   {
     type: "dropdown",
     label: navbarTranslate.pages,
     options: ["About", "Shop", "Contact"],
+    link: "",
   },
   {
     type: "navitem",
     textItem: navbarTranslate.contact,
     hyperlinkVariant: "hyp",
-    link: "",
+    link: "../pages/Contact.tsx",
     is_arrow: false,
+    page: "contact",
   },
 ];
 

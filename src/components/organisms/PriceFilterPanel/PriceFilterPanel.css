@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 1.5rem;
   overflow: hidden;
+  padding: 1rem;
+  border: 0.063rem solid var(--color-border);
 }
 
 .price-filter-panel__slider {
@@ -32,9 +34,9 @@
 
 .price-filter-panel__decoration {
   position: absolute;
-  bottom: 0.25rem;
-  right: 0.25rem;
-  width: 4.5rem;
+  bottom: 0rem;
+  right: 0rem;
+  width: 12rem;
   opacity: 0.9;
   z-index: 0;
 }

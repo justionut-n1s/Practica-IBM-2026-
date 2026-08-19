@@ -20,6 +20,7 @@ interface NavItemConfig extends NavItemProps {
 
 interface DropdownConfig extends DropdownProps {
   type: "dropdown";
+  page?: Page;
 }
 
 export type NavGroupConfig = NavItemConfig | DropdownConfig;
@@ -49,7 +50,7 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
       ></IconCombobox>
       <NavItem
         iconSrc={Blaze}
-        iconClassName="icon icon--green"
+        iconClassName="icon--green"
         size={20}
         textItem={translation.deals}
         hyperlinkVariant="hyp"
@@ -87,6 +88,15 @@ const HeaderBottomSection: React.FC<HeaderBottomSectionProps> = ({
                 labelVariant={item.labelVariant}
                 chevronVariant={item.chevronVariant}
                 options={item.options}
+                link={item.link}
+                onClick={
+                  item.page
+                    ? (e) => {
+                        e.preventDefault();
+                        onNavigate(item.page!);
+                      }
+                    : undefined
+                }
               ></Dropdown>
             );
           }

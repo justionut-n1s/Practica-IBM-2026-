@@ -1,24 +1,21 @@
 import { useState } from "react";
 import { Card, Heading, Button, Icon } from "../../atoms";
+import { Filter } from "../../../assets/icons/index";
 import CheckboxForm from "../CheckboxForm/CheckboxForm";
 import "./PriceFilterPanel.css";
 
 interface PriceFilterPanelProps {
   min: number;
   max: number;
-  filterIcon: string;
   colors: { label: string; count: number }[];
   conditions: { label: string; count: number }[];
   decorativeImage?: string;
   onFilter?: (range: { from: number; to: number }) => void;
 }
 
-// Two overlapping <input type="range"> make a "dual" slider: one controls the
-// low value, one controls the high value, and each is clamped so they can't cross.
 function PriceFilterPanel({
   min,
   max,
-  filterIcon,
   colors,
   conditions,
   decorativeImage,
@@ -37,7 +34,7 @@ function PriceFilterPanel({
 
   return (
     <Card className="price-filter-panel">
-      <Heading lvl={3}>Fill by price</Heading>
+      <Heading lvl={4}>Fill by price</Heading>
 
       <div className="price-filter-panel__slider">
         <input
@@ -55,35 +52,34 @@ function PriceFilterPanel({
           onChange={(e) => handleToChange(Number(e.target.value))}
         />
       </div>
-
       <div className="price-filter-panel__values">
         <span>From: ${from}</span>
         <span>To: ${to}</span>
       </div>
-
       <CheckboxForm
         className="checkbox-form"
         title="Color"
         contentList={colors.map((c) => `${c.label} (${c.count})`)}
       />
-
       <CheckboxForm
         className="checkbox-form"
         title="Item Condition"
         contentList={conditions.map((c) => `${c.label} (${c.count})`)}
       />
-
       <Button
         variant="filter-button"
         className="button button--filter-button price-filter-panel__button"
         onClick={() => onFilter?.({ from, to })}
       >
-        <Icon src={filterIcon} alt="" size={16} />
+        <Icon src={Filter} alt="" size={16} className="icon--white" />
         Filter
       </Button>
-
       {decorativeImage && (
-        <img className="price-filter-panel__decoration" src={decorativeImage} alt="" />
+        <img
+          className="price-filter-panel__decoration"
+          src={decorativeImage}
+          alt=""
+        />
       )}
     </Card>
   );

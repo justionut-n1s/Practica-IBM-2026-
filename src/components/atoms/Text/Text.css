@@ -52,7 +52,7 @@
 
 .text--banner-text {
   position: relative;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-md);
   line-height: 1.25rem;
 }
 

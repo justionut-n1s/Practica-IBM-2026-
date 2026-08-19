@@ -5,7 +5,6 @@ export { default as Chevron } from "./Chevron.svg";
 export { default as Compare } from "./Compare.svg";
 export { default as Filter } from "./Filter.svg";
 export { default as Headset } from "./Headset.svg";
-export { default as Home } from "./Home.svg";
 export { default as Heart } from "./Heart.svg";
 export { default as Hours } from "./Hours.svg";
 export { default as Location } from "./Location.svg";

@@ -50,10 +50,10 @@
 
 .button--shop-now-button {
   position: relative;
-  height: 1.5rem;
+  height: 2rem;
   width: fit-content;
   padding: 0rem 0.625rem;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
 }
 
 .button--filter-button,
