@@ -8,6 +8,8 @@ export interface DropdownProps {
   labelVariant?: string;
   chevronVariant?: string;
   options: string[];
+  link: string;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 function Dropdown({
@@ -15,6 +17,8 @@ function Dropdown({
   labelVariant,
   chevronVariant,
   options,
+  link,
+  onClick,
 }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -23,7 +27,12 @@ function Dropdown({
         className={`dropdown__toggle ${isOpen ? "dropdown__toggle--active" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Hyperlink variant={labelVariant} message={label} link="#" />
+        <Hyperlink
+          variant={labelVariant}
+          message={label}
+          link={link}
+          onClick={onClick}
+        />
 
         <span
           className={`dropdown__arrow ${isOpen ? "dropdown__arrow--active" : `dropdown__arrow--${chevronVariant}`}`}

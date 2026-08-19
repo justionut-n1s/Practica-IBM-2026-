@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.home-page__hero-slider {
+  height: 25rem;
+  width: 100%;
+}
+
+.home-page__mid-section {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 3fr 1fr;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.home-page__mid-section__sides {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-page__section {
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+}

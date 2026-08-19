@@ -16,7 +16,9 @@ export { slideList } from "./heroSliderMocks";
 export { iconFeaturesList } from "./iconFeaturesMocks";
 export {
   categoryList,
-  filterCheckboxList,
+  shopCategoryList,
+  colors,
+  itemCondition,
   newProducts,
 } from "./rightSidePanelsMocks";
 export {

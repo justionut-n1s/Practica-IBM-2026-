@@ -1,5 +1,5 @@
 import { Icon } from "../../atoms";
-import { Home } from "../../../assets/icons";
+import { Blaze } from "../../../assets/icons/index";
 import { translations } from "../../../translations/translations";
 import "./Breadcrumb.css";
 
@@ -17,7 +17,7 @@ function Breadcrumb({ trail }: BreadcrumbProps) {
   return (
     <nav className="breadcrumb">
       <a href="/" className="breadcrumb__home">
-        <Icon src={Home} alt="" size={16} />
+        <Icon src={Blaze} alt="" size={16} className="icon--green" />
         {breadcrumbTranslate.home}
       </a>
       {trail.map((item) => (
